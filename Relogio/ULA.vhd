@@ -13,7 +13,7 @@ entity ULA is
     
     );
 end ALU; 
-architecture rtl of ALU is
+architecture rtl of ULA is
 
 signal tmp : std_logic_vector (3 downto 0);
 

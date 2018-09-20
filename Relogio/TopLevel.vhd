@@ -11,6 +11,15 @@ end entity;
 
 architecture rtl of top_level is
 
+component ULA is
+    Port (
+    A, B  : in  STD_LOGIC_VECTOR(3 downto 0);  -- input 4 bit
+    Flag  : in  STD_LOGIC;							  -- flag de selecao soma ou sub -> 0 = soma 1 = sub
+    Q 	 : out  STD_LOGIC_VECTOR(3 downto 0); -- output 4 bit
+    
+    );
+end ULA; 
+
 begin
 fazDivisaoPot2: entity work.divisorGenerico(divPotenciaDe2)
             generic map (divisor => 5)   -- divide por 2^6.
