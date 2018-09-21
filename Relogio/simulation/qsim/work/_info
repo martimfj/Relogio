@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/simulation/qsim
+Ehard_block
+Z1 w1537498200
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 U]E`hi0:`oKa5cWiFZ>hl3
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 7:=`d=[QUY_aUcbj<lC000
+R0
+Z8 8Relogio.vho
+Z9 FRelogio.vho
+l0
+L34
+VOgIg9T_BR7joedFDVM>H13
+!s100 A`ID_i56<Ua56=ZD=[EG=2
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1537498201
+!i10b 1
+Z12 !s108 1537498201.000000
+Z13 !s90 -work|work|Relogio.vho|
+Z14 !s107 Relogio.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 OgIg9T_BR7joedFDVM>H13
+l64
+L50
+V`^CmQg<48W[ez[JL_5@Yn2
+!s100 2S?JL;LJ@<3:BHXTNcXS]3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Etoplevel
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L77
+VBXFE2_2ahCN1CDG_ddcQa3
+!s100 ]_V[?ARB<XcRMlXBFfzbK3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 toplevel 0 22 BXFE2_2ahCN1CDG_ddcQa3
+l140
+L98
+Vm10azZ^3j^Qa:G3@Bk3i90
+!s100 iMfV]FW_Uda6VPCd?GM2?3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Etoplevel_vhd_vec_tst
+Z17 w1537498198
+R5
+R6
+R0
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L31
+V_Q`jhaf9mz5d`N6`e8I1D2
+!s100 UI8JHDIkbNbAV2UzJD^D50
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|Waveform.vwf.vht|
+Z21 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Atoplevel_arch
+R5
+R6
+Z22 DEx4 work 20 toplevel_vhd_vec_tst 0 22 _Q`jhaf9mz5d`N6`e8I1D2
+l48
+L33
+VD?Lak_WmIF1@3zL:jj^?B2
+!s100 ;7H3:W923^>Gb9P?5=OH00
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16

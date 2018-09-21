@@ -1,0 +1,28 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+ 
+entity mux is
+
+  generic(
+    LEN : natural;   -- Bits in each input
+    NUM : natural);  -- Number of inputs
+
+	 port(
+    A,B,C,D,E   : in  std_logic_vector(LEN - 1 downto 0);
+    Sel 			 : in  natural range 0 to NUM - 1;
+    Q   			 : out std_logic_vector(LEN - 1 downto 0));
+
+end entity;
+
+architecture mux_architecture of mux is
+
+begin
+ 
+	with Sel  select
+		tmp <= A WHEN "000",
+				 B WHEN "001",
+				 C WHEN "010",
+				 D WHEN "011",
+				 E WHEN "100";
+
+end architecture;
