@@ -5,23 +5,32 @@ use ieee.NUMERIC_STD.all;
 -----------------------------------------------
 ----------------ULA 4-bit----------------------
 -----------------------------------------------
+
 entity ULA is
-    Port (
-    A, B  : in  STD_LOGIC_VECTOR(3 downto 0);  -- input 4 bit
-    Flag  : in  STD_LOGIC;							  -- flag de selecao soma ou sub -> 0 = soma 1 = sub
-    Q 	 : out  STD_LOGIC_VECTOR(3 downto 0); -- output 4 bit
-    
+
+generic (
+        DATA_WITH : natural := 4
     );
-end ALU; 
+	 
+
+
+    Port (
+		 A, B  : in  STD_LOGIC_VECTOR( (DATA_WITH - 1) downto 0);  
+		 Sel_Ula   : in  STD_LOGIC;							  					  
+		 Q 	 : out  STD_LOGIC_VECTOR( (DATA_WITH - 1) downto 0) 		 
+    );
+	 
+end ULA; 
 architecture rtl of ULA is
 
 signal tmp : std_logic_vector (3 downto 0);
 
 begin
-   process(A,B,Flag)
- begin
- 
-  case(Flag) is
+  
+  process(A,B,Sel_Ula)
+		begin
+  
+  case(Sel_ula) is
   when '0' => -- Soma
    tmp <= A + B ; 
   when '1' => -- Sub
@@ -29,6 +38,7 @@ begin
   when others => tmp <= A + B ; 
   end case;
   
+		  
  end process;
  
  Q <= tmp; -- ALU out

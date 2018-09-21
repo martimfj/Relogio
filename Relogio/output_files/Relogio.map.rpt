@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Relogio
-Tue Sep 18 15:00:37 2018
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Thu Sep 20 20:47:10 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -10,7 +10,17 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: mux:P1
+ 10. Parameter Settings for User Entity Instance: ULA:P2
+ 11. Port Connectivity Checks: "ULA:P2"
+ 12. Port Connectivity Checks: "mux:P1"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -33,24 +43,24 @@ refer to the applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Sep 18 15:00:37 2018               ;
-; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
-; Revision Name                      ; Relogio                                         ;
-; Top-level Entity Name              ; TopLevel                                        ;
-; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
-+------------------------------------+-------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Sep 20 20:47:10 2018       ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                      ; Relogio                                     ;
+; Top-level Entity Name              ; TopLevel                                    ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 8                                           ;
+;     Total combinational functions  ; 8                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 9                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -61,6 +71,8 @@ refer to the applicable agreement for further details.
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
 ; Top-level entity name                                            ; TopLevel           ; Relogio            ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; VHDL Show LMF Mapping Messages                                   ; Off                ;                    ;
+; VHDL Version                                                     ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                      ; Off                ; Off                ;
@@ -69,7 +81,6 @@ refer to the applicable agreement for further details.
 ; Preserve fewer node names                                        ; On                 ; On                 ;
 ; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
 ; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                         ; Auto               ; Auto               ;
 ; Safe State Machine                                               ; Off                ; Off                ;
 ; Extract Verilog State Machines                                   ; On                 ; On                 ;
@@ -155,26 +166,209 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------+---------+
+; TopLevel.vhd                     ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd ;         ;
+; Mux.vhd                          ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd      ;         ;
+; ula.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd      ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 8                ;
+;                                             ;                  ;
+; Total combinational functions               ; 8                ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 0                ;
+;     -- 3 input functions                    ; 6                ;
+;     -- <=2 input functions                  ; 2                ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 5                ;
+;     -- arithmetic mode                      ; 3                ;
+;                                             ;                  ;
+; Total registers                             ; 0                ;
+;     -- Dedicated logic registers            ; 0                ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 9                ;
+;                                             ;                  ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; Sel_Mux[2]~input ;
+; Maximum fan-out                             ; 4                ;
+; Total fan-out                               ; 35               ;
+; Average fan-out                             ; 1.35             ;
++---------------------------------------------+------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |TopLevel                  ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |TopLevel           ; TopLevel    ; work         ;
+;    |ULA:P2|                ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|ULA:P2    ; ULA         ; work         ;
+;    |mux:P1|                ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|mux:P1    ; mux         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux:P1 ;
++----------------+-------+----------------------------+
+; Parameter Name ; Value ; Type                       ;
++----------------+-------+----------------------------+
+; data_width     ; 4     ; Signed Integer             ;
+; sel_width      ; 3     ; Signed Integer             ;
++----------------+-------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:P2 ;
++----------------+-------+----------------------------+
+; Parameter Name ; Value ; Type                       ;
++----------------+-------+----------------------------+
+; DATA_WITH      ; 4     ; Signed Integer             ;
++----------------+-------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "ULA:P2"        ;
++---------+-------+----------+--------------+
+; Port    ; Type  ; Severity ; Details      ;
++---------+-------+----------+--------------+
+; b[3..1] ; Input ; Info     ; Stuck at GND ;
+; b[0]    ; Input ; Info     ; Stuck at VCC ;
++---------+-------+----------+--------------+
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "mux:P1"        ;
++---------+-------+----------+--------------+
+; Port    ; Type  ; Severity ; Details      ;
++---------+-------+----------+--------------+
+; a[3..2] ; Input ; Info     ; Stuck at GND ;
+; a[1]    ; Input ; Info     ; Stuck at VCC ;
+; a[0]    ; Input ; Info     ; Stuck at GND ;
+; b[1..0] ; Input ; Info     ; Stuck at GND ;
+; b[3]    ; Input ; Info     ; Stuck at GND ;
+; b[2]    ; Input ; Info     ; Stuck at VCC ;
+; c[2..1] ; Input ; Info     ; Stuck at VCC ;
+; c[3]    ; Input ; Info     ; Stuck at GND ;
+; c[0]    ; Input ; Info     ; Stuck at GND ;
+; d[3]    ; Input ; Info     ; Stuck at VCC ;
+; d[2]    ; Input ; Info     ; Stuck at GND ;
+; d[1]    ; Input ; Info     ; Stuck at VCC ;
+; d[0]    ; Input ; Info     ; Stuck at GND ;
+; e[3..1] ; Input ; Info     ; Stuck at GND ;
+; e[0]    ; Input ; Info     ; Stuck at VCC ;
++---------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 9                           ;
+; cycloneiii_lcell_comb ; 9                           ;
+;     arith             ; 3                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 2                           ;
+;     normal            ; 6                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 4                           ;
+;                       ;                             ;
+; Max LUT depth         ; 2.30                        ;
+; Average LUT depth     ; 2.15                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Tue Sep 18 15:00:26 2018
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Thu Sep 20 20:46:48 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Relogio -c Relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Error (10500): VHDL syntax error at TopLevel.vhd(26) near text "end";  expecting "begin", or a declaration statement File: /home/sabrina/GitHub/DesComp/Relogio/TopLevel.vhd Line: 26
-Info (12021): Found 0 design units, including 0 entities, in source file TopLevel.vhd
-Error (10522): VHDL Syntax error at base_de_tempo.vhd(6): experienced unexpected end-of-file ;  expecting "entity", or "architecture", or "use", or "library", or "package", or "configuration" File: /home/sabrina/GitHub/DesComp/Relogio/base_de_tempo.vhd Line: 6
-Info (12021): Found 0 design units, including 0 entities, in source file base_de_tempo.vhd
-Info (12021): Found 1 design units, including 1 entities, in source file BlocoTempo.bdf
-    Info (12023): Found entity 1: BlocoTempo
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 950 megabytes
-    Error: Processing ended: Tue Sep 18 15:00:37 2018
-    Error: Elapsed time: 00:00:11
-    Error: Total CPU time (on all processors): 00:00:26
+Info (12021): Found 4 design units, including 1 entities, in source file divisor.vhd
+    Info (12022): Found design unit 1: divisorGenerico-divPor2 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisor.vhd Line: 15
+    Info (12022): Found design unit 2: divisorGenerico-divPotenciaDe2 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisor.vhd Line: 29
+    Info (12022): Found design unit 3: divisorGenerico-divInteiro File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisor.vhd Line: 43
+    Info (12023): Found entity 1: divisorGenerico File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisor.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file comparador.vhd
+    Info (12022): Found design unit 1: comparador-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/comparador.vhd Line: 22
+    Info (12023): Found entity 1: comparador File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/comparador.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhd
+    Info (12022): Found design unit 1: TopLevel-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 14
+    Info (12023): Found entity 1: TopLevel File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file base_de_tempo.vhd
+    Info (12022): Found design unit 1: BlocoTempo-bdf_type File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/base_de_tempo.vhd Line: 16
+    Info (12023): Found entity 1: BlocoTempo File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/base_de_tempo.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd Line: 4
+Warning (12090): Entity "mux" obtained from "Mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
+    Info (12022): Found design unit 1: mux-mux_architecture File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd Line: 17
+    Info (12023): Found entity 1: mux File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd Line: 4
+Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
+Info (12128): Elaborating entity "mux" for hierarchy "mux:P1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 50
+Warning (12125): Using design file ula.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ULA-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd Line: 24
+    Info (12023): Found entity 1: ULA File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd Line: 9
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:P2" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 53
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 7
+Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 8 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4808 megabytes
+    Info: Processing ended: Thu Sep 20 20:47:10 2018
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:44
 
 

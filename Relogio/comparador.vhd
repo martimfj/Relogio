@@ -27,7 +27,7 @@ begin
 	begin
 		if rising_edge(clk) then
 			if (A = B) then
-				if (enable = '1') then
+				if (en = '1') then
 					res <= '1';
 					Q   <= "0000";
 				else
