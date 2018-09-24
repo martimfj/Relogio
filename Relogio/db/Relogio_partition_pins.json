@@ -2,40 +2,7 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : [
-				{
-					"name" : "Q[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Q[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Q[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Q[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_Mux[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_Mux[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_Mux[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_Ula",
-					"strict" : false
-				}
-			]
+			"pins" : []
 		}
 	]
 }

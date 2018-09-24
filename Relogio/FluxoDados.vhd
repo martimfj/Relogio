@@ -1,0 +1,150 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+use ieee.numeric_std.all;
+
+entity FluxoDados is
+   port(
+      clk        :   in  std_logic;
+		ENABLE	  :   in  std_logic_vector(5 downto 0);
+		Sel_Ula    :   in  std_logic;
+		Sel_Mux1   :   in  std_logic_vector(2 downto 0);
+		Sel_Mux2   :   in  std_logic_vector(2 downto 0);
+
+		--------------INPUTS---------------------
+	/*
+		KEY : in STD_LOGIC_VECTOR(3 DOWNTO 0);
+      SW  : in STD_LOGIC_VECTOR(17 DOWNTO 0);
+	*/
+		--------------OUTPUTS--------------------
+		Flag		  : out STD_LOGIC;
+		HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : OUT STD_LOGIC_VECTOR(6 downto 0)
+		
+	);
+end entity;
+
+architecture fl of FluxoDados is
+
+component ULA is
+    Port (
+    A, B      : in  STD_LOGIC_VECTOR(3 downto 0);  -- input 4 bit
+    Sel_Ula   : in  STD_LOGIC;							-- flag de selecao soma ou sub -> 0 = soma 1 = sub
+    Q 	     : out STD_LOGIC_VECTOR(3 downto 0);  -- output 4 bit
+	 Flag		  : out STD_LOGIC
+    
+    );
+
+end component; 
+
+component mux is
+
+  generic(
+    DATA_WIDTH   : natural := 4;   -- Bits in each input
+    SEL_WIDTH    : natural := 3	  -- Number of inputs
+);
+	  port(
+    A,B,C,D,E, F   : in  std_logic_vector( (DATA_WIDTH - 1) downto 0);
+    Sel_Mux 	    : in  std_logic_vector( (SEL_WIDTH - 1) downto 0);
+    Q   			    : out std_logic_vector( (DATA_WIDTH - 1) downto 0)
+);
+end component;
+
+
+component Registrador is
+ generic (
+	  larguraDados : natural := 4
+ );
+ 
+	port (DIN 	 		: in  std_logic_vector(larguraDados-1 downto 0);
+		  DOUT 	 		: out std_logic_vector(larguraDados-1 downto 0);
+		  ENABLE, CLK  : in  std_logic
+
+);		  
+end component;
+ 
+
+component conversorHex7Seg is
+	port
+	(
+		 -- Input ports
+		 dadoHex  : in  std_logic_vector(3 downto 0);
+		 apaga  	 : in  std_logic := '0';
+		 negativo : in  std_logic := '0';
+		 overFlow : in  std_logic := '0';
+
+		 -- Output ports
+		 saida7seg : out std_logic_vector(6 downto 0)
+	);
+end component;
+
+------------------------------------
+-------------SINAIS--------------------
+------------------------------------
+
+--------------MUX--------------------
+signal OUT_m1 : std_logic_vector (3 downto 0);
+signal OUT_m2 : std_logic_vector (3 downto 0);
+
+--------------ULA--------------------
+signal u1   : std_logic_vector (3 downto 0);
+signal u1_F : std_logic;
+
+-----------REGISTRADOR-------------
+signal OUT_R1  : std_logic_vector (3 downto 0);
+signal OUT_R2  : std_logic_vector (3 downto 0);
+signal OUT_R3  : std_logic_vector (3 downto 0);
+signal OUT_R4  : std_logic_vector (3 downto 0);
+signal OUT_R5  : std_logic_vector (3 downto 0);
+signal OUT_R6  : std_logic_vector (3 downto 0);
+
+---------DISPLAY 7 SEGMENTOS-------
+
+signal auxOverFlow : std_logic := '0';
+signal enable_reg  : std_logic_vector(5 downto 0);
+
+begin
+	
+	M1: Mux port map(A => "0000", B=> "0001", C => "1010", 
+
+   				     D => "0010", E => "0100", F => "0110", 
+				  
+						  Sel_Mux => Sel_Mux1, Q => OUT_m1);
+						  
+						  
+	M2: Mux port map(A => OUT_R1, B=> OUT_R2, C => OUT_R3, 
+
+   				     D => OUT_R4, E => OUT_R5, F => OUT_R6, 
+				  
+						  Sel_Mux => Sel_Mux2, Q => OUT_m2);
+							
+	
+	U: ULA port map(A => OUT_m1, B => OUT_m2, Sel_Ula => Sel_Ula, Q => u1, Flag => u1_F);
+	
+	
+	R1: Registrador port map(DIN => u1, Enable => enable_reg(0), CLK => clk, DOUT => OUT_R1);
+	R2: Registrador port map(DIN => u1, Enable => enable_reg(1), CLK => clk, DOUT => OUT_R2);
+	R3: Registrador port map(DIN => u1, Enable => enable_reg(2), CLK => clk, DOUT => OUT_R3);
+	R4: Registrador port map(DIN => u1, Enable => enable_reg(3), CLK => clk, DOUT => OUT_R4);
+	R5: Registrador port map(DIN => u1, Enable => enable_reg(4), CLK => clk, DOUT => OUT_R5);
+	R6: Registrador port map(DIN => u1, Enable => enable_reg(5), CLK => clk, DOUT => OUT_R6);
+
+	
+display0 : entity work.conversorHex7seg
+ Port map (saida7seg => HEX2, dadoHex => OUT_R6, apaga => auxOverFlow);
+ 
+display1 : entity work.conversorHex7seg
+ Port map (saida7seg => HEX3, dadoHex => OUT_R5, apaga => auxOverFlow);
+
+display2 : entity work.conversorHex7seg
+ Port map (saida7seg => HEX4, dadoHex => OUT_R4, apaga => auxOverFlow);
+
+ display3 : entity work.conversorHex7seg
+ Port map (saida7seg => HEX5, dadoHex => OUT_R3, apaga => auxOverFlow);
+
+display4 : entity work.conversorHex7seg
+ Port map (saida7seg => HEX6, dadoHex => OUT_R2, apaga => auxOverFlow);
+ 
+display5 : entity work.conversorHex7seg
+ Port map (saida7seg => HEX7, dadoHex => OUT_R1, apaga => auxOverFlow);
+	
+	
+end architecture;
