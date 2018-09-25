@@ -103,9 +103,9 @@ signal enable_reg  : std_logic_vector(5 downto 0);
 
 begin
 	
-	M1: Mux port map(A => "0000", B=> "0001", C => "1010", 
+	M1: Mux port map(A => "0000", B=> "0001", C => "0010", 
 
-   				     D => "0010", E => "0100", F => "0110", 
+   				     D => "0100", E => "0110", F => "1010", 
 				  
 						  Sel_Mux => Sel_Mux1, Q => OUT_m1);
 						  
