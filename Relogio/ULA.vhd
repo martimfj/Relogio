@@ -15,10 +15,12 @@ generic (
 
 
     Port (
-		 A, B  : in  STD_LOGIC_VECTOR( (DATA_WITH - 1) downto 0);  
+		 A, B      : in  STD_LOGIC_VECTOR( (DATA_WITH - 1) downto 0);  
 		 Sel_Ula   : in  STD_LOGIC;							  					  
-		 Q 	 : out  STD_LOGIC_VECTOR( (DATA_WITH - 1) downto 0) 		 
-    );
+		 Q   		  : out STD_LOGIC_VECTOR( (DATA_WITH - 1) downto 0); 		 
+		 Flag		  : out STD_LOGIC
+	 
+	 );
 	 
 end ULA; 
 architecture rtl of ULA is
@@ -41,5 +43,7 @@ begin
 		  
  end process;
  
- Q <= tmp; -- ALU out
+ Q 	<= tmp; -- ALU out
+ Flag <= not(tmp(0) or tmp(1) or tmp(2) or tmp(3));
+ 
 end architecture;
