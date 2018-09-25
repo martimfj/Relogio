@@ -1,5 +1,5 @@
-Analysis & Elaboration report for Relogio
-Mon Sep 24 22:50:01 2018
+Analysis & Synthesis report for Relogio
+Tue Sep 25 16:59:45 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -7,29 +7,35 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M1
-  5. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M2
-  6. Parameter Settings for User Entity Instance: FluxoDados:F0|ULA:U
-  7. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:R1
-  8. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:R2
-  9. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:R3
- 10. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:R4
- 11. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:R5
- 12. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:R6
- 13. Analysis & Elaboration Settings
- 14. Port Connectivity Checks: "FluxoDados:F0|conversorHex7Seg:display5"
- 15. Port Connectivity Checks: "FluxoDados:F0|conversorHex7Seg:display4"
- 16. Port Connectivity Checks: "FluxoDados:F0|conversorHex7Seg:display3"
- 17. Port Connectivity Checks: "FluxoDados:F0|conversorHex7Seg:display2"
- 18. Port Connectivity Checks: "FluxoDados:F0|conversorHex7Seg:display1"
- 19. Port Connectivity Checks: "FluxoDados:F0|conversorHex7Seg:display0"
- 20. Port Connectivity Checks: "FluxoDados:F0|ULA:U"
- 21. Port Connectivity Checks: "FluxoDados:F0|mux:M1"
- 22. Port Connectivity Checks: "FluxoDados:F0"
- 23. Port Connectivity Checks: "SM1:S0"
- 24. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M1
+ 11. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M2
+ 12. Parameter Settings for User Entity Instance: FluxoDados:F0|ULA:U
+ 13. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg1
+ 14. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg2
+ 15. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg3
+ 16. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg4
+ 17. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg5
+ 18. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg6
+ 19. Port Connectivity Checks: "conversorHex7Seg:display5"
+ 20. Port Connectivity Checks: "conversorHex7Seg:display4"
+ 21. Port Connectivity Checks: "conversorHex7Seg:display3"
+ 22. Port Connectivity Checks: "conversorHex7Seg:display2"
+ 23. Port Connectivity Checks: "conversorHex7Seg:display1"
+ 24. Port Connectivity Checks: "conversorHex7Seg:display0"
+ 25. Port Connectivity Checks: "FluxoDados:F0|ULA:U"
+ 26. Port Connectivity Checks: "FluxoDados:F0|mux:M1"
+ 27. Port Connectivity Checks: "FluxoDados:F0"
+ 28. Post-Synthesis Netlist Statistics for Top Partition
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
 
 
 
@@ -53,135 +59,27 @@ refer to the applicable agreement for further details.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                   ;
+; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Sep 24 22:50:01 2018       ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 25 16:59:45 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Relogio                                     ;
 ; Top-level Entity Name              ; TopLevel                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 57                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M1 ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; data_width     ; 4     ; Signed Integer                           ;
-; sel_width      ; 3     ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M2 ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; data_width     ; 4     ; Signed Integer                           ;
-; sel_width      ; 3     ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FluxoDados:F0|ULA:U ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; DATA_WITH      ; 4     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:R1 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:R2 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:R3 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:R4 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:R5 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:R6 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -267,70 +165,263 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "FluxoDados:F0|conversorHex7Seg:display5" ;
-+----------+-------+----------+---------------------------------------+
-; Port     ; Type  ; Severity ; Details                               ;
-+----------+-------+----------+---------------------------------------+
-; apaga    ; Input ; Info     ; Stuck at GND                          ;
-; negativo ; Input ; Info     ; Stuck at GND                          ;
-; overflow ; Input ; Info     ; Stuck at GND                          ;
-+----------+-------+----------+---------------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "FluxoDados:F0|conversorHex7Seg:display4" ;
-+----------+-------+----------+---------------------------------------+
-; Port     ; Type  ; Severity ; Details                               ;
-+----------+-------+----------+---------------------------------------+
-; apaga    ; Input ; Info     ; Stuck at GND                          ;
-; negativo ; Input ; Info     ; Stuck at GND                          ;
-; overflow ; Input ; Info     ; Stuck at GND                          ;
-+----------+-------+----------+---------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------+---------+
+; TopLevel.vhd                     ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd         ;         ;
+; Registrador.vhd                  ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd      ;         ;
+; Mux.vhd                          ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd              ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/conversorHex7Seg.vhd ;         ;
+; FluxoDados.vhd                   ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd       ;         ;
+; ula.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd              ;         ;
++----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "FluxoDados:F0|conversorHex7Seg:display3" ;
-+----------+-------+----------+---------------------------------------+
-; Port     ; Type  ; Severity ; Details                               ;
-+----------+-------+----------+---------------------------------------+
-; apaga    ; Input ; Info     ; Stuck at GND                          ;
-; negativo ; Input ; Info     ; Stuck at GND                          ;
-; overflow ; Input ; Info     ; Stuck at GND                          ;
-+----------+-------+----------+---------------------------------------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+;                                             ;          ;
+; Total combinational functions               ; 0        ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 0        ;
+;     -- 3 input functions                    ; 0        ;
+;     -- <=2 input functions                  ; 0        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 0        ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 0        ;
+;     -- Dedicated logic registers            ; 0        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 57       ;
+;                                             ;          ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; CLOCK_50 ;
+; Maximum fan-out                             ; 1        ;
+; Total fan-out                               ; 57       ;
+; Average fan-out                             ; 0.50     ;
++---------------------------------------------+----------+
 
 
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "FluxoDados:F0|conversorHex7Seg:display2" ;
-+----------+-------+----------+---------------------------------------+
-; Port     ; Type  ; Severity ; Details                               ;
-+----------+-------+----------+---------------------------------------+
-; apaga    ; Input ; Info     ; Stuck at GND                          ;
-; negativo ; Input ; Info     ; Stuck at GND                          ;
-; overflow ; Input ; Info     ; Stuck at GND                          ;
-+----------+-------+----------+---------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |TopLevel                  ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 57   ; 0            ; |TopLevel           ; TopLevel    ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "FluxoDados:F0|conversorHex7Seg:display1" ;
-+----------+-------+----------+---------------------------------------+
-; Port     ; Type  ; Severity ; Details                               ;
-+----------+-------+----------+---------------------------------------+
-; apaga    ; Input ; Info     ; Stuck at GND                          ;
-; negativo ; Input ; Info     ; Stuck at GND                          ;
-; overflow ; Input ; Info     ; Stuck at GND                          ;
-+----------+-------+----------+---------------------------------------+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++------------------------------------------+--------------------------------------+
+; Register name                            ; Reason for Removal                   ;
++------------------------------------------+--------------------------------------+
+; FluxoDados:F0|Registrador:Rg6|DOUT[0..3] ; Stuck at GND due to stuck port clock ;
+; FluxoDados:F0|Registrador:Rg5|DOUT[0..3] ; Stuck at GND due to stuck port clock ;
+; FluxoDados:F0|Registrador:Rg4|DOUT[0..3] ; Stuck at GND due to stuck port clock ;
+; FluxoDados:F0|Registrador:Rg3|DOUT[0..3] ; Stuck at GND due to stuck port clock ;
+; FluxoDados:F0|Registrador:Rg2|DOUT[0..3] ; Stuck at GND due to stuck port clock ;
+; FluxoDados:F0|Registrador:Rg1|DOUT[0..3] ; Stuck at GND due to stuck port clock ;
+; Total Number of Removed Registers = 24   ;                                      ;
++------------------------------------------+--------------------------------------+
 
 
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "FluxoDados:F0|conversorHex7Seg:display0" ;
-+----------+-------+----------+---------------------------------------+
-; Port     ; Type  ; Severity ; Details                               ;
-+----------+-------+----------+---------------------------------------+
-; apaga    ; Input ; Info     ; Stuck at GND                          ;
-; negativo ; Input ; Info     ; Stuck at GND                          ;
-; overflow ; Input ; Info     ; Stuck at GND                          ;
-+----------+-------+----------+---------------------------------------+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M1 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; data_width     ; 4     ; Signed Integer                           ;
+; sel_width      ; 3     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M2 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; data_width     ; 4     ; Signed Integer                           ;
+; sel_width      ; 3     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FluxoDados:F0|ULA:U ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; DATA_WITH      ; 4     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg1 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg2 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg3 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg4 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg5 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg6 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display5" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display4" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display3" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display2" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display1" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display0" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -366,43 +457,59 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "FluxoDados:F0"                                                                                           ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; hex0 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; hex1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; hex2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; hex3 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; hex4 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; hex5 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; hex6 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; hex7 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; flag ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FluxoDados:F0"                                                                                                     ;
++----------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                  ;
++----------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; clk            ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; enable[4..0]   ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; enable[5]      ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; sel_ula        ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; sel_mux1[2..1] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; sel_mux1[0]    ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; sel_mux2       ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flag           ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "SM1:S0"                                                                                   ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; reset      ; Input  ; Info     ; Stuck at GND                                                                        ;
-; output1[0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 57                          ;
+; cycloneiii_lcell_comb ; 2                           ;
+;     normal            ; 2                           ;
+;         0 data inputs ; 2                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon Sep 24 22:49:39 2018
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Relogio -c Relogio --analysis_and_elaboration
+    Info: Processing started: Tue Sep 25 16:59:27 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Relogio -c Relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file sm1.vhd
+    Info (12022): Found design unit 1: SM1-BEHAVIOR File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 30
+    Info (12023): Found entity 1: SM1 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 21
 Info (12021): Found 4 design units, including 1 entities, in source file divisor.vhd
     Info (12022): Found design unit 1: divisorGenerico-divPor2 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisor.vhd Line: 15
     Info (12022): Found design unit 2: divisorGenerico-divPotenciaDe2 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisor.vhd Line: 29
@@ -412,11 +519,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file compara
     Info (12022): Found design unit 1: comparador-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/comparador.vhd Line: 22
     Info (12023): Found entity 1: comparador File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/comparador.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhd
-    Info (12022): Found design unit 1: TopLevel-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 13
+    Info (12022): Found design unit 1: TopLevel-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 14
     Info (12023): Found entity 1: TopLevel File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file base_de_tempo.vhd
-    Info (12022): Found design unit 1: BlocoTempo-bdf_type File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/base_de_tempo.vhd Line: 16
-    Info (12023): Found entity 1: BlocoTempo File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/base_de_tempo.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
     Info (12022): Found design unit 1: Registrador-comportamento File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd Line: 16
     Info (12023): Found entity 1: Registrador File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd Line: 4
@@ -428,33 +532,91 @@ Info (12021): Found 2 design units, including 1 entities, in source file convers
     Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/conversorHex7Seg.vhd Line: 18
     Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/conversorHex7Seg.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fluxodados.vhd
-    Info (12022): Found design unit 1: FluxoDados-fl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 25
+    Info (12022): Found design unit 1: FluxoDados-fl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 23
     Info (12023): Found entity 1: FluxoDados File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 5
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at TopLevel.vhd(41): used implicit default value for signal "out_flag" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 41
-Warning (12125): Using design file sm1.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: SM1-BEHAVIOR File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/sm1.vhd Line: 30
-    Info (12023): Found entity 1: SM1 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/sm1.vhd Line: 21
-Info (12128): Elaborating entity "SM1" for hierarchy "SM1:S0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 46
-Info (12128): Elaborating entity "FluxoDados" for hierarchy "FluxoDados:F0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 48
-Warning (10541): VHDL Signal Declaration warning at FluxoDados.vhd(19): used implicit default value for signal "Flag" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 19
-Warning (10541): VHDL Signal Declaration warning at FluxoDados.vhd(20): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 20
-Warning (10541): VHDL Signal Declaration warning at FluxoDados.vhd(20): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 20
-Warning (10036): Verilog HDL or VHDL warning at FluxoDados.vhd(89): object "u1_F" assigned a value but never read File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 89
-Warning (10540): VHDL Signal Declaration warning at FluxoDados.vhd(101): used explicit default value for signal "auxOverFlow" because signal was never assigned a value File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 101
-Warning (10541): VHDL Signal Declaration warning at FluxoDados.vhd(102): used implicit default value for signal "enable_reg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 102
-Info (12128): Elaborating entity "mux" for hierarchy "FluxoDados:F0|mux:M1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 106
+Warning (10541): VHDL Signal Declaration warning at TopLevel.vhd(9): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+Warning (10541): VHDL Signal Declaration warning at TopLevel.vhd(9): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+Info (12128): Elaborating entity "FluxoDados" for hierarchy "FluxoDados:F0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 59
+Warning (10541): VHDL Signal Declaration warning at FluxoDados.vhd(17): used implicit default value for signal "Flag" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 17
+Warning (10036): Verilog HDL or VHDL warning at FluxoDados.vhd(87): object "u1_F" assigned a value but never read File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 87
+Warning (10541): VHDL Signal Declaration warning at FluxoDados.vhd(98): used implicit default value for signal "enable_reg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 98
+Info (12128): Elaborating entity "mux" for hierarchy "FluxoDados:F0|mux:M1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 102
 Warning (12125): Using design file ula.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: ULA-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd Line: 26
     Info (12023): Found entity 1: ULA File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd Line: 9
-Info (12128): Elaborating entity "ULA" for hierarchy "FluxoDados:F0|ULA:U" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 120
-Info (12128): Elaborating entity "Registrador" for hierarchy "FluxoDados:F0|Registrador:R1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 123
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "FluxoDados:F0|conversorHex7Seg:display0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 131
+Info (12128): Elaborating entity "ULA" for hierarchy "FluxoDados:F0|ULA:U" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 116
+Info (12128): Elaborating entity "Registrador" for hierarchy "FluxoDados:F0|Registrador:Rg1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 119
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 69
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4799 megabytes
-    Info: Processing ended: Mon Sep 24 22:50:01 2018
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:42
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX6[0]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX6[1]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX6[2]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX6[3]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX6[4]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX6[5]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX6[6]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX7[0]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX7[1]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX7[2]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX7[3]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX7[4]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX7[5]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX7[6]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 8
+Info (21057): Implemented 57 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 56 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 68 warnings
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Tue Sep 25 16:59:45 2018
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:38
 
 

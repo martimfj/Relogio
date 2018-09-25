@@ -1,114 +1,5 @@
 |TopLevel
-CLOCK_50 => SM1:S0.clock
-CLOCK_50 => FluxoDados:F0.clk
-
-
-|TopLevel|SM1:S0
-reset => reg_fstate.state1.OUTPUTSELECT
-reset => reg_fstate.state4.OUTPUTSELECT
-reset => reg_fstate.state7.OUTPUTSELECT
-reset => reg_fstate.state10.OUTPUTSELECT
-reset => reg_fstate.state5.OUTPUTSELECT
-reset => reg_fstate.state3.OUTPUTSELECT
-reset => reg_fstate.state2.OUTPUTSELECT
-reset => reg_fstate.state6.OUTPUTSELECT
-reset => reg_fstate.state8.OUTPUTSELECT
-reset => reg_fstate.state9.OUTPUTSELECT
-reset => reg_fstate.state11.OUTPUTSELECT
-reset => reg_fstate.state14.OUTPUTSELECT
-reset => reg_fstate.state13.OUTPUTSELECT
-reset => reg_fstate.state15.OUTPUTSELECT
-reset => reg_fstate.state12.OUTPUTSELECT
-reset => reg_fstate.state16.OUTPUTSELECT
-reset => reg_fstate.state17.OUTPUTSELECT
-reset => reg_fstate.state18.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-reset => output1.OUTPUTSELECT
-clock => fstate~1.DATAIN
-input1 => Selector0.IN4
-input1 => Selector1.IN4
-input1 => Selector2.IN4
-input1 => Selector3.IN4
-input1 => Selector4.IN1
-input1 => Selector8.IN1
-input1 => Selector10.IN1
-input1 => Selector11.IN1
-input1 => Selector12.IN4
-input1 => Selector15.IN4
-input1 => Selector16.IN1
-input1 => Selector0.IN1
-input1 => Selector0.IN2
-input1 => Selector1.IN1
-input1 => Selector1.IN2
-input1 => Selector2.IN1
-input1 => Selector2.IN2
-input1 => Selector3.IN1
-input1 => Selector3.IN2
-input1 => Selector5.IN1
-input1 => Selector7.IN1
-input1 => Selector9.IN1
-input1 => Selector12.IN1
-input1 => Selector12.IN2
-input1 => Selector13.IN1
-input1 => Selector14.IN1
-input1 => Selector15.IN1
-input1 => Selector15.IN2
-input1 => Selector17.IN1
-input1 => Selector5.IN2
-input1 => Selector7.IN2
-input1 => Selector9.IN2
-input1 => Selector13.IN2
-input1 => Selector14.IN2
-input1 => Selector17.IN2
-input1 => Selector6.IN0
-output1[0] <= <GND>
-output1[1] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[2] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[3] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[4] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[5] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[6] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[7] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[8] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[9] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[10] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[11] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[12] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[13] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|TopLevel|FluxoDados:F0
-clk => Registrador:R1.CLK
-clk => Registrador:R2.CLK
-clk => Registrador:R3.CLK
-clk => Registrador:R4.CLK
-clk => Registrador:R5.CLK
-clk => Registrador:R6.CLK
-ENABLE[0] => ~NO_FANOUT~
-ENABLE[1] => ~NO_FANOUT~
-ENABLE[2] => ~NO_FANOUT~
-ENABLE[3] => ~NO_FANOUT~
-ENABLE[4] => ~NO_FANOUT~
-ENABLE[5] => ~NO_FANOUT~
-Sel_Ula => ULA:U.Sel_Ula
-Sel_Mux1[0] => mux:M1.Sel_Mux[0]
-Sel_Mux1[1] => mux:M1.Sel_Mux[1]
-Sel_Mux1[2] => mux:M1.Sel_Mux[2]
-Sel_Mux2[0] => mux:M2.Sel_Mux[0]
-Sel_Mux2[1] => mux:M2.Sel_Mux[1]
-Sel_Mux2[2] => mux:M2.Sel_Mux[2]
-Flag <= Flag.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_50 => ~NO_FANOUT~
 HEX0[0] <= HEX0[0].DB_MAX_OUTPUT_PORT_TYPE
 HEX0[1] <= HEX0[1].DB_MAX_OUTPUT_PORT_TYPE
 HEX0[2] <= HEX0[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -165,6 +56,53 @@ HEX7[3] <= conversorhex7seg:display5.saida7seg[3]
 HEX7[4] <= conversorhex7seg:display5.saida7seg[4]
 HEX7[5] <= conversorhex7seg:display5.saida7seg[5]
 HEX7[6] <= conversorhex7seg:display5.saida7seg[6]
+
+
+|TopLevel|FluxoDados:F0
+clk => Registrador:Rg1.CLK
+clk => Registrador:Rg2.CLK
+clk => Registrador:Rg3.CLK
+clk => Registrador:Rg4.CLK
+clk => Registrador:Rg5.CLK
+clk => Registrador:Rg6.CLK
+ENABLE[0] => ~NO_FANOUT~
+ENABLE[1] => ~NO_FANOUT~
+ENABLE[2] => ~NO_FANOUT~
+ENABLE[3] => ~NO_FANOUT~
+ENABLE[4] => ~NO_FANOUT~
+ENABLE[5] => ~NO_FANOUT~
+Sel_Ula => ULA:U.Sel_Ula
+Sel_Mux1[0] => mux:M1.Sel_Mux[0]
+Sel_Mux1[1] => mux:M1.Sel_Mux[1]
+Sel_Mux1[2] => mux:M1.Sel_Mux[2]
+Sel_Mux2[0] => mux:M2.Sel_Mux[0]
+Sel_Mux2[1] => mux:M2.Sel_Mux[1]
+Sel_Mux2[2] => mux:M2.Sel_Mux[2]
+Flag <= comb.DB_MAX_OUTPUT_PORT_TYPE
+R1[0] <= Registrador:Rg1.DOUT[0]
+R1[1] <= Registrador:Rg1.DOUT[1]
+R1[2] <= Registrador:Rg1.DOUT[2]
+R1[3] <= Registrador:Rg1.DOUT[3]
+R2[0] <= Registrador:Rg2.DOUT[0]
+R2[1] <= Registrador:Rg2.DOUT[1]
+R2[2] <= Registrador:Rg2.DOUT[2]
+R2[3] <= Registrador:Rg2.DOUT[3]
+R3[0] <= Registrador:Rg3.DOUT[0]
+R3[1] <= Registrador:Rg3.DOUT[1]
+R3[2] <= Registrador:Rg3.DOUT[2]
+R3[3] <= Registrador:Rg3.DOUT[3]
+R4[0] <= Registrador:Rg4.DOUT[0]
+R4[1] <= Registrador:Rg4.DOUT[1]
+R4[2] <= Registrador:Rg4.DOUT[2]
+R4[3] <= Registrador:Rg4.DOUT[3]
+R5[0] <= Registrador:Rg5.DOUT[0]
+R5[1] <= Registrador:Rg5.DOUT[1]
+R5[2] <= Registrador:Rg5.DOUT[2]
+R5[3] <= Registrador:Rg5.DOUT[3]
+R6[0] <= Registrador:Rg6.DOUT[0]
+R6[1] <= Registrador:Rg6.DOUT[1]
+R6[2] <= Registrador:Rg6.DOUT[2]
+R6[3] <= Registrador:Rg6.DOUT[3]
 
 
 |TopLevel|FluxoDados:F0|mux:M1
@@ -281,7 +219,7 @@ Q[3] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
 Flag <= Flag.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|FluxoDados:F0|Registrador:R1
+|TopLevel|FluxoDados:F0|Registrador:Rg1
 DIN[0] => DOUT[0]~reg0.DATAIN
 DIN[1] => DOUT[1]~reg0.DATAIN
 DIN[2] => DOUT[2]~reg0.DATAIN
@@ -300,7 +238,7 @@ CLK => DOUT[2]~reg0.CLK
 CLK => DOUT[3]~reg0.CLK
 
 
-|TopLevel|FluxoDados:F0|Registrador:R2
+|TopLevel|FluxoDados:F0|Registrador:Rg2
 DIN[0] => DOUT[0]~reg0.DATAIN
 DIN[1] => DOUT[1]~reg0.DATAIN
 DIN[2] => DOUT[2]~reg0.DATAIN
@@ -319,7 +257,7 @@ CLK => DOUT[2]~reg0.CLK
 CLK => DOUT[3]~reg0.CLK
 
 
-|TopLevel|FluxoDados:F0|Registrador:R3
+|TopLevel|FluxoDados:F0|Registrador:Rg3
 DIN[0] => DOUT[0]~reg0.DATAIN
 DIN[1] => DOUT[1]~reg0.DATAIN
 DIN[2] => DOUT[2]~reg0.DATAIN
@@ -338,7 +276,7 @@ CLK => DOUT[2]~reg0.CLK
 CLK => DOUT[3]~reg0.CLK
 
 
-|TopLevel|FluxoDados:F0|Registrador:R4
+|TopLevel|FluxoDados:F0|Registrador:Rg4
 DIN[0] => DOUT[0]~reg0.DATAIN
 DIN[1] => DOUT[1]~reg0.DATAIN
 DIN[2] => DOUT[2]~reg0.DATAIN
@@ -357,7 +295,7 @@ CLK => DOUT[2]~reg0.CLK
 CLK => DOUT[3]~reg0.CLK
 
 
-|TopLevel|FluxoDados:F0|Registrador:R5
+|TopLevel|FluxoDados:F0|Registrador:Rg5
 DIN[0] => DOUT[0]~reg0.DATAIN
 DIN[1] => DOUT[1]~reg0.DATAIN
 DIN[2] => DOUT[2]~reg0.DATAIN
@@ -376,7 +314,7 @@ CLK => DOUT[2]~reg0.CLK
 CLK => DOUT[3]~reg0.CLK
 
 
-|TopLevel|FluxoDados:F0|Registrador:R6
+|TopLevel|FluxoDados:F0|Registrador:Rg6
 DIN[0] => DOUT[0]~reg0.DATAIN
 DIN[1] => DOUT[1]~reg0.DATAIN
 DIN[2] => DOUT[2]~reg0.DATAIN
@@ -395,7 +333,7 @@ CLK => DOUT[2]~reg0.CLK
 CLK => DOUT[3]~reg0.CLK
 
 
-|TopLevel|FluxoDados:F0|conversorHex7Seg:display0
+|TopLevel|conversorHex7Seg:display0
 dadoHex[0] => Equal0.IN3
 dadoHex[0] => Equal1.IN0
 dadoHex[0] => Equal2.IN3
@@ -480,7 +418,7 @@ saida7seg[5] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 saida7seg[6] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|FluxoDados:F0|conversorHex7Seg:display1
+|TopLevel|conversorHex7Seg:display1
 dadoHex[0] => Equal0.IN3
 dadoHex[0] => Equal1.IN0
 dadoHex[0] => Equal2.IN3
@@ -565,7 +503,7 @@ saida7seg[5] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 saida7seg[6] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|FluxoDados:F0|conversorHex7Seg:display2
+|TopLevel|conversorHex7Seg:display2
 dadoHex[0] => Equal0.IN3
 dadoHex[0] => Equal1.IN0
 dadoHex[0] => Equal2.IN3
@@ -650,7 +588,7 @@ saida7seg[5] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 saida7seg[6] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|FluxoDados:F0|conversorHex7Seg:display3
+|TopLevel|conversorHex7Seg:display3
 dadoHex[0] => Equal0.IN3
 dadoHex[0] => Equal1.IN0
 dadoHex[0] => Equal2.IN3
@@ -735,7 +673,7 @@ saida7seg[5] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 saida7seg[6] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|FluxoDados:F0|conversorHex7Seg:display4
+|TopLevel|conversorHex7Seg:display4
 dadoHex[0] => Equal0.IN3
 dadoHex[0] => Equal1.IN0
 dadoHex[0] => Equal2.IN3
@@ -820,7 +758,7 @@ saida7seg[5] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 saida7seg[6] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|FluxoDados:F0|conversorHex7Seg:display5
+|TopLevel|conversorHex7Seg:display5
 dadoHex[0] => Equal0.IN3
 dadoHex[0] => Equal1.IN0
 dadoHex[0] => Equal2.IN3
