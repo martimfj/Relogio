@@ -95,7 +95,6 @@ signal OUT_R5  : std_logic_vector (3 downto 0);
 signal OUT_R6  : std_logic_vector (3 downto 0);
 
 ---------DISPLAY 7 SEGMENTOS-------
-signal enable_reg  : std_logic_vector(5 downto 0);
 
 begin
 	
@@ -116,12 +115,12 @@ begin
 	U: ULA port map(A => OUT_m1, B => OUT_m2, Sel_Ula => Sel_Ula, Q => u1, Flag => u1_F);
 	
 	
-	Rg1: Registrador port map(DIN => u1, Enable => enable_reg(0), CLK => clk, DOUT => OUT_R1);
-	Rg2: Registrador port map(DIN => u1, Enable => enable_reg(1), CLK => clk, DOUT => OUT_R2);
-	Rg3: Registrador port map(DIN => u1, Enable => enable_reg(2), CLK => clk, DOUT => OUT_R3);
-	Rg4: Registrador port map(DIN => u1, Enable => enable_reg(3), CLK => clk, DOUT => OUT_R4);
-	Rg5: Registrador port map(DIN => u1, Enable => enable_reg(4), CLK => clk, DOUT => OUT_R5);
-	Rg6: Registrador port map(DIN => u1, Enable => enable_reg(5), CLK => clk, DOUT => OUT_R6);
+	Rg1: Registrador port map(DIN => u1, Enable => ENABLE(0), CLK => clk, DOUT => OUT_R1);
+	Rg2: Registrador port map(DIN => u1, Enable => ENABLE(1), CLK => clk, DOUT => OUT_R2);
+	Rg3: Registrador port map(DIN => u1, Enable => ENABLE(2), CLK => clk, DOUT => OUT_R3);
+	Rg4: Registrador port map(DIN => u1, Enable => ENABLE(3), CLK => clk, DOUT => OUT_R4);
+	Rg5: Registrador port map(DIN => u1, Enable => ENABLE(4), CLK => clk, DOUT => OUT_R5);
+	Rg6: Registrador port map(DIN => u1, Enable => ENABLE(5), CLK => clk, DOUT => OUT_R6);
 
 	R1 <= OUT_R1;
 	R2 <= OUT_R2;
@@ -129,5 +128,6 @@ begin
 	R4 <= OUT_R4;
 	R5 <= OUT_R5;
 	R6 <= OUT_R6;
+	Flag <= u1_F;
 	
 end architecture;
