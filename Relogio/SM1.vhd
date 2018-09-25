@@ -31,6 +31,7 @@ ARCHITECTURE BEHAVIOR OF SM1 IS
     TYPE type_fstate IS (state1,state4,state7,state10,state5,state3,state2,state6,state8,state9,state11,state14,state13,state15,state12,state16,state17,state18);
     SIGNAL fstate : type_fstate;
     SIGNAL reg_fstate : type_fstate;
+	 
 BEGIN
     PROCESS (clock,reg_fstate)
     BEGIN
