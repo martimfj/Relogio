@@ -57,7 +57,7 @@ signal saida_clk: std_logic;
 begin
 
 	fazDivisaoInteiro: entity work.divisorGenerico(divInteiro)
-            generic map (divisor => 25000000)   -- divide por 10.
+            generic map (divisor => 5000000)   -- divide por 10.
             port map (clk => CLOCK_50, saida_clk => saida_clk);
 
 
