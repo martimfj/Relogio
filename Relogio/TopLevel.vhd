@@ -56,7 +56,12 @@ signal saida_clk: std_logic;
 
 begin
 
-		S0: SM1 port map(reset => '0', clock => CLOCK_50, input1 => out_flag ,output1 => comando);
+	fazDivisaoInteiro: entity work.divisorGenerico(divInteiro)
+            generic map (divisor => 50000000)   -- divide por 10.
+            port map (clk => CLOCK_50, saida_clk => saida_clk);
+
+
+		S0: SM1 port map(reset => '0', clock => saida_clk, input1 => out_flag ,output1 => comando);
 
 	
 		-- comando (13 downto 0)
@@ -64,7 +69,7 @@ begin
 		-- 13 12 11 | 10 9 8   |  7  | 6 5 4 3 2 1 | --
 	
 		F0: FluxoDados port map( 
-		clk 		  => CLOCK_50,
+		clk 		  => saida_clk,
 		Sel_Ula    => comando(7),
 		Sel_Mux1   => comando(13 downto 11),
 		Sel_Mux2   => comando(10 downto 8),
@@ -73,16 +78,7 @@ begin
 		R1 => OUT_R1, R2 => OUT_R2, R3 => OUT_R3, R4 => OUT_R4, R5 => OUT_R5, R6 => OUT_R6
 		);
 		
-	
-	
-	fazDivisaoPot2: entity work.divisorGenerico(divPotenciaDe2)
-            generic map (divisor => 5)   -- divide por 2^6.
-            port map (clk => CLOCK_50, saida_clk => saida_clk);
 
-	fazDivisaoInteiro: entity work.divisorGenerico(divInteiro)
-            generic map (divisor => 5)   -- divide por 10.
-            port map (clk => CLOCK_50, saida_clk => saida_clk);
-	
 	
 	display00 : entity work.conversorHex7seg
 	 Port map (saida7seg => HEX0, dadoHex => "0000", apaga => '1');
@@ -91,7 +87,7 @@ begin
 	 Port map (saida7seg => HEX1, dadoHex => "0000", apaga => '1');
 	
 	display0 : entity work.conversorHex7seg
-	 Port map (saida7seg => HEX2, dadoHex => OUT_R6, apaga => '0');
+	 Port map (saida7seg => HEX2, dadoHex => "000" & saida_clk, apaga => '0');
 	 
 	display1 : entity work.conversorHex7seg
 	 Port map (saida7seg => HEX3, dadoHex => OUT_R5, apaga => '0');

@@ -1,7 +1,4 @@
 |TopLevel
-CLOCK_50 => SM1:S0.clock
-CLOCK_50 => FluxoDados:F0.clk
-CLOCK_50 => divisorgenerico:fazDivisaoPot2.clk
 CLOCK_50 => divisorgenerico:fazDivisaoInteiro.clk
 HEX0[0] <= conversorhex7seg:display00.saida7seg[0]
 HEX0[1] <= conversorhex7seg:display00.saida7seg[1]
@@ -61,31 +58,96 @@ HEX7[5] <= conversorhex7seg:display5.saida7seg[5]
 HEX7[6] <= conversorhex7seg:display5.saida7seg[6]
 
 
+|TopLevel|divisorGenerico:fazDivisaoInteiro
+clk => tick.CLK
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => contador[4].CLK
+clk => contador[5].CLK
+clk => contador[6].CLK
+clk => contador[7].CLK
+clk => contador[8].CLK
+clk => contador[9].CLK
+clk => contador[10].CLK
+clk => contador[11].CLK
+clk => contador[12].CLK
+clk => contador[13].CLK
+clk => contador[14].CLK
+clk => contador[15].CLK
+clk => contador[16].CLK
+clk => contador[17].CLK
+clk => contador[18].CLK
+clk => contador[19].CLK
+clk => contador[20].CLK
+clk => contador[21].CLK
+clk => contador[22].CLK
+clk => contador[23].CLK
+clk => contador[24].CLK
+clk => contador[25].CLK
+saida_clk <= tick.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |TopLevel|SM1:S0
+reset => reg_fstate.state0.OUTPUTSELECT
 reset => reg_fstate.state1.OUTPUTSELECT
 reset => reg_fstate.state4.OUTPUTSELECT
+reset => reg_fstate.state7.OUTPUTSELECT
+reset => reg_fstate.state10.OUTPUTSELECT
+reset => reg_fstate.state5.OUTPUTSELECT
+reset => reg_fstate.state3.OUTPUTSELECT
 reset => reg_fstate.state2.OUTPUTSELECT
+reset => reg_fstate.state6.OUTPUTSELECT
+reset => reg_fstate.state8.OUTPUTSELECT
+reset => reg_fstate.state9.OUTPUTSELECT
+reset => reg_fstate.state11.OUTPUTSELECT
+reset => reg_fstate.state14.OUTPUTSELECT
+reset => reg_fstate.state13.OUTPUTSELECT
+reset => reg_fstate.state15.OUTPUTSELECT
+reset => reg_fstate.state12.OUTPUTSELECT
+reset => reg_fstate.state16.OUTPUTSELECT
+reset => reg_fstate.state17.OUTPUTSELECT
+reset => reg_fstate.state18.OUTPUTSELECT
 reset => output1.OUTPUTSELECT
 reset => output1.OUTPUTSELECT
 reset => output1.OUTPUTSELECT
 reset => output1.OUTPUTSELECT
 reset => output1.OUTPUTSELECT
 reset => output1.OUTPUTSELECT
-clock => ~NO_FANOUT~
-input1 => ~NO_FANOUT~
+reset => output1.OUTPUTSELECT
+reset => output1.OUTPUTSELECT
+reset => output1.OUTPUTSELECT
+reset => output1.OUTPUTSELECT
+reset => output1.OUTPUTSELECT
+reset => output1.OUTPUTSELECT
+reset => output1.OUTPUTSELECT
+clock => fstate~1.DATAIN
+input1 => reg_fstate.DATAB
+input1 => reg_fstate.DATAB
+input1 => reg_fstate.DATAB
+input1 => reg_fstate.DATAB
+input1 => reg_fstate.DATAB
+input1 => reg_fstate.DATAB
+input1 => Selector0.IN2
+input1 => Selector0.IN3
+input1 => Selector0.IN4
+input1 => Selector0.IN5
+input1 => Selector0.IN6
+input1 => Selector0.IN7
 output1[0] <= <GND>
-output1[1] <= <GND>
-output1[2] <= <GND>
-output1[3] <= <GND>
-output1[4] <= <GND>
+output1[1] <= output1.DB_MAX_OUTPUT_PORT_TYPE
+output1[2] <= output1.DB_MAX_OUTPUT_PORT_TYPE
+output1[3] <= output1.DB_MAX_OUTPUT_PORT_TYPE
+output1[4] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 output1[5] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 output1[6] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 output1[7] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 output1[8] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[9] <= <GND>
-output1[10] <= <GND>
+output1[9] <= output1.DB_MAX_OUTPUT_PORT_TYPE
+output1[10] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 output1[11] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[12] <= <GND>
+output1[12] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 output1[13] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -137,30 +199,34 @@ R6[3] <= Registrador:Rg6.DOUT[3]
 
 
 |TopLevel|FluxoDados:F0|mux:M1
-A[0] => Mux3.IN2
-A[1] => Mux2.IN2
-A[2] => Mux1.IN2
-A[3] => Mux0.IN2
-B[0] => Mux3.IN3
-B[1] => Mux2.IN3
-B[2] => Mux1.IN3
-B[3] => Mux0.IN3
-C[0] => Mux3.IN4
-C[1] => Mux2.IN4
-C[2] => Mux1.IN4
-C[3] => Mux0.IN4
-D[0] => Mux3.IN5
-D[1] => Mux2.IN5
-D[2] => Mux1.IN5
-D[3] => Mux0.IN5
-E[0] => Mux3.IN6
-E[1] => Mux2.IN6
-E[2] => Mux1.IN6
-E[3] => Mux0.IN6
-F[0] => Mux3.IN7
-F[1] => Mux2.IN7
-F[2] => Mux1.IN7
-F[3] => Mux0.IN7
+A[0] => Mux3.IN1
+A[1] => Mux2.IN1
+A[2] => Mux1.IN1
+A[3] => Mux0.IN1
+B[0] => Mux3.IN2
+B[1] => Mux2.IN2
+B[2] => Mux1.IN2
+B[3] => Mux0.IN2
+C[0] => Mux3.IN3
+C[1] => Mux2.IN3
+C[2] => Mux1.IN3
+C[3] => Mux0.IN3
+D[0] => Mux3.IN4
+D[1] => Mux2.IN4
+D[2] => Mux1.IN4
+D[3] => Mux0.IN4
+E[0] => Mux3.IN5
+E[1] => Mux2.IN5
+E[2] => Mux1.IN5
+E[3] => Mux0.IN5
+F[0] => Mux3.IN6
+F[1] => Mux2.IN6
+F[2] => Mux1.IN6
+F[3] => Mux0.IN6
+G[0] => Mux3.IN7
+G[1] => Mux2.IN7
+G[2] => Mux1.IN7
+G[3] => Mux0.IN7
 Sel_Mux[0] => Mux0.IN10
 Sel_Mux[0] => Mux1.IN10
 Sel_Mux[0] => Mux2.IN10
@@ -180,30 +246,34 @@ Q[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|FluxoDados:F0|mux:M2
-A[0] => Mux3.IN2
-A[1] => Mux2.IN2
-A[2] => Mux1.IN2
-A[3] => Mux0.IN2
-B[0] => Mux3.IN3
-B[1] => Mux2.IN3
-B[2] => Mux1.IN3
-B[3] => Mux0.IN3
-C[0] => Mux3.IN4
-C[1] => Mux2.IN4
-C[2] => Mux1.IN4
-C[3] => Mux0.IN4
-D[0] => Mux3.IN5
-D[1] => Mux2.IN5
-D[2] => Mux1.IN5
-D[3] => Mux0.IN5
-E[0] => Mux3.IN6
-E[1] => Mux2.IN6
-E[2] => Mux1.IN6
-E[3] => Mux0.IN6
-F[0] => Mux3.IN7
-F[1] => Mux2.IN7
-F[2] => Mux1.IN7
-F[3] => Mux0.IN7
+A[0] => Mux3.IN1
+A[1] => Mux2.IN1
+A[2] => Mux1.IN1
+A[3] => Mux0.IN1
+B[0] => Mux3.IN2
+B[1] => Mux2.IN2
+B[2] => Mux1.IN2
+B[3] => Mux0.IN2
+C[0] => Mux3.IN3
+C[1] => Mux2.IN3
+C[2] => Mux1.IN3
+C[3] => Mux0.IN3
+D[0] => Mux3.IN4
+D[1] => Mux2.IN4
+D[2] => Mux1.IN4
+D[3] => Mux0.IN4
+E[0] => Mux3.IN5
+E[1] => Mux2.IN5
+E[2] => Mux1.IN5
+E[3] => Mux0.IN5
+F[0] => Mux3.IN6
+F[1] => Mux2.IN6
+F[2] => Mux1.IN6
+F[3] => Mux0.IN6
+G[0] => Mux3.IN7
+G[1] => Mux2.IN7
+G[2] => Mux1.IN7
+G[3] => Mux0.IN7
 Sel_Mux[0] => Mux0.IN10
 Sel_Mux[0] => Mux1.IN10
 Sel_Mux[0] => Mux2.IN10
@@ -362,24 +432,6 @@ CLK => DOUT[0]~reg0.CLK
 CLK => DOUT[1]~reg0.CLK
 CLK => DOUT[2]~reg0.CLK
 CLK => DOUT[3]~reg0.CLK
-
-
-|TopLevel|divisorGenerico:fazDivisaoPot2
-clk => contador[0].CLK
-clk => contador[1].CLK
-clk => contador[2].CLK
-clk => contador[3].CLK
-clk => contador[4].CLK
-clk => contador[5].CLK
-saida_clk <= contador[5].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|TopLevel|divisorGenerico:fazDivisaoInteiro
-clk => tick.CLK
-clk => contador[0].CLK
-clk => contador[1].CLK
-clk => contador[2].CLK
-saida_clk <= tick.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|conversorHex7Seg:display00
