@@ -8,7 +8,7 @@ entity mux is
     SEL_WIDTH   : natural := 3	 -- Number of inputs
 );
 	 port(
-    A,B,C,D,E, F   : in  std_logic_vector( (DATA_WIDTH - 1) downto 0);
+    A, B, C, D, E, F, G   : in  std_logic_vector( (DATA_WIDTH - 1) downto 0);
     Sel_Mux 	    : in  std_logic_vector( (SEL_WIDTH - 1) downto 0);
     Q   			    : out std_logic_vector( (DATA_WIDTH - 1) downto 0)
 );
@@ -25,6 +25,7 @@ begin
 				 D WHEN "011",
 				 E WHEN "100",
 				 F WHEN "101",
+				 G WHEN "110",
 				 (others =>'0') when others;
 
 end architecture;
