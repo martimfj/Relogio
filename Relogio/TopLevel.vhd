@@ -57,7 +57,7 @@ signal saida_clk: std_logic;
 begin
 
 	fazDivisaoInteiro: entity work.divisorGenerico(divInteiro)
-            generic map (divisor => 50000000)   -- divide por 10.
+            generic map (divisor => 25000000)   -- divide por 10.
             port map (clk => CLOCK_50, saida_clk => saida_clk);
 
 
@@ -87,22 +87,22 @@ begin
 	 Port map (saida7seg => HEX1, dadoHex => "0000", apaga => '1');
 	
 	display0 : entity work.conversorHex7seg
-	 Port map (saida7seg => HEX2, dadoHex => "000" & saida_clk, apaga => '0');
+	 Port map (saida7seg => HEX2, dadoHex => OUT_R1, apaga => '0');
 	 
 	display1 : entity work.conversorHex7seg
-	 Port map (saida7seg => HEX3, dadoHex => OUT_R5, apaga => '0');
+	 Port map (saida7seg => HEX3, dadoHex => OUT_R2, apaga => '0');
 
 	display2 : entity work.conversorHex7seg
-	 Port map (saida7seg => HEX4, dadoHex => OUT_R4, apaga => '0');
+	 Port map (saida7seg => HEX4, dadoHex => OUT_R3, apaga => '0');
 
 	 display3 : entity work.conversorHex7seg
-	 Port map (saida7seg => HEX5, dadoHex => OUT_R3, apaga => '0');
+	 Port map (saida7seg => HEX5, dadoHex => OUT_R4, apaga => '0');
 
 	display4 : entity work.conversorHex7seg
-	 Port map (saida7seg => HEX6, dadoHex => OUT_R2, apaga => '0');
+	 Port map (saida7seg => HEX6, dadoHex => OUT_R5, apaga => '0');
 	 
 	display5 : entity work.conversorHex7seg
-	 Port map (saida7seg => HEX7, dadoHex => OUT_R1, apaga => '0');
+	 Port map (saida7seg => HEX7, dadoHex => OUT_R6, apaga => '0');
 	
 
 end architecture;

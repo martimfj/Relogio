@@ -8,6 +8,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "HEX2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2[2]",
+					"strict" : false
+				},
+				{
 					"name" : "HEX2[3]",
 					"strict" : false
 				},
@@ -17,6 +25,10 @@
 				},
 				{
 					"name" : "HEX2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2[6]",
 					"strict" : false
 				},
 				{

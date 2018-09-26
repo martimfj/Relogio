@@ -18,7 +18,7 @@ BEGIN
     PROCESS (clock)
 	
     BEGIN
-        IF (clock='1') THEN
+        IF (rising_edge(clock)) THEN
             fstate <= reg_fstate;
         END IF;
     END PROCESS;
