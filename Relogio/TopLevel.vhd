@@ -7,6 +7,7 @@ entity TopLevel is
 	port(
 		CLOCK_50 : in STD_LOGIC;
 		HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : OUT STD_LOGIC_VECTOR(6 downto 0)
+
 	);
 	
 end entity;
@@ -35,7 +36,7 @@ component SM1 IS
 	 PORT (
         reset : IN STD_LOGIC := '0';
         clock : IN STD_LOGIC;
-        input1 : IN STD_LOGIC := '0';
+        input1 : IN STD_LOGIC;
         output1 : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
     );
 	 
@@ -50,6 +51,8 @@ signal OUT_R3  : std_logic_vector (3 downto 0);
 signal OUT_R4  : std_logic_vector (3 downto 0);
 signal OUT_R5  : std_logic_vector (3 downto 0);
 signal OUT_R6  : std_logic_vector (3 downto 0);
+
+signal saida_clk: std_logic;
 
 begin
 
@@ -70,6 +73,16 @@ begin
 		R1 => OUT_R1, R2 => OUT_R2, R3 => OUT_R3, R4 => OUT_R4, R5 => OUT_R5, R6 => OUT_R6
 		);
 		
+	
+	
+	fazDivisaoPot2: entity work.divisorGenerico(divPotenciaDe2)
+            generic map (divisor => 5)   -- divide por 2^6.
+            port map (clk => CLOCK_50, saida_clk => saida_clk);
+
+	fazDivisaoInteiro: entity work.divisorGenerico(divInteiro)
+            generic map (divisor => 5)   -- divide por 10.
+            port map (clk => CLOCK_50, saida_clk => saida_clk);
+	
 	
 	display00 : entity work.conversorHex7seg
 	 Port map (saida7seg => HEX0, dadoHex => "0000", apaga => '1');

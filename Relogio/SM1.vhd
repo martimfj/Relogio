@@ -34,16 +34,31 @@ begin
 					WHEN state2 =>
                     IF (NOT((input1 = '1'))) THEN
                         reg_fstate <= state1;
-                    ELSIF ((input1 = '1')) THEN
-                        reg_fstate <= state1;
-                    -- Inserting 'else' block to prevent latch inference
-                    ELSE
+                   
+						  ELSIF ((input1 = '1')) THEN
+								reg_fstate <= state1;
+							
+							ELSE
                         reg_fstate <= state2;
                     END IF;
 
                     output1 <= "10100010000000";
                     
                
+					
+					 WHEN state3 =>
+					 
+					 output1 <= "00000011000000";
+                    reg_fstate <= state4;
+	
+					
+					 WHEN state4 =>
+					 
+					 output1 <= "00100100100000";
+                    reg_fstate <= state4;
+	
+					
+					
                 WHEN OTHERS => 
                     reg_fstate <= state1;
                     report "Reach undefined state";

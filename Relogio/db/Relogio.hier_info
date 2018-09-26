@@ -1,67 +1,72 @@
 |TopLevel
 CLOCK_50 => SM1:S0.clock
 CLOCK_50 => FluxoDados:F0.clk
-HEX0[0] << conversorhex7seg:display00.saida7seg[0]
-HEX0[1] << conversorhex7seg:display00.saida7seg[1]
-HEX0[2] << conversorhex7seg:display00.saida7seg[2]
-HEX0[3] << conversorhex7seg:display00.saida7seg[3]
-HEX0[4] << conversorhex7seg:display00.saida7seg[4]
-HEX0[5] << conversorhex7seg:display00.saida7seg[5]
-HEX0[6] << conversorhex7seg:display00.saida7seg[6]
-HEX1[0] << conversorhex7seg:display01.saida7seg[0]
-HEX1[1] << conversorhex7seg:display01.saida7seg[1]
-HEX1[2] << conversorhex7seg:display01.saida7seg[2]
-HEX1[3] << conversorhex7seg:display01.saida7seg[3]
-HEX1[4] << conversorhex7seg:display01.saida7seg[4]
-HEX1[5] << conversorhex7seg:display01.saida7seg[5]
-HEX1[6] << conversorhex7seg:display01.saida7seg[6]
-HEX2[0] << conversorhex7seg:display0.saida7seg[0]
-HEX2[1] << conversorhex7seg:display0.saida7seg[1]
-HEX2[2] << conversorhex7seg:display0.saida7seg[2]
-HEX2[3] << conversorhex7seg:display0.saida7seg[3]
-HEX2[4] << conversorhex7seg:display0.saida7seg[4]
-HEX2[5] << conversorhex7seg:display0.saida7seg[5]
-HEX2[6] << conversorhex7seg:display0.saida7seg[6]
-HEX3[0] << conversorhex7seg:display1.saida7seg[0]
-HEX3[1] << conversorhex7seg:display1.saida7seg[1]
-HEX3[2] << conversorhex7seg:display1.saida7seg[2]
-HEX3[3] << conversorhex7seg:display1.saida7seg[3]
-HEX3[4] << conversorhex7seg:display1.saida7seg[4]
-HEX3[5] << conversorhex7seg:display1.saida7seg[5]
-HEX3[6] << conversorhex7seg:display1.saida7seg[6]
-HEX4[0] << conversorhex7seg:display2.saida7seg[0]
-HEX4[1] << conversorhex7seg:display2.saida7seg[1]
-HEX4[2] << conversorhex7seg:display2.saida7seg[2]
-HEX4[3] << conversorhex7seg:display2.saida7seg[3]
-HEX4[4] << conversorhex7seg:display2.saida7seg[4]
-HEX4[5] << conversorhex7seg:display2.saida7seg[5]
-HEX4[6] << conversorhex7seg:display2.saida7seg[6]
-HEX5[0] << conversorhex7seg:display3.saida7seg[0]
-HEX5[1] << conversorhex7seg:display3.saida7seg[1]
-HEX5[2] << conversorhex7seg:display3.saida7seg[2]
-HEX5[3] << conversorhex7seg:display3.saida7seg[3]
-HEX5[4] << conversorhex7seg:display3.saida7seg[4]
-HEX5[5] << conversorhex7seg:display3.saida7seg[5]
-HEX5[6] << conversorhex7seg:display3.saida7seg[6]
-HEX6[0] << conversorhex7seg:display4.saida7seg[0]
-HEX6[1] << conversorhex7seg:display4.saida7seg[1]
-HEX6[2] << conversorhex7seg:display4.saida7seg[2]
-HEX6[3] << conversorhex7seg:display4.saida7seg[3]
-HEX6[4] << conversorhex7seg:display4.saida7seg[4]
-HEX6[5] << conversorhex7seg:display4.saida7seg[5]
-HEX6[6] << conversorhex7seg:display4.saida7seg[6]
-HEX7[0] << conversorhex7seg:display5.saida7seg[0]
-HEX7[1] << conversorhex7seg:display5.saida7seg[1]
-HEX7[2] << conversorhex7seg:display5.saida7seg[2]
-HEX7[3] << conversorhex7seg:display5.saida7seg[3]
-HEX7[4] << conversorhex7seg:display5.saida7seg[4]
-HEX7[5] << conversorhex7seg:display5.saida7seg[5]
-HEX7[6] << conversorhex7seg:display5.saida7seg[6]
+CLOCK_50 => divisorgenerico:fazDivisaoPot2.clk
+CLOCK_50 => divisorgenerico:fazDivisaoInteiro.clk
+HEX0[0] <= conversorhex7seg:display00.saida7seg[0]
+HEX0[1] <= conversorhex7seg:display00.saida7seg[1]
+HEX0[2] <= conversorhex7seg:display00.saida7seg[2]
+HEX0[3] <= conversorhex7seg:display00.saida7seg[3]
+HEX0[4] <= conversorhex7seg:display00.saida7seg[4]
+HEX0[5] <= conversorhex7seg:display00.saida7seg[5]
+HEX0[6] <= conversorhex7seg:display00.saida7seg[6]
+HEX1[0] <= conversorhex7seg:display01.saida7seg[0]
+HEX1[1] <= conversorhex7seg:display01.saida7seg[1]
+HEX1[2] <= conversorhex7seg:display01.saida7seg[2]
+HEX1[3] <= conversorhex7seg:display01.saida7seg[3]
+HEX1[4] <= conversorhex7seg:display01.saida7seg[4]
+HEX1[5] <= conversorhex7seg:display01.saida7seg[5]
+HEX1[6] <= conversorhex7seg:display01.saida7seg[6]
+HEX2[0] <= conversorhex7seg:display0.saida7seg[0]
+HEX2[1] <= conversorhex7seg:display0.saida7seg[1]
+HEX2[2] <= conversorhex7seg:display0.saida7seg[2]
+HEX2[3] <= conversorhex7seg:display0.saida7seg[3]
+HEX2[4] <= conversorhex7seg:display0.saida7seg[4]
+HEX2[5] <= conversorhex7seg:display0.saida7seg[5]
+HEX2[6] <= conversorhex7seg:display0.saida7seg[6]
+HEX3[0] <= conversorhex7seg:display1.saida7seg[0]
+HEX3[1] <= conversorhex7seg:display1.saida7seg[1]
+HEX3[2] <= conversorhex7seg:display1.saida7seg[2]
+HEX3[3] <= conversorhex7seg:display1.saida7seg[3]
+HEX3[4] <= conversorhex7seg:display1.saida7seg[4]
+HEX3[5] <= conversorhex7seg:display1.saida7seg[5]
+HEX3[6] <= conversorhex7seg:display1.saida7seg[6]
+HEX4[0] <= conversorhex7seg:display2.saida7seg[0]
+HEX4[1] <= conversorhex7seg:display2.saida7seg[1]
+HEX4[2] <= conversorhex7seg:display2.saida7seg[2]
+HEX4[3] <= conversorhex7seg:display2.saida7seg[3]
+HEX4[4] <= conversorhex7seg:display2.saida7seg[4]
+HEX4[5] <= conversorhex7seg:display2.saida7seg[5]
+HEX4[6] <= conversorhex7seg:display2.saida7seg[6]
+HEX5[0] <= conversorhex7seg:display3.saida7seg[0]
+HEX5[1] <= conversorhex7seg:display3.saida7seg[1]
+HEX5[2] <= conversorhex7seg:display3.saida7seg[2]
+HEX5[3] <= conversorhex7seg:display3.saida7seg[3]
+HEX5[4] <= conversorhex7seg:display3.saida7seg[4]
+HEX5[5] <= conversorhex7seg:display3.saida7seg[5]
+HEX5[6] <= conversorhex7seg:display3.saida7seg[6]
+HEX6[0] <= conversorhex7seg:display4.saida7seg[0]
+HEX6[1] <= conversorhex7seg:display4.saida7seg[1]
+HEX6[2] <= conversorhex7seg:display4.saida7seg[2]
+HEX6[3] <= conversorhex7seg:display4.saida7seg[3]
+HEX6[4] <= conversorhex7seg:display4.saida7seg[4]
+HEX6[5] <= conversorhex7seg:display4.saida7seg[5]
+HEX6[6] <= conversorhex7seg:display4.saida7seg[6]
+HEX7[0] <= conversorhex7seg:display5.saida7seg[0]
+HEX7[1] <= conversorhex7seg:display5.saida7seg[1]
+HEX7[2] <= conversorhex7seg:display5.saida7seg[2]
+HEX7[3] <= conversorhex7seg:display5.saida7seg[3]
+HEX7[4] <= conversorhex7seg:display5.saida7seg[4]
+HEX7[5] <= conversorhex7seg:display5.saida7seg[5]
+HEX7[6] <= conversorhex7seg:display5.saida7seg[6]
 
 
 |TopLevel|SM1:S0
 reset => reg_fstate.state1.OUTPUTSELECT
+reset => reg_fstate.state4.OUTPUTSELECT
 reset => reg_fstate.state2.OUTPUTSELECT
+reset => output1.OUTPUTSELECT
+reset => output1.OUTPUTSELECT
 reset => output1.OUTPUTSELECT
 reset => output1.OUTPUTSELECT
 reset => output1.OUTPUTSELECT
@@ -73,10 +78,10 @@ output1[1] <= <GND>
 output1[2] <= <GND>
 output1[3] <= <GND>
 output1[4] <= <GND>
-output1[5] <= <GND>
+output1[5] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 output1[6] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 output1[7] <= output1.DB_MAX_OUTPUT_PORT_TYPE
-output1[8] <= <GND>
+output1[8] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 output1[9] <= <GND>
 output1[10] <= <GND>
 output1[11] <= output1.DB_MAX_OUTPUT_PORT_TYPE
@@ -357,6 +362,24 @@ CLK => DOUT[0]~reg0.CLK
 CLK => DOUT[1]~reg0.CLK
 CLK => DOUT[2]~reg0.CLK
 CLK => DOUT[3]~reg0.CLK
+
+
+|TopLevel|divisorGenerico:fazDivisaoPot2
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => contador[4].CLK
+clk => contador[5].CLK
+saida_clk <= contador[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|divisorGenerico:fazDivisaoInteiro
+clk => tick.CLK
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+saida_clk <= tick.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|conversorHex7Seg:display00

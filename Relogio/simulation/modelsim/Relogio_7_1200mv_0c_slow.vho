@@ -14,9 +14,9 @@
 
 -- VENDOR "Altera"
 -- PROGRAM "Quartus Prime"
--- VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition"
+-- VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
--- DATE "09/25/2018 18:48:00"
+-- DATE "09/25/2018 22:12:57"
 
 -- 
 -- Device: Altera EP4CE115F29C7 Package FBGA780
