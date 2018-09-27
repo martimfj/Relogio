@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-Analysis & Synthesis Status : Successful - Thu Sep 27 18:37:03 2018
+Analysis & Synthesis Status : Successful - Thu Sep 27 18:54:34 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-=======
-Analysis & Synthesis Status : Successful - Thu Sep 27 21:33:31 2018
-Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
->>>>>>> d20e9d3ddc53ed3fd33768ad097d3fd90483acfb
 Revision Name : Relogio
 Top-level Entity Name : TopLevel
 Family : Cyclone IV E

@@ -3,35 +3,35 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'SM1:S0|fstate.state9'
-Slack : -11.274
-TNS   : -11.274
+Slack : -11.554
+TNS   : -11.554
 
 Type  : Slow 1200mV 85C Model Setup 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : -7.758
-TNS   : -272.747
+Slack : -7.904
+TNS   : -273.227
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -4.490
-TNS   : -94.233
-
-Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.441
-TNS   : 0.000
+Slack : -4.306
+TNS   : -87.324
 
 Type  : Slow 1200mV 85C Model Hold 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : 0.514
+Slack : 0.213
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.464
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'SM1:S0|fstate.state9'
-Slack : 4.517
+Slack : 3.721
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : -2.084
-TNS   : -39.284
+Slack : -2.007
+TNS   : -37.289
 
 Type  : Slow 1200mV 85C Model Removal 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : 1.427
+Slack : 1.461
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
@@ -43,39 +43,39 @@ Slack : -1.285
 TNS   : -50.115
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SM1:S0|fstate.state9'
-Slack : 0.464
+Slack : 0.467
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'SM1:S0|fstate.state9'
-Slack : -10.212
-TNS   : -10.212
+Slack : -10.516
+TNS   : -10.516
 
 Type  : Slow 1200mV 0C Model Setup 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : -7.060
-TNS   : -246.393
+Slack : -7.167
+TNS   : -248.332
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -4.117
-TNS   : -85.486
-
-Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.400
-TNS   : 0.000
+Slack : -3.940
+TNS   : -77.286
 
 Type  : Slow 1200mV 0C Model Hold 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : 0.471
+Slack : 0.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.419
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'SM1:S0|fstate.state9'
-Slack : 4.103
+Slack : 3.461
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : -1.799
-TNS   : -33.146
+Slack : -1.741
+TNS   : -31.262
 
 Type  : Slow 1200mV 0C Model Removal 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : 1.300
+Slack : 1.340
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
@@ -87,51 +87,51 @@ Slack : -1.285
 TNS   : -50.115
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SM1:S0|fstate.state9'
-Slack : 0.489
+Slack : 0.487
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'SM1:S0|fstate.state9'
-Slack : -5.366
-TNS   : -5.366
+Slack : -5.532
+TNS   : -5.532
 
 Type  : Fast 1200mV 0C Model Setup 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : -3.295
-TNS   : -115.439
+Slack : -3.374
+TNS   : -115.908
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -1.777
-TNS   : -32.207
-
-Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.199
-TNS   : 0.000
+Slack : -1.669
+TNS   : -29.554
 
 Type  : Fast 1200mV 0C Model Hold 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : 0.232
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.211
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'SM1:S0|fstate.state9'
-Slack : 2.109
+Slack : 1.720
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : -0.546
-TNS   : -7.972
+Slack : -0.519
+TNS   : -6.748
 
 Type  : Fast 1200mV 0C Model Removal 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : 0.671
+Slack : 0.689
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -37.910
+TNS   : -37.919
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisorGenerico:fazDivisaoInteiro1|tick'
 Slack : -1.000
 TNS   : -39.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SM1:S0|fstate.state9'
-Slack : 0.438
+Slack : 0.444
 TNS   : 0.000
 
 ------------------------------------------------------------
