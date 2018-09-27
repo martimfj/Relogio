@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Relogio
-Wed Sep 26 14:08:03 2018
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Thu Sep 27 17:29:31 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
 ---------------------
@@ -18,30 +18,35 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: divisorGenerico:fazDivisaoInteiro
- 14. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M1
- 15. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M2
- 16. Parameter Settings for User Entity Instance: FluxoDados:F0|ULA:U
- 17. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg1
- 18. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg2
- 19. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg3
- 20. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg4
- 21. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg5
- 22. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg6
- 23. Port Connectivity Checks: "conversorHex7Seg:display5"
- 24. Port Connectivity Checks: "conversorHex7Seg:display4"
- 25. Port Connectivity Checks: "conversorHex7Seg:display3"
- 26. Port Connectivity Checks: "conversorHex7Seg:display2"
- 27. Port Connectivity Checks: "conversorHex7Seg:display1"
- 28. Port Connectivity Checks: "conversorHex7Seg:display0"
- 29. Port Connectivity Checks: "conversorHex7Seg:display01"
- 30. Port Connectivity Checks: "conversorHex7Seg:display00"
- 31. Port Connectivity Checks: "FluxoDados:F0|mux:M2"
- 32. Port Connectivity Checks: "FluxoDados:F0|mux:M1"
- 33. Port Connectivity Checks: "SM1:S0"
- 34. Post-Synthesis Netlist Statistics for Top Partition
- 35. Elapsed Time Per Partition
- 36. Analysis & Synthesis Messages
+ 13. Parameter Settings for User Entity Instance: divisorGenerico:fazDivisaoInteiro1
+ 14. Parameter Settings for User Entity Instance: divisorGenerico:fazDivisaoInteiro2
+ 15. Parameter Settings for User Entity Instance: divisorGenerico:fazDivisaoInteiro3
+ 16. Parameter Settings for User Entity Instance: divisorGenerico:fazDivisaoInteiro4
+ 17. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M1
+ 18. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M2
+ 19. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M3
+ 20. Parameter Settings for User Entity Instance: FluxoDados:F0|ULA:U
+ 21. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg1
+ 22. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg2
+ 23. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg3
+ 24. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg4
+ 25. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg5
+ 26. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg6
+ 27. Port Connectivity Checks: "conversorHex7Seg:display5"
+ 28. Port Connectivity Checks: "conversorHex7Seg:display4"
+ 29. Port Connectivity Checks: "conversorHex7Seg:display3"
+ 30. Port Connectivity Checks: "conversorHex7Seg:display2"
+ 31. Port Connectivity Checks: "conversorHex7Seg:display1"
+ 32. Port Connectivity Checks: "conversorHex7Seg:display0"
+ 33. Port Connectivity Checks: "conversorHex7Seg:display01"
+ 34. Port Connectivity Checks: "conversorHex7Seg:display00"
+ 35. Port Connectivity Checks: "FluxoDados:F0|mux:M3"
+ 36. Port Connectivity Checks: "FluxoDados:F0|mux:M1"
+ 37. Port Connectivity Checks: "FluxoDados:F0"
+ 38. Port Connectivity Checks: "SM1:S0"
+ 39. Post-Synthesis Netlist Statistics for Top Partition
+ 40. Elapsed Time Per Partition
+ 41. Analysis & Synthesis Messages
 
 
 
@@ -64,24 +69,24 @@ refer to the applicable agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Sep 26 14:08:03 2018       ;
-; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
-; Revision Name                      ; Relogio                                     ;
-; Top-level Entity Name              ; TopLevel                                    ;
-; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 182                                         ;
-;     Total combinational functions  ; 152                                         ;
-;     Dedicated logic registers      ; 68                                          ;
-; Total registers                    ; 68                                          ;
-; Total pins                         ; 57                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Sep 27 17:29:31 2018           ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
+; Revision Name                      ; Relogio                                         ;
+; Top-level Entity Name              ; TopLevel                                        ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 296                                             ;
+;     Total combinational functions  ; 276                                             ;
+;     Dedicated logic registers      ; 124                                             ;
+; Total registers                    ; 124                                             ;
+; Total pins                         ; 79                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -188,78 +193,82 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                    ;
-+----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                       ; Library ;
-+----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------+---------+
-; SM1.vhd                          ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd              ;         ;
-; TopLevel.vhd                     ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd         ;         ;
-; Registrador.vhd                  ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd      ;         ;
-; Mux.vhd                          ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd              ;         ;
-; conversorHex7Seg.vhd             ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/conversorHex7Seg.vhd ;         ;
-; FluxoDados.vhd                   ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd       ;         ;
-; divisorGenerico.vhd              ; yes             ; User VHDL File        ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd  ;         ;
-; ula.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd              ;         ;
-+----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                           ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------+---------+
+; SM1.vhd                          ; yes             ; User VHDL File        ; /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd              ;         ;
+; TopLevel.vhd                     ; yes             ; User VHDL File        ; /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd         ;         ;
+; Registrador.vhd                  ; yes             ; User VHDL File        ; /home/sabrina/GitHub/Relogio/Relogio/Registrador.vhd      ;         ;
+; Mux.vhd                          ; yes             ; User VHDL File        ; /home/sabrina/GitHub/Relogio/Relogio/Mux.vhd              ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File        ; /home/sabrina/GitHub/Relogio/Relogio/conversorHex7Seg.vhd ;         ;
+; FluxoDados.vhd                   ; yes             ; User VHDL File        ; /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd       ;         ;
+; divisorGenerico.vhd              ; yes             ; User VHDL File        ; /home/sabrina/GitHub/Relogio/Relogio/divisorGenerico.vhd  ;         ;
+; ULA.vhd                          ; yes             ; Auto-Found VHDL File  ; /home/sabrina/GitHub/Relogio/Relogio/ULA.vhd              ;         ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                          ;
-+---------------------------------------------+----------------------------------------+
-; Resource                                    ; Usage                                  ;
-+---------------------------------------------+----------------------------------------+
-; Estimated Total logic elements              ; 182                                    ;
-;                                             ;                                        ;
-; Total combinational functions               ; 152                                    ;
-; Logic element usage by number of LUT inputs ;                                        ;
-;     -- 4 input functions                    ; 88                                     ;
-;     -- 3 input functions                    ; 30                                     ;
-;     -- <=2 input functions                  ; 34                                     ;
-;                                             ;                                        ;
-; Logic elements by mode                      ;                                        ;
-;     -- normal mode                          ; 126                                    ;
-;     -- arithmetic mode                      ; 26                                     ;
-;                                             ;                                        ;
-; Total registers                             ; 68                                     ;
-;     -- Dedicated logic registers            ; 68                                     ;
-;     -- I/O registers                        ; 0                                      ;
-;                                             ;                                        ;
-; I/O pins                                    ; 57                                     ;
-;                                             ;                                        ;
-; Embedded Multiplier 9-bit elements          ; 0                                      ;
-;                                             ;                                        ;
-; Maximum fan-out node                        ; divisorGenerico:fazDivisaoInteiro|tick ;
-; Maximum fan-out                             ; 45                                     ;
-; Total fan-out                               ; 767                                    ;
-; Average fan-out                             ; 2.30                                   ;
-+---------------------------------------------+----------------------------------------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 296            ;
+;                                             ;                ;
+; Total combinational functions               ; 276            ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 130            ;
+;     -- 3 input functions                    ; 38             ;
+;     -- <=2 input functions                  ; 108            ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 195            ;
+;     -- arithmetic mode                      ; 81             ;
+;                                             ;                ;
+; Total registers                             ; 124            ;
+;     -- Dedicated logic registers            ; 124            ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 79             ;
+;                                             ;                ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 85             ;
+; Total fan-out                               ; 1262           ;
+; Average fan-out                             ; 2.26           ;
++---------------------------------------------+----------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                               ;
-+----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+------------------+--------------+
-; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name      ; Library Name ;
-+----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+------------------+--------------+
-; |TopLevel                              ; 152 (0)             ; 68 (0)                    ; 0           ; 0            ; 0       ; 0         ; 57   ; 0            ; |TopLevel                                   ; TopLevel         ; work         ;
-;    |FluxoDados:F0|                     ; 37 (0)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0                     ; FluxoDados       ; work         ;
-;       |Registrador:Rg1|                ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg1     ; Registrador      ; work         ;
-;       |Registrador:Rg2|                ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg2     ; Registrador      ; work         ;
-;       |Registrador:Rg3|                ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg3     ; Registrador      ; work         ;
-;       |Registrador:Rg4|                ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg4     ; Registrador      ; work         ;
-;       |Registrador:Rg5|                ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg5     ; Registrador      ; work         ;
-;       |Registrador:Rg6|                ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg6     ; Registrador      ; work         ;
-;       |ULA:U|                          ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|ULA:U               ; ULA              ; work         ;
-;       |mux:M1|                         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|mux:M1              ; mux              ; work         ;
-;    |SM1:S0|                            ; 33 (33)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|SM1:S0                            ; SM1              ; work         ;
-;    |conversorHex7Seg:display0|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display0         ; conversorHex7Seg ; work         ;
-;    |conversorHex7Seg:display1|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display1         ; conversorHex7Seg ; work         ;
-;    |conversorHex7Seg:display2|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display2         ; conversorHex7Seg ; work         ;
-;    |conversorHex7Seg:display3|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display3         ; conversorHex7Seg ; work         ;
-;    |conversorHex7Seg:display4|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display4         ; conversorHex7Seg ; work         ;
-;    |conversorHex7Seg:display5|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display5         ; conversorHex7Seg ; work         ;
-;    |divisorGenerico:fazDivisaoInteiro| ; 40 (40)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|divisorGenerico:fazDivisaoInteiro ; divisorGenerico  ; work         ;
-+----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                 ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name      ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+------------------+--------------+
+; |TopLevel                               ; 276 (4)             ; 124 (0)                   ; 0           ; 0            ; 0       ; 0         ; 79   ; 0            ; |TopLevel                                    ; TopLevel         ; work         ;
+;    |FluxoDados:F0|                      ; 57 (0)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0                      ; FluxoDados       ; work         ;
+;       |Registrador:Rg1|                 ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg1      ; Registrador      ; work         ;
+;       |Registrador:Rg2|                 ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg2      ; Registrador      ; work         ;
+;       |Registrador:Rg3|                 ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg3      ; Registrador      ; work         ;
+;       |Registrador:Rg4|                 ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg4      ; Registrador      ; work         ;
+;       |Registrador:Rg5|                 ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg5      ; Registrador      ; work         ;
+;       |Registrador:Rg6|                 ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg6      ; Registrador      ; work         ;
+;       |ULA:U|                           ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|ULA:U                ; ULA              ; work         ;
+;       |mux:M1|                          ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|mux:M1               ; mux              ; work         ;
+;       |mux:M3|                          ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|mux:M3               ; mux              ; work         ;
+;    |SM1:S0|                             ; 30 (30)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|SM1:S0                             ; SM1              ; work         ;
+;    |conversorHex7Seg:display0|          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display0          ; conversorHex7Seg ; work         ;
+;    |conversorHex7Seg:display1|          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display1          ; conversorHex7Seg ; work         ;
+;    |conversorHex7Seg:display2|          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display2          ; conversorHex7Seg ; work         ;
+;    |conversorHex7Seg:display3|          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display3          ; conversorHex7Seg ; work         ;
+;    |conversorHex7Seg:display4|          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display4          ; conversorHex7Seg ; work         ;
+;    |conversorHex7Seg:display5|          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display5          ; conversorHex7Seg ; work         ;
+;    |divisorGenerico:fazDivisaoInteiro1| ; 39 (39)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|divisorGenerico:fazDivisaoInteiro1 ; divisorGenerico  ; work         ;
+;    |divisorGenerico:fazDivisaoInteiro2| ; 39 (39)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|divisorGenerico:fazDivisaoInteiro2 ; divisorGenerico  ; work         ;
+;    |divisorGenerico:fazDivisaoInteiro3| ; 34 (34)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|divisorGenerico:fazDivisaoInteiro3 ; divisorGenerico  ; work         ;
+;    |divisorGenerico:fazDivisaoInteiro4| ; 31 (31)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|divisorGenerico:fazDivisaoInteiro4 ; divisorGenerico  ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -293,14 +302,14 @@ Encoding Type:  One-Hot
 +----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                 ;
-+----------------------------------------------------+-----------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal   ; Free of Timing Hazards ;
-+----------------------------------------------------+-----------------------+------------------------+
-; SM1:S0|flag4                                       ; SM1:S0|fstate.state14 ; yes                    ;
-; Number of user-specified and inferred latches = 1  ;                       ;                        ;
-+----------------------------------------------------+-----------------------+------------------------+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++----------------------------------------------------+----------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal  ; Free of Timing Hazards ;
++----------------------------------------------------+----------------------+------------------------+
+; SM1:S0|flag4                                       ; SM1:S0|fstate.state9 ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                      ;                        ;
++----------------------------------------------------+----------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -309,8 +318,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------------------+--------------------+
 ; Register name                         ; Reason for Removal ;
 +---------------------------------------+--------------------+
+; SM1:S0|fstate.state15                 ; Lost fanout        ;
+; SM1:S0|fstate.state16                 ; Lost fanout        ;
+; SM1:S0|fstate.state17                 ; Lost fanout        ;
+; SM1:S0|fstate.state18                 ; Lost fanout        ;
+; SM1:S0|fstate.state19                 ; Lost fanout        ;
 ; SM1:S0|fstate.state20                 ; Lost fanout        ;
-; Total Number of Removed Registers = 1 ;                    ;
+; Total Number of Removed Registers = 6 ;                    ;
 +---------------------------------------+--------------------+
 
 
@@ -319,32 +333,64 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 68    ;
+; Total registers                              ; 124   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 24    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; 16:1               ; 4 bits    ; 40 LEs        ; 36 LEs               ; 4 LEs                  ; No         ; |TopLevel|FluxoDados:F0|ULA:U|Add0 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; 16:1               ; 4 bits    ; 40 LEs        ; 36 LEs               ; 4 LEs                  ; No         ; |TopLevel|FluxoDados:F0|ULA:U|Add0  ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |TopLevel|FluxoDados:F0|mux:M3|Mux1 ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |TopLevel|FluxoDados:F0|mux:M3|Mux0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 
 
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: divisorGenerico:fazDivisaoInteiro ;
-+----------------+---------+-----------------------------------------------------+
-; Parameter Name ; Value   ; Type                                                ;
-+----------------+---------+-----------------------------------------------------+
-; divisor        ; 5000000 ; Signed Integer                                      ;
-+----------------+---------+-----------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisorGenerico:fazDivisaoInteiro1 ;
++----------------+---------+------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                 ;
++----------------+---------+------------------------------------------------------+
+; divisor        ; 2500000 ; Signed Integer                                       ;
++----------------+---------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisorGenerico:fazDivisaoInteiro2 ;
++----------------+---------+------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                 ;
++----------------+---------+------------------------------------------------------+
+; divisor        ; 1500000 ; Signed Integer                                       ;
++----------------+---------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisorGenerico:fazDivisaoInteiro3 ;
++----------------+--------+-------------------------------------------------------+
+; Parameter Name ; Value  ; Type                                                  ;
++----------------+--------+-------------------------------------------------------+
+; divisor        ; 800000 ; Signed Integer                                        ;
++----------------+--------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisorGenerico:fazDivisaoInteiro4 ;
++----------------+--------+-------------------------------------------------------+
+; Parameter Name ; Value  ; Type                                                  ;
++----------------+--------+-------------------------------------------------------+
+; divisor        ; 200000 ; Signed Integer                                        ;
++----------------+--------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -361,6 +407,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M2 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; data_width     ; 4     ; Signed Integer                           ;
+; sel_width      ; 3     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M3 ;
 +----------------+-------+------------------------------------------+
 ; Parameter Name ; Value ; Type                                     ;
 +----------------+-------+------------------------------------------+
@@ -524,19 +581,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Port     ; Type  ; Severity ; Details                  ;
 +----------+-------+----------+--------------------------+
 ; dadohex  ; Input ; Info     ; Stuck at GND             ;
-; apaga    ; Input ; Info     ; Stuck at VCC             ;
+; apaga    ; Input ; Info     ; Stuck at GND             ;
 ; negativo ; Input ; Info     ; Stuck at GND             ;
 ; overflow ; Input ; Info     ; Stuck at GND             ;
 +----------+-------+----------+--------------------------+
 
 
 +--------------------------------------------------+
-; Port Connectivity Checks: "FluxoDados:F0|mux:M2" ;
-+------+-------+----------+------------------------+
-; Port ; Type  ; Severity ; Details                ;
-+------+-------+----------+------------------------+
-; g    ; Input ; Info     ; Stuck at GND           ;
-+------+-------+----------+------------------------+
+; Port Connectivity Checks: "FluxoDados:F0|mux:M3" ;
++---------+-------+----------+---------------------+
+; Port    ; Type  ; Severity ; Details             ;
++---------+-------+----------+---------------------+
+; c[3..1] ; Input ; Info     ; Stuck at GND        ;
+; c[0]    ; Input ; Info     ; Stuck at VCC        ;
+; d[3..1] ; Input ; Info     ; Stuck at GND        ;
+; d[0]    ; Input ; Info     ; Stuck at VCC        ;
+; e[3..1] ; Input ; Info     ; Stuck at GND        ;
+; e[0]    ; Input ; Info     ; Stuck at VCC        ;
++---------+-------+----------+---------------------+
 
 
 +--------------------------------------------------+
@@ -550,28 +612,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; c[3..2] ; Input ; Info     ; Stuck at GND        ;
 ; c[1]    ; Input ; Info     ; Stuck at VCC        ;
 ; c[0]    ; Input ; Info     ; Stuck at GND        ;
-; d[1..0] ; Input ; Info     ; Stuck at GND        ;
-; d[3]    ; Input ; Info     ; Stuck at GND        ;
-; d[2]    ; Input ; Info     ; Stuck at VCC        ;
-; e[2..1] ; Input ; Info     ; Stuck at VCC        ;
+; d[1..0] ; Input ; Info     ; Stuck at VCC        ;
+; d[3..2] ; Input ; Info     ; Stuck at GND        ;
 ; e[3]    ; Input ; Info     ; Stuck at GND        ;
-; e[0]    ; Input ; Info     ; Stuck at GND        ;
+; e[2]    ; Input ; Info     ; Stuck at VCC        ;
+; e[1]    ; Input ; Info     ; Stuck at GND        ;
+; e[0]    ; Input ; Info     ; Stuck at VCC        ;
+; f[2..1] ; Input ; Info     ; Stuck at GND        ;
 ; f[3]    ; Input ; Info     ; Stuck at VCC        ;
-; f[2]    ; Input ; Info     ; Stuck at GND        ;
-; f[1]    ; Input ; Info     ; Stuck at VCC        ;
-; f[0]    ; Input ; Info     ; Stuck at GND        ;
-; g       ; Input ; Info     ; Stuck at GND        ;
+; f[0]    ; Input ; Info     ; Stuck at VCC        ;
 +---------+-------+----------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "SM1:S0"                                                                                   ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; reset      ; Input  ; Info     ; Stuck at GND                                                                        ;
-; output1[0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "FluxoDados:F0"        ;
++----------------+-------+----------+--------------+
+; Port           ; Type  ; Severity ; Details      ;
++----------------+-------+----------+--------------+
+; enablerw[5..4] ; Input ; Info     ; Stuck at GND ;
+; sel_time[2..1] ; Input ; Info     ; Stuck at GND ;
++----------------+-------+----------+--------------+
+
+
++-----------------------------------------+
+; Port Connectivity Checks: "SM1:S0"      ;
++-------+-------+----------+--------------+
+; Port  ; Type  ; Severity ; Details      ;
++-------+-------+----------+--------------+
+; reset ; Input ; Info     ; Stuck at GND ;
++-------+-------+----------+--------------+
 
 
 +-----------------------------------------------------+
@@ -579,23 +648,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 57                          ;
-; cycloneiii_ff         ; 68                          ;
-;     ENA               ; 24                          ;
-;     plain             ; 44                          ;
-; cycloneiii_lcell_comb ; 153                         ;
-;     arith             ; 26                          ;
-;         2 data inputs ; 23                          ;
+; boundary_port         ; 79                          ;
+; cycloneiii_ff         ; 124                         ;
+;     ENA CLR           ; 24                          ;
+;     plain             ; 100                         ;
+; cycloneiii_lcell_comb ; 278                         ;
+;     arith             ; 81                          ;
+;         2 data inputs ; 78                          ;
 ;         3 data inputs ; 3                           ;
-;     normal            ; 127                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 27                          ;
-;         4 data inputs ; 88                          ;
+;     normal            ; 197                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 25                          ;
+;         3 data inputs ; 35                          ;
+;         4 data inputs ; 130                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.30                        ;
-; Average LUT depth     ; 4.74                        ;
+; Average LUT depth     ; 3.95                        ;
 +-----------------------+-----------------------------+
 
 
@@ -613,77 +682,89 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Sep 26 14:07:44 2018
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+    Info: Processing started: Thu Sep 27 17:29:17 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Relogio -c Relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file sm1.vhd
-    Info (12022): Found design unit 1: SM1-BEHAVIOR File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 13
-    Info (12023): Found entity 1: SM1 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file SM1.vhd
+    Info (12022): Found design unit 1: SM1-BEHAVIOR File: /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd Line: 13
+    Info (12023): Found entity 1: SM1 File: /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd Line: 4
 Warning (12019): Can't analyze file -- file divisor.vhd is missing
 Warning (12019): Can't analyze file -- file comparador.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhd
-    Info (12022): Found design unit 1: TopLevel-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 15
-    Info (12023): Found entity 1: TopLevel File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
-    Info (12022): Found design unit 1: Registrador-comportamento File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd Line: 16
-    Info (12023): Found entity 1: Registrador File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd Line: 4
-Warning (12090): Entity "mux" obtained from "Mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: mux-mux_architecture File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd Line: 17
-    Info (12023): Found entity 1: mux File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/conversorHex7Seg.vhd Line: 18
-    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/conversorHex7Seg.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file fluxodados.vhd
-    Info (12022): Found design unit 1: FluxoDados-fl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 23
-    Info (12023): Found entity 1: FluxoDados File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 5
-Info (12021): Found 4 design units, including 1 entities, in source file divisorgenerico.vhd
-    Info (12022): Found design unit 1: divisorGenerico-divPor2 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 16
-    Info (12022): Found design unit 2: divisorGenerico-divPotenciaDe2 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 30
-    Info (12022): Found design unit 3: divisorGenerico-divInteiro File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 44
-    Info (12023): Found entity 1: divisorGenerico File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file TopLevel.vhd
+    Info (12022): Found design unit 1: TopLevel-rtl File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 19
+    Info (12023): Found entity 1: TopLevel File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file Registrador.vhd
+    Info (12022): Found design unit 1: Registrador-comportamento File: /home/sabrina/GitHub/Relogio/Relogio/Registrador.vhd Line: 16
+    Info (12023): Found entity 1: Registrador File: /home/sabrina/GitHub/Relogio/Relogio/Registrador.vhd Line: 4
+Warning (12090): Entity "mux" obtained from "Mux.vhd" instead of from Quartus Prime megafunction library File: /home/sabrina/GitHub/Relogio/Relogio/Mux.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file Mux.vhd
+    Info (12022): Found design unit 1: mux-mux_architecture File: /home/sabrina/GitHub/Relogio/Relogio/Mux.vhd Line: 17
+    Info (12023): Found entity 1: mux File: /home/sabrina/GitHub/Relogio/Relogio/Mux.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file conversorHex7Seg.vhd
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/sabrina/GitHub/Relogio/Relogio/conversorHex7Seg.vhd Line: 18
+    Info (12023): Found entity 1: conversorHex7Seg File: /home/sabrina/GitHub/Relogio/Relogio/conversorHex7Seg.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file FluxoDados.vhd
+    Info (12022): Found design unit 1: FluxoDados-fl File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 27
+    Info (12023): Found entity 1: FluxoDados File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 5
+Info (12021): Found 4 design units, including 1 entities, in source file divisorGenerico.vhd
+    Info (12022): Found design unit 1: divisorGenerico-divPor2 File: /home/sabrina/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 16
+    Info (12022): Found design unit 2: divisorGenerico-divPotenciaDe2 File: /home/sabrina/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 30
+    Info (12022): Found design unit 3: divisorGenerico-divInteiro File: /home/sabrina/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 44
+    Info (12023): Found entity 1: divisorGenerico File: /home/sabrina/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 6
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Info (12129): Elaborating entity "divisorGenerico" using architecture "A:divinteiro" for hierarchy "divisorGenerico:fazDivisaoInteiro" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 59
-Info (12128): Elaborating entity "SM1" for hierarchy "SM1:S0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 64
-Warning (10631): VHDL Process Statement warning at SM1.vhd(29): inferring latch(es) for signal or variable "flag4", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 29
-Info (10041): Inferred latch for "flag4" at SM1.vhd(34) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 34
-Info (12128): Elaborating entity "FluxoDados" for hierarchy "FluxoDados:F0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 71
-Info (12128): Elaborating entity "mux" for hierarchy "FluxoDados:F0|mux:M1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 101
-Warning (12125): Using design file ula.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: ULA-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd Line: 26
-    Info (12023): Found entity 1: ULA File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd Line: 9
-Info (12128): Elaborating entity "ULA" for hierarchy "FluxoDados:F0|ULA:U" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 115
-Info (12128): Elaborating entity "Registrador" for hierarchy "FluxoDados:F0|Registrador:Rg1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 118
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display00" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 83
+Info (12129): Elaborating entity "divisorGenerico" using architecture "A:divinteiro" for hierarchy "divisorGenerico:fazDivisaoInteiro1" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 100
+Info (12129): Elaborating entity "divisorGenerico" using architecture "A:divinteiro" for hierarchy "divisorGenerico:fazDivisaoInteiro2" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 104
+Info (12129): Elaborating entity "divisorGenerico" using architecture "A:divinteiro" for hierarchy "divisorGenerico:fazDivisaoInteiro3" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 108
+Info (12129): Elaborating entity "divisorGenerico" using architecture "A:divinteiro" for hierarchy "divisorGenerico:fazDivisaoInteiro4" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 112
+Info (12128): Elaborating entity "SM1" for hierarchy "SM1:S0" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 116
+Warning (10631): VHDL Process Statement warning at SM1.vhd(29): inferring latch(es) for signal or variable "flag4", which holds its previous value in one or more paths through the process File: /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd Line: 29
+Info (10041): Inferred latch for "flag4" at SM1.vhd(34) File: /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd Line: 34
+Info (12128): Elaborating entity "FluxoDados" for hierarchy "FluxoDados:F0" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 123
+Info (12128): Elaborating entity "mux" for hierarchy "FluxoDados:F0|mux:M1" File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 106
+Warning (12125): Using design file ULA.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ULA-rtl File: /home/sabrina/GitHub/Relogio/Relogio/ULA.vhd Line: 26
+    Info (12023): Found entity 1: ULA File: /home/sabrina/GitHub/Relogio/Relogio/ULA.vhd Line: 9
+Info (12128): Elaborating entity "ULA" for hierarchy "FluxoDados:F0|ULA:U" File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 128
+Info (12128): Elaborating entity "Registrador" for hierarchy "FluxoDados:F0|Registrador:Rg1" File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 131
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display00" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 141
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer valor_clock File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 72
+    Warning (19017): Found clock multiplexer valor_clock~0 File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 72
+    Warning (19017): Found clock multiplexer valor_clock~1 File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 72
+    Warning (19017): Found clock multiplexer valor_clock~2 File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 72
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX0[1]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX0[2]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX0[4]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX0[5]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX1[5]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX1[5]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 243 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[5]" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[6]" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[7]" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 10
+Info (21057): Implemented 379 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 23 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 186 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 4812 megabytes
-    Info: Processing ended: Wed Sep 26 14:08:03 2018
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:41
+    Info (21061): Implemented 300 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 992 megabytes
+    Info: Processing ended: Thu Sep 27 17:29:31 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:28
 
 
