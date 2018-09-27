@@ -2,28 +2,36 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'SM1:S0|fstate.state14'
-Slack : -17.066
-TNS   : -17.066
+Type  : Slow 1200mV 85C Model Setup 'SM1:S0|fstate.state9'
+Slack : -18.310
+TNS   : -18.310
 
 Type  : Slow 1200mV 85C Model Setup 'SW[1]'
-Slack : -12.249
-TNS   : -378.385
+Slack : -12.819
+TNS   : -442.142
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -2.587
-TNS   : -140.648
+Slack : -2.616
+TNS   : -139.360
 
 Type  : Slow 1200mV 85C Model Hold 'SW[1]'
-Slack : -0.581
-TNS   : -0.581
+Slack : -0.717
+TNS   : -5.720
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
 Slack : 0.389
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'SM1:S0|fstate.state14'
-Slack : 6.032
+Type  : Slow 1200mV 85C Model Hold 'SM1:S0|fstate.state9'
+Slack : 4.371
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'SW[1]'
+Slack : -1.850
+TNS   : -36.132
+
+Type  : Slow 1200mV 85C Model Removal 'SW[1]'
+Slack : 1.451
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
@@ -32,34 +40,42 @@ TNS   : -112.225
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SW[1]'
 Slack : -3.000
-TNS   : -59.540
+TNS   : -53.115
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SM1:S0|fstate.state14'
-Slack : 0.476
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SM1:S0|fstate.state9'
+Slack : 0.467
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'SM1:S0|fstate.state14'
-Slack : -15.643
-TNS   : -15.643
+Type  : Slow 1200mV 0C Model Setup 'SM1:S0|fstate.state9'
+Slack : -16.911
+TNS   : -16.911
 
 Type  : Slow 1200mV 0C Model Setup 'SW[1]'
-Slack : -11.158
-TNS   : -344.057
+Slack : -11.791
+TNS   : -404.674
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -2.275
-TNS   : -118.827
+Slack : -2.301
+TNS   : -117.328
 
 Type  : Slow 1200mV 0C Model Hold 'SW[1]'
-Slack : -0.646
-TNS   : -0.646
+Slack : -0.801
+TNS   : -7.103
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
 Slack : 0.348
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'SM1:S0|fstate.state14'
-Slack : 5.588
+Type  : Slow 1200mV 0C Model Hold 'SM1:S0|fstate.state9'
+Slack : 4.013
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'SW[1]'
+Slack : -1.576
+TNS   : -30.121
+
+Type  : Slow 1200mV 0C Model Removal 'SW[1]'
+Slack : 1.332
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
@@ -68,46 +84,54 @@ TNS   : -112.225
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SW[1]'
 Slack : -3.000
-TNS   : -59.540
+TNS   : -53.115
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SM1:S0|fstate.state14'
-Slack : 0.404
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SM1:S0|fstate.state9'
+Slack : 0.454
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'SM1:S0|fstate.state14'
-Slack : -8.320
-TNS   : -8.320
+Type  : Fast 1200mV 0C Model Setup 'SM1:S0|fstate.state9'
+Slack : -8.818
+TNS   : -8.818
 
 Type  : Fast 1200mV 0C Model Setup 'SW[1]'
-Slack : -5.748
-TNS   : -172.882
+Slack : -6.064
+TNS   : -206.940
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -0.797
-TNS   : -27.915
+Slack : -0.753
+TNS   : -26.876
 
 Type  : Fast 1200mV 0C Model Hold 'SW[1]'
-Slack : -0.270
-TNS   : -0.270
+Slack : -0.413
+TNS   : -3.294
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.179
+Slack : 0.180
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'SM1:S0|fstate.state14'
-Slack : 2.894
+Type  : Fast 1200mV 0C Model Hold 'SM1:S0|fstate.state9'
+Slack : 2.096
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'SW[1]'
+Slack : -0.419
+TNS   : -6.141
+
+Type  : Fast 1200mV 0C Model Removal 'SW[1]'
+Slack : 0.690
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -112.413
+TNS   : -112.488
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SW[1]'
 Slack : -3.000
-TNS   : -72.521
+TNS   : -68.835
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SM1:S0|fstate.state14'
-Slack : 0.398
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SM1:S0|fstate.state9'
+Slack : 0.359
 TNS   : 0.000
 
 ------------------------------------------------------------

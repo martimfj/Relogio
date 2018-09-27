@@ -3,20 +3,17 @@ USE ieee.std_logic_1164.all;
 
 ENTITY SM1 IS
     PORT (
-        reset  : IN STD_LOGIC := '0';
-        clock  : IN STD_LOGIC;
+        reset : IN STD_LOGIC := '0';
+        clock : IN STD_LOGIC;
         input1 : IN STD_LOGIC := '0';
-        SW		: in STD_LOGIC_VECTOR(17 DOWNTO 0);
-		  KEY		: in STD_LOGIC_VECTOR(3 DOWNTO 0);
-		  output1 : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
-		  
+        output1 : OUT STD_LOGIC_VECTOR(18 DOWNTO 0)
     );
 END SM1;
 
 ARCHITECTURE BEHAVIOR OF SM1 IS
     
-	 TYPE type_fstate IS (state0, state1,state4,state7,state10,state5,state3,state2,state6,state8,
-	 state9,state11,state14,state13,state15,state12,state16,state17,state18, state19, state20, stateSETUP);
+	 TYPE type_fstate IS (state0,state1,state4,state7,state10,state5,state3,state2,state6,state8,
+	 state9,state11,state14,state13,state15,state12,state16,state17,state18,state19,state20);
     
 	 SIGNAL fstate : type_fstate;
     SIGNAL reg_fstate : type_fstate;
@@ -29,13 +26,14 @@ BEGIN
         END IF;
     END PROCESS;
 
-    PROCESS (SW, fstate,reset,input1)
+    PROCESS (fstate,reset,input1)
 	 variable flag4: bit := '0';
     BEGIN
+		  
 			
         IF (reset='1') THEN
             reg_fstate <= state0;
-            output1 <= "00011001111110";
+            output1 <= "0001100111111000000";
         ELSE
 				
 					
@@ -47,154 +45,159 @@ BEGIN
 						  
 		--				else
 	--					  reg_fstate  <= state0;
-                    output1 <= "00000000000000";
+                    output1 <= "0000000000000000000";
 		--				end if;
                 
-					 WHEN state1 =>
-					 
-                    reg_fstate <= state2;
-
-                    output1 <= "00100001000000";
 						  
-					 WHEN state2 =>
+					 WHEN state1 =>
                     IF (input1 = '0') THEN
-                        reg_fstate <= state0;
+                        reg_fstate <= state2;
 								
                     ELSE
                         reg_fstate <= state3;
 								
                     END IF;
 
-                    output1 <= "10100010000000";
-						  
-						  
-					  WHEN state3 =>
-                    reg_fstate <= state4;
-
-                    output1 <= "00011001000000";
-						  
-						  
-					  WHEN state4 =>
-                    reg_fstate <= state5;
-
-                    output1 <= "00100100100000";
-
+                    output1 <= "1010001000000000000";
 				
-					  WHEN state5 =>
-                    if (input1 = '0') THEN
-                        reg_fstate <= state0;
-                    else 
-                        reg_fstate <= state6;
-                    END IF;
-						  
-                    output1 <= "10000110000000";
-					  
-					  
-					  WHEN state6 =>
-                 
-						  reg_fstate <= state7;
 
-                    output1 <= "00011000100000";
-				
-					  WHEN state7 =>
-                    reg_fstate <= state8;
-
-                    output1 <= "00101000010000";
-						  
-						  
-					  WHEN state8 =>
-                    IF (input1 = '0') THEN
-                        reg_fstate <= state0;
-                    ELSE
-                        reg_fstate <= state9;
-                    END IF;
-
-                    output1 <= "10101010000000";
-						  
-					  WHEN state9 =>
-                    reg_fstate <= state10;
-
-                    output1 <= "00011000010000";
-						  
-						  
-						WHEN state10 =>
-                    reg_fstate <= state11;
-
-                    output1 <= "00101100001000";
-						  
-						WHEN state11 =>
-                    if (input1 = '0') then
-                        reg_fstate <= state0;
-                    else
-                        reg_fstate <= state12;
-                    END IF;
-
-                    output1 <= "10001110000000";
-						  
-						  
-						WHEN state12 =>
-                    reg_fstate <= state13;
-
-                    output1 <= "00011000001000";
-						  
-						WHEN state13 =>
-                    reg_fstate <= state14;
-
-                    output1 <= "00110000000100";
-						
-						
-						WHEN state14 =>
-                    IF (input1 = '0') then
-                        reg_fstate <= state15;
-								flag4 := '0';
-                    else
-								flag4 := '1';
-                        reg_fstate <= state18;
-                    END IF;
-						  
-						  output1 <= "01110010000000";
-						
-						WHEN state15 =>
-                    IF (input1 = '0') then
-                        reg_fstate <= state0;
-                    else
-                        reg_fstate <= state16;
-                    END IF;
-						  
-						  output1 <= "10110010000000";
-						  
-						WHEN state16 =>
-                    reg_fstate <= state17;
-
-                    output1 <= "00011000000100";
-						  
-						 WHEN state17 =>
-                 
-                    reg_fstate <= state18;
-
-                    output1 <= "00110100000010";
-						  
-						  
-						  WHEN state18 =>
-							  IF (input1 = '0') then
-									reg_fstate <= state0;
-							  elsif (flag4 = '0') then
-									reg_fstate <= state0;
-							  else 
-									reg_fstate <= state19;
-								END IF;
-						  output1 <= "01010110000000";
-						  
-						  
-						 WHEN state19 =>
+					WHEN state2 =>
+					 
                     reg_fstate <= state0;
 
-                    output1 <= "00011001111110";
+                    output1 <= "0010000100000000000";
+				
+
+
+					 WHEN state3 =>
+                    IF (input1 = '0') THEN
+                        reg_fstate <= state4;
+								
+                    ELSE
+                        reg_fstate <= state5;
+								
+                    END IF;
+
+                    output1 <= "1000011000000000000";
+				
+
+					WHEN state4 =>
+					 
+                    reg_fstate <= state0;
+
+                    output1 <= "0010010010000100000";
+
 						  
-												
+					WHEN state5 =>
+                    IF (input1 = '0') THEN
+                        reg_fstate <= state6;
+								
+                    ELSE
+                        reg_fstate <= state7;
+								
+                    END IF;
+
+                    output1 <= "1010101000000000000";
+				
+
+					WHEN state6 =>
+					 
+                    reg_fstate <= state0;
+
+                    output1 <= "0010100001000110000";
+
+						  
+					WHEN state7 =>
+                    IF (input1 = '0') THEN
+                        reg_fstate <= state8;
+								
+                    ELSE
+                        reg_fstate <= state9;
+								
+                    END IF;
+
+                    output1 <= "1000111000000000000";
+				
+
+					WHEN state8 =>
+					 
+                    reg_fstate <= state0;
+
+                    output1 <= "0010110000100111000";
+
+						  
+								  
+					WHEN state9 =>
+                    IF (input1 = '0') THEN
+                        reg_fstate <= state10;
+								flag4 := '0';
+								
+                    ELSE
+                        reg_fstate <= state12;
+								flag4 := '1';
+								
+                    END IF;
+
+                    output1 <= "0111001000000000000";
+				
+
+					WHEN state10 =>
+                    IF (input1 = '0') THEN
+                        reg_fstate <= state11;
+							
+								
+                    ELSE
+                        reg_fstate <= state12;
+								
+                    END IF;
+
+                    output1 <= "1011001000000000000";
+							
+				
+					WHEN state11 =>
+					 
+                    reg_fstate <= state0;
+
+                    output1 <= "0011000000010111100";
+
+						  	  
+					WHEN state12 =>
+					
+                    IF (input1 = '0') THEN
+                        reg_fstate <= state13;
+						  
+								IF(flag4 = '1') THEN
+									reg_fstate <= state11;
+								END IF;
+								
+                    ELSE
+                        reg_fstate <= state14;
+								
+                    END IF;
+
+                    output1 <= "0101011000000000000";
+				
+
+					WHEN state13 =>
+					 
+                    reg_fstate <= state0;
+
+                    output1 <= "0011010000001111110";
+						  
+				
+					
+					
+					WHEN state14 =>
+					 
+                    reg_fstate <= state0;
+
+                    output1 <= "0011010000001111111";
+				
+				
+				
                 WHEN OTHERS => 
    					  reg_fstate <= state0;
-                    output1 <= "XXXXXXXXXXXXXX";
+                    output1 <= "XXXXXXXXXXXXXXXXXXX";
                     report "Reach undefined state";
             END CASE;
         END IF;

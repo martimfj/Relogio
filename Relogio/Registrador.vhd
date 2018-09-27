@@ -8,22 +8,23 @@ entity Registrador is
 	 
       port (DIN 	 		: in    std_logic_vector(larguraDados-1 downto 0);
            DOUT 	 		: out   std_logic_vector(larguraDados-1 downto 0);
-           ENABLE, ENABLERW, CLK  : in  std_logic
+           ENABLE, ENABLERW, RST, CLK  : in  std_logic
 
 );
 end entity;
 
  architecture comportamento of Registrador is
- begin
-  
-  process(CLK)
+  begin
+    process(RST, CLK)
     begin
-        
-		if (rising_edge(CLK)) then
-			 if (ENABLE = '1' OR ENABLERW = '1') then
-						DOUT <= DIN;
-			 end if;
-		end if;
-	
-    end process;
+        if (RST = '1') then
+            DOUT <= (others => '0');
+        else
+            if (rising_edge(CLK)) then
+                if (ENABLE = '1' OR ENABLERW = '1') then
+                        DOUT <= DIN;
+                end if;
+            end if;
+        end if;
+	end process;
 	end architecture;

@@ -25,6 +25,7 @@ component FluxoDados is
 
 		--------------INPUTS-------------------
 	   clk        :   in  std_logic;
+		RST	  :   in  std_logic_vector(5 downto 0);
 		ENABLE	  :   in  std_logic_vector(5 downto 0);
 		ENABLERW   :   in  std_logic_vector(5 downto 0);
 		Sel_Ula    :   in  std_logic;
@@ -48,16 +49,14 @@ component SM1 IS
         reset  : IN STD_LOGIC := '0';
         clock  : IN STD_LOGIC;
         input1 : IN STD_LOGIC := '0';
-        SW		: in STD_LOGIC_VECTOR(17 DOWNTO 0);
-		  KEY		: in STD_LOGIC_VECTOR(3 DOWNTO 0);
-		  output1 : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
+		  output1 : OUT STD_LOGIC_VECTOR(18 DOWNTO 0)
 		  
     );
 	 
 end component;
 
 signal out_flag: std_logic;
-signal comando : std_logic_vector(13 downto 0);
+signal comando : std_logic_vector(18 downto 0);
 
 signal OUT_R1  : std_logic_vector (3 downto 0);
 signal OUT_R2  : std_logic_vector (3 downto 0);
@@ -114,7 +113,7 @@ begin
             generic map (divisor => 200000)   -- divide por valor_clock.
             port map (clk => CLOCK_50, saida_clk => saida_clk4);
 				
-		S0: SM1 port map(reset => '0', clock => valor_clock, input1 => out_flag ,output1 => comando, SW => SW, KEY => KEY);
+		S0: SM1 port map(reset => '0', clock => valor_clock, input1 => out_flag ,output1 => comando);
 
 	
 		-- comando (13 downto 0)
@@ -123,11 +122,12 @@ begin
 	
 		F0: FluxoDados port map( 
 		clk 		  => valor_clock,
-		Sel_Ula    => comando(7),
-		Sel_Mux1   => comando(13 downto 11),
-		Sel_Mux2   => comando(10 downto 8),
+		Sel_Ula    => comando(12),
+		Sel_Mux1   => comando(18 downto 16),
+		Sel_Mux2   => comando(15 downto 13),
+		ENABLE	  => comando(11 downto 6),
+		RST  		  => comando(5 downto 0),
 		Sel_time   => select_time(2 downto 0),
-		ENABLE	  => comando(6 downto 1),
 		ENABLERW   => Reg_Setup(5 downto 0),
 		Flag 		  => out_flag,
 		SW			  => SW,
@@ -138,8 +138,8 @@ begin
 		
 
 	
-	display00 : entity work.conversorHex7seg
-	 Port map (saida7seg => HEX0, dadoHex => "0000", apaga => '1');
+display00 : entity work.conversorHex7seg
+	 Port map (saida7seg => HEX0, dadoHex => "0000", apaga => '0');
 	 
 	display01 : entity work.conversorHex7seg
 	 Port map (saida7seg => HEX1, dadoHex => "0000", apaga => '1');
