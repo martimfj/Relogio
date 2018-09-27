@@ -65,11 +65,9 @@ signal OUT_R4  : std_logic_vector (3 downto 0);
 signal OUT_R5  : std_logic_vector (3 downto 0);
 signal OUT_R6  : std_logic_vector (3 downto 0);
 
-signal saida_clk1: std_logic;
-signal saida_clk2: std_logic;
-signal saida_clk3: std_logic;
-signal saida_clk4: std_logic;
-signal valor_clock: std_logic;
+signal saida_clk: std_logic;
+
+signal frequencia: integer := 25;
 
 signal Reg_setup : std_logic_vector (5 downto 0);
 signal select_time      : std_logic_vector (2 downto 0);
@@ -91,29 +89,17 @@ begin
 							 "1001" when SW(8)  = '1'else ---9
 							 "0000";
 	
-	valor_clock <= saida_clk1  when SW(1) = '1' else
-						saida_clk2  when SW(2) = '1' else
-						saida_clk3  when SW(3) = '1' else
-						saida_clk4  when SW(4) = '1' else
-						saida_clk1;
+	frequencia  <= 25   when SW(1) = '1' else
+						50   when SW(2) = '1' else
+						500   when SW(3) = '1' else
+						5000  when SW(4) = '1' else
+						25;
 	
 	fazDivisaoInteiro1: entity work.divisorGenerico(divInteiro)
-            generic map (divisor => 2500000)   -- divide por valor_clock.
-            port map (clk => CLOCK_50, saida_clk => saida_clk1);
-
-	fazDivisaoInteiro2: entity work.divisorGenerico(divInteiro)
-            generic map (divisor => 1500000)   -- divide por valor_clock.
-            port map (clk => CLOCK_50, saida_clk => saida_clk2);
-	
-	fazDivisaoInteiro3: entity work.divisorGenerico(divInteiro)
-            generic map (divisor => 800000)   -- divide por valor_clock.
-            port map (clk => CLOCK_50, saida_clk => saida_clk3);
-	
-	fazDivisaoInteiro4: entity work.divisorGenerico(divInteiro)
-            generic map (divisor => 200000)   -- divide por valor_clock.
-            port map (clk => CLOCK_50, saida_clk => saida_clk4);
+            generic map (divisor => 50000000)   -- divide por frequencia.
+            port map (clk => CLOCK_50, saida_clk => saida_clk, setup => frequencia);
 				
-		S0: SM1 port map(reset => '0', clock => valor_clock, input1 => out_flag ,output1 => comando);
+		S0: SM1 port map(reset => '0', clock => saida_clk, input1 => out_flag ,output1 => comando);
 
 	
 		-- comando (13 downto 0)
@@ -121,7 +107,7 @@ begin
 		-- 13 12 11 | 10 9 8   |  7  | 6 5 4 3 2 1 |   0--
 	
 		F0: FluxoDados port map( 
-		clk 		  => valor_clock,
+		clk 		  => saida_clk,
 		Sel_Ula    => comando(12),
 		Sel_Mux1   => comando(18 downto 16),
 		Sel_Mux2   => comando(15 downto 13),

@@ -5,39 +5,13 @@
 
    entity divisorGenerico is
     generic
-    (divisor : natural := 8);
+    (divisor : natural := 50000000);
        port(
+			  setup    :   in integer := 1 ;
            clk      :   in std_logic;
            saida_clk :   out std_logic
            );
    end entity;
-
-   -- Nao usa o valor do divisor. So divide por 2.
-   architecture divPor2 of divisorGenerico is
-       signal tick : std_logic;
-   begin
-       process(clk)
-       begin
-           if rising_edge(clk) then
-               tick <= not tick;
-           end if;
-       end process;
-       saida_clk <= tick;
-   end divPor2;
-
-   -- O valor "n" do divisor, define a divisao por 2^(n+1).
-   -- Ou seja, 2^n é metade do período da frequência de saída.
-   architecture divPotenciaDe2 of divisorGenerico is
-    signal contador : std_logic_vector(divisor downto 0);
-   begin
-    process(clk)
-        begin
-            if rising_edge(clk) then
-                contador <= std_logic_vector(unsigned(contador) + 1);
-            end if;
-    end process;
-    saida_clk <= contador(divisor);
-   end divPotenciaDe2;
 
    -- O valor "n" do divisor, define a divisao por "2n".
    -- Ou seja, n é metade do período da frequência de saída.
@@ -48,7 +22,7 @@
     process(clk)
     begin
         if rising_edge(clk) then
-            if contador = divisor then
+            if contador = (divisor/setup) then
                 contador <= 0;
                 tick <= not tick;
             else
