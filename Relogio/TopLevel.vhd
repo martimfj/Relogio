@@ -89,8 +89,8 @@ begin
 							 "1001" when SW(8)  = '1'else ---9
 							 "0000";
 	
-	frequencia  <= 25   when SW(1) = '1' else
-						50   when SW(2) = '1' else
+	frequencia  <= 25    when SW(1) = '1' else
+						50    when SW(2) = '1' else
 						500   when SW(3) = '1' else
 						5000  when SW(4) = '1' else
 						25;

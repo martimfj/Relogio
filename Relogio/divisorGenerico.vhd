@@ -7,7 +7,7 @@
     generic
     (divisor : natural := 50000000);
        port(
-			  setup    :   in integer := 1 ;
+			  setup    :   in integer := 10 ;
            clk      :   in std_logic;
            saida_clk :   out std_logic
            );

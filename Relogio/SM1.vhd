@@ -17,6 +17,7 @@ ARCHITECTURE BEHAVIOR OF SM1 IS
     
 	 SIGNAL fstate : type_fstate;
     SIGNAL reg_fstate : type_fstate;
+	 signal flag4: std_logic;
 BEGIN
     PROCESS (clock)
 	
@@ -27,7 +28,7 @@ BEGIN
     END PROCESS;
 
     PROCESS (fstate,reset,input1)
-	 variable flag4: bit := '0';
+
     BEGIN
 		  
 			
@@ -130,11 +131,11 @@ BEGIN
 					WHEN state9 =>
                     IF (input1 = '0') THEN
                         reg_fstate <= state10;
-								flag4 := '0';
+								flag4 <= '0';
 								
                     ELSE
                         reg_fstate <= state12;
-								flag4 := '1';
+								flag4 <= '1';
 								
                     END IF;
 

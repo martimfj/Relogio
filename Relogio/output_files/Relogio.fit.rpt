@@ -1,5 +1,5 @@
 Fitter report for Relogio
-Thu Sep 27 18:14:25 2018
+Thu Sep 27 18:37:21 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Sep 27 18:14:25 2018           ;
+; Fitter Status                      ; Successful - Thu Sep 27 18:37:21 2018           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; Relogio                                         ;
 ; Top-level Entity Name              ; TopLevel                                        ;
@@ -160,7 +160,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.0%      ;
+;     Processor 2            ;   1.3%      ;
 +----------------------------+-------------+
 
 
@@ -3410,7 +3410,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 0.32 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.29 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -3421,10 +3421,10 @@ Warning (169177): 1 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
     Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at Y2 File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 9
 Info (144001): Generated suppressed messages file /home/sabrina/GitHub/Relogio/Relogio/output_files/Relogio.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 454 warnings
-    Info: Peak virtual memory: 1466 megabytes
-    Info: Processing ended: Thu Sep 27 18:14:26 2018
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Peak virtual memory: 1470 megabytes
+    Info: Processing ended: Thu Sep 27 18:37:22 2018
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:25
 
 
 +----------------------------+
