@@ -17,6 +17,8 @@ entity FluxoDados is
 		SW		     :   in  STD_LOGIC_VECTOR(17 DOWNTO 0);
 		KEY		  :   in  STD_LOGIC_VECTOR(3 DOWNTO 0);
 		tempo	     :   in  std_logic_vector(3 downto 0);
+		swModoTempo:   in  std_logic;
+		
 		--------------OUTPUTS--------------------
 		Flag		  : out STD_LOGIC;
 		R1, R2, R3, R4, R5, R6 : OUT STD_LOGIC_VECTOR(3 downto 0)
@@ -99,13 +101,22 @@ signal OUT_R4  : std_logic_vector (3 downto 0);
 signal OUT_R5  : std_logic_vector (3 downto 0);
 signal OUT_R6  : std_logic_vector (3 downto 0);
 
----------DISPLAY 7 SEGMENTOS-------
+---------Sinal entrada Mux-------
+signal sinalC  : std_logic_vector (3 downto 0);
+signal sinalD  : std_logic_vector (3 downto 0);
 
 begin
-	
-	M1: Mux port map(A => "0000", B=> "0001", C => "0010", 
 
-   				     D => "0011", E => "0101", F => "1001", 
+	sinalC <= "0010" when swModoTempo = '0' else
+				 "0001" when swModoTempo = '1';
+				 
+	sinalD <= "0011" when swModoTempo = '0' else
+				 "0001" when swModoTempo = '1';
+
+	
+	M1: Mux port map(A => "0000", B=> "0001", C => sinalC, 
+
+   				     D => sinalD, E => "0101", F => "1001", 
 				  
 						  Sel_Mux => Sel_Mux1, Q => OUT_m1);
 						  
