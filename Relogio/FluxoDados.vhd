@@ -8,11 +8,14 @@ entity FluxoDados is
 		--------------INPUTS-------------------
 	   clk        :   in  std_logic;
 		ENABLE	  :   in  std_logic_vector(5 downto 0);
+		ENABLERW   :   in  std_logic_vector(5 downto 0);
 		Sel_Ula    :   in  std_logic;
 		Sel_Mux1   :   in  std_logic_vector(2 downto 0);
 		Sel_Mux2   :   in  std_logic_vector(2 downto 0);
-
-		
+		Sel_time   :   in  std_logic_vector(2 downto 0);
+		SW		     :   in  STD_LOGIC_VECTOR(17 DOWNTO 0);
+		KEY		  :   in  STD_LOGIC_VECTOR(3 DOWNTO 0);
+		tempo	     :   in  std_logic_vector(3 downto 0);
 		--------------OUTPUTS--------------------
 		Flag		  : out STD_LOGIC;
 		R1, R2, R3, R4, R5, R6 : OUT STD_LOGIC_VECTOR(3 downto 0)
@@ -54,7 +57,7 @@ component Registrador is
  
 	port (DIN 	 		: in  std_logic_vector(larguraDados-1 downto 0);
 		  DOUT 	 		: out std_logic_vector(larguraDados-1 downto 0);
-		  ENABLE, CLK  : in  std_logic
+		  ENABLE, ENABLERW, CLK  : in  std_logic
 
 );		  
 end component;
@@ -81,6 +84,7 @@ end component;
 --------------MUX--------------------
 signal OUT_m1 : std_logic_vector (3 downto 0);
 signal OUT_m2 : std_logic_vector (3 downto 0);
+signal OUT_m3 : std_logic_vector (3 downto 0);
 
 --------------ULA--------------------
 signal u1   : std_logic_vector (3 downto 0);
@@ -110,17 +114,25 @@ begin
    				     D => OUT_R4, E => OUT_R5, F => OUT_R6, G => "0000",
 				  
 						  Sel_Mux => Sel_Mux2, Q => OUT_m2);
+						  
+						  
+	M3: Mux port map(A => u1, B=> tempo, C => "0001", 
+
+   				     D => "0001", E => "0001", F => u1, G => "0000",
+				  
+						  Sel_Mux => Sel_time, Q => OUT_m3);
+						  
 							
 	
 	U: ULA port map(A => OUT_m1, B => OUT_m2, Sel_Ula => Sel_Ula, Q => u1, Flag => u1_F);
 	
 	
-	Rg1: Registrador port map(DIN => u1, Enable => ENABLE(5), CLK => clk, DOUT => OUT_R1);
-	Rg2: Registrador port map(DIN => u1, Enable => ENABLE(4), CLK => clk, DOUT => OUT_R2);
-	Rg3: Registrador port map(DIN => u1, Enable => ENABLE(3), CLK => clk, DOUT => OUT_R3);
-	Rg4: Registrador port map(DIN => u1, Enable => ENABLE(2), CLK => clk, DOUT => OUT_R4);
-	Rg5: Registrador port map(DIN => u1, Enable => ENABLE(1), CLK => clk, DOUT => OUT_R5);
-	Rg6: Registrador port map(DIN => u1, Enable => ENABLE(0), CLK => clk, DOUT => OUT_R6);
+	Rg1: Registrador port map(DIN => OUT_m3, Enable => ENABLE(5), ENABLERW => Enablerw(5) AND SW(0), CLK => clk, DOUT => OUT_R1);
+	Rg2: Registrador port map(DIN => OUT_m3, Enable => ENABLE(4), ENABLERW => Enablerw(4) AND SW(0), CLK => clk, DOUT => OUT_R2);
+	Rg3: Registrador port map(DIN => OUT_m3, Enable => ENABLE(3), ENABLERW => Enablerw(3) AND SW(0), CLK => clk, DOUT => OUT_R3);
+	Rg4: Registrador port map(DIN => OUT_m3, Enable => ENABLE(2), ENABLERW => Enablerw(2) AND SW(0), CLK => clk, DOUT => OUT_R4);
+	Rg5: Registrador port map(DIN => OUT_m3, Enable => ENABLE(1), ENABLERW => Enablerw(1) AND SW(0), CLK => clk, DOUT => OUT_R5);
+	Rg6: Registrador port map(DIN => OUT_m3, Enable => ENABLE(0), ENABLERW => Enablerw(0) AND SW(0), CLK => clk, DOUT => OUT_R6);
 
 	R1 <= OUT_R1;
 	R2 <= OUT_R2;

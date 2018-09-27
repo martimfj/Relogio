@@ -3,17 +3,20 @@ USE ieee.std_logic_1164.all;
 
 ENTITY SM1 IS
     PORT (
-        reset : IN STD_LOGIC := '0';
-        clock : IN STD_LOGIC;
+        reset  : IN STD_LOGIC := '0';
+        clock  : IN STD_LOGIC;
         input1 : IN STD_LOGIC := '0';
-        output1 : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
+        SW		: in STD_LOGIC_VECTOR(17 DOWNTO 0);
+		  KEY		: in STD_LOGIC_VECTOR(3 DOWNTO 0);
+		  output1 : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
+		  
     );
 END SM1;
 
 ARCHITECTURE BEHAVIOR OF SM1 IS
     
 	 TYPE type_fstate IS (state0, state1,state4,state7,state10,state5,state3,state2,state6,state8,
-	 state9,state11,state14,state13,state15,state12,state16,state17,state18, state19, state20);
+	 state9,state11,state14,state13,state15,state12,state16,state17,state18, state19, state20, stateSETUP);
     
 	 SIGNAL fstate : type_fstate;
     SIGNAL reg_fstate : type_fstate;
@@ -26,10 +29,9 @@ BEGIN
         END IF;
     END PROCESS;
 
-    PROCESS (fstate,reset,input1)
+    PROCESS (SW, fstate,reset,input1)
 	 variable flag4: bit := '0';
     BEGIN
-		  
 			
         IF (reset='1') THEN
             reg_fstate <= state0;
@@ -183,7 +185,6 @@ BEGIN
 								END IF;
 						  output1 <= "01010110000000";
 						  
-		
 						  
 						 WHEN state19 =>
                     reg_fstate <= state0;

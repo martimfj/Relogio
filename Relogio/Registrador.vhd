@@ -8,7 +8,7 @@ entity Registrador is
 	 
       port (DIN 	 		: in    std_logic_vector(larguraDados-1 downto 0);
            DOUT 	 		: out   std_logic_vector(larguraDados-1 downto 0);
-           ENABLE, CLK  : in  std_logic
+           ENABLE, ENABLERW, CLK  : in  std_logic
 
 );
 end entity;
@@ -20,7 +20,7 @@ end entity;
     begin
         
 		if (rising_edge(CLK)) then
-			 if (ENABLE = '1') then
+			 if (ENABLE = '1' OR ENABLERW = '1') then
 						DOUT <= DIN;
 			 end if;
 		end if;

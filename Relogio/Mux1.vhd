@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+ 
+entity mux1 is
+
+  generic(
+    DATA_WIDTH  : natural := 4;   -- Bits in each input
+    SEL_WIDTH   : natural := 3	 -- Number of inputs
+);
+	 port(
+    A, B			    : in  std_logic_vector( (DATA_WIDTH - 1) downto 0);
+    Sel_Mux 	    : in  std_logic;
+    Q   			    : out std_logic_vector( (DATA_WIDTH - 1) downto 0)
+);
+end entity;
+
+architecture mux_architecture1 of mux is
+
+begin
+ 
+	with Sel_Mux  select
+		Q <=   A WHEN "0",
+				 B WHEN "1",
+				 (others =>'0') when others;
+
+end architecture;
