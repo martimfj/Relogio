@@ -19,6 +19,7 @@ component FluxoDados is
    port(
       clk        :   in  std_logic;
 		ENABLE	  :   in  std_logic_vector(5 downto 0);
+		RST	  :   in  std_logic_vector(5 downto 0);
 		Sel_Ula    :   in  std_logic;
 		Sel_Mux1   :   in  std_logic_vector(2 downto 0);
 		Sel_Mux2   :   in  std_logic_vector(2 downto 0);
@@ -37,13 +38,13 @@ component SM1 IS
         reset : IN STD_LOGIC := '0';
         clock : IN STD_LOGIC;
         input1 : IN STD_LOGIC;
-        output1 : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
+        output1 : OUT STD_LOGIC_VECTOR(18 DOWNTO 0)
     );
 	 
 end component;
 
 signal out_flag: std_logic;
-signal comando : std_logic_vector(13 downto 0);
+signal comando : std_logic_vector(18 downto 0);
 
 signal OUT_R1  : std_logic_vector (3 downto 0);
 signal OUT_R2  : std_logic_vector (3 downto 0);
@@ -57,7 +58,7 @@ signal saida_clk: std_logic;
 begin
 
 	fazDivisaoInteiro: entity work.divisorGenerico(divInteiro)
-            generic map (divisor => 5000000)   -- divide por 10.
+            generic map (divisor => 10000)   -- divide por 10.
             port map (clk => CLOCK_50, saida_clk => saida_clk);
 
 
@@ -70,18 +71,18 @@ begin
 	
 		F0: FluxoDados port map( 
 		clk 		  => saida_clk,
-		Sel_Ula    => comando(7),
-		Sel_Mux1   => comando(13 downto 11),
-		Sel_Mux2   => comando(10 downto 8),
-		ENABLE	  => comando(6 downto 1),
+		Sel_Ula    => comando(12),
+		Sel_Mux1   => comando(18 downto 16),
+		Sel_Mux2   => comando(15 downto 13),
+		ENABLE	  => comando(11 downto 6),
+		RST  		  => comando(5 downto 0),
 		Flag 		  => out_flag,
 		R1 => OUT_R1, R2 => OUT_R2, R3 => OUT_R3, R4 => OUT_R4, R5 => OUT_R5, R6 => OUT_R6
 		);
 		
 
-	
 	display00 : entity work.conversorHex7seg
-	 Port map (saida7seg => HEX0, dadoHex => "0000", apaga => '1');
+	 Port map (saida7seg => HEX0, dadoHex => "000" & saida_clk , apaga => '0');
 	 
 	display01 : entity work.conversorHex7seg
 	 Port map (saida7seg => HEX1, dadoHex => "0000", apaga => '1');
