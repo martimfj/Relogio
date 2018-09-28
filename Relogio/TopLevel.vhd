@@ -35,6 +35,7 @@ component FluxoDados is
 		SW		     :   in  STD_LOGIC_VECTOR(17 DOWNTO 0);
 		KEY		  :   in  STD_LOGIC_VECTOR(3 DOWNTO 0);
 	   tempo	     :   in  std_logic_vector(3 downto 0);
+		swModoTempo:   in  std_logic;
 		--------------OUTPUTS--------------------
 		Flag		  : out STD_LOGIC;
 		R1, R2, R3, R4, R5, R6 : OUT STD_LOGIC_VECTOR(3 downto 0)
@@ -75,8 +76,11 @@ signal Reg_setup : std_logic_vector (5 downto 0);
 signal select_time      : std_logic_vector (2 downto 0);
 signal tempo_escolhido 				: std_logic_vector (3 downto 0);
 
+signal modoRelogio: std_logic;
+
 begin
-	
+
+	modoRelogio <= sw(5);
 	Reg_setup <= '0' & '0' & not(KEY(3)) & not(KEY(2)) & not(KEY(1)) & not(KEY(0));
 	select_time  <= '0' & '0' & SW(0);
 	tempo_escolhido <= "0000" when SW(17) = '1'else ---0
@@ -133,6 +137,7 @@ begin
 		SW			  => SW,
 		KEY        => KEY,
 		tempo      => tempo_escolhido,
+		swModoTempo=> modoRelogio,
 		R1 => OUT_R1, R2 => OUT_R2, R3 => OUT_R3, R4 => OUT_R4, R5 => OUT_R5, R6 => OUT_R6
 		);
 		

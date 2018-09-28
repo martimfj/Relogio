@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Sep 27 17:29:52 2018
-Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Fitter Status : Successful - Thu Sep 27 21:08:04 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : Relogio
 Top-level Entity Name : TopLevel
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 276 / 114,480 ( < 1 % )
-    Total combinational functions : 276 / 114,480 ( < 1 % )
+Total logic elements : 282 / 114,480 ( < 1 % )
+    Total combinational functions : 277 / 114,480 ( < 1 % )
     Dedicated logic registers : 124 / 114,480 ( < 1 % )
 Total registers : 124
 Total pins : 79 / 529 ( 15 % )
