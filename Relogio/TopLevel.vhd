@@ -4,13 +4,27 @@ use ieee.numeric_std.all;
 
 
 entity TopLevel is
-	
+	generic(
+			lD  : std_logic_vector(9 downto 0) := "1001000100"; --D
+			lE  : std_logic_vector(9 downto 0) := "1001000101"; --E
+			lF  : std_logic_vector(9 downto 0) := "1001000110"; --F
+			lM  : std_logic_vector(9 downto 0) := "1001001101"; --M
+			lO  : std_logic_vector(9 downto 0) := "1001001111"; --O
+			lP  : std_logic_vector(9 downto 0) := "1001010000"; --P
+			lQ  : std_logic_vector(9 downto 0) := "1001010001"; --Q
+			lS  : std_logic_vector(9 downto 0) := "1001010011"; --S
+			lT  : std_logic_vector(9 downto 0) := "1001010100"; --T
+			lU  : std_logic_vector(9 downto 0) := "1001010101"; --U
+			es  : std_logic_vector(9 downto 0) := "1000100000"; --espaço
+			p0  : std_logic_vector(9 downto 0) := "1000111010" --:
+	);
 	port(
-		CLOCK_50 : in STD_LOGIC;
-		  SW		: in STD_LOGIC_VECTOR(17 DOWNTO 0);
-		  KEY		: in STD_LOGIC_VECTOR(3 DOWNTO 0);
-		HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : OUT STD_LOGIC_VECTOR(6 downto 0)
-		
+		CLOCK_50 												  : in	 STD_LOGIC;
+		SW															  : in	 STD_LOGIC_VECTOR(17 DOWNTO 0);
+		KEY													     : in    STD_LOGIC_VECTOR(3 DOWNTO 0);
+		HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : OUT   STD_LOGIC_VECTOR(6 downto 0);
+		LCD_RW, LCD_RS, LCD_EN 								  : OUT   STD_LOGIC;  						 --read/write, setup/data, and enable for lcd
+		LCD_DATA				  									  : OUT   STD_LOGIC_VECTOR(7 DOWNTO 0) --data signals for lcd
 	);
 	
 	
@@ -18,7 +32,20 @@ end entity;
 
 architecture rtl of TopLevel is
 
+SIGNAL   lcd_enable : STD_LOGIC;
+SIGNAL   lcd_bus    : STD_LOGIC_VECTOR(9 DOWNTO 0);
+SIGNAL   lcd_busy   : STD_LOGIC;
 
+component lcd_controller is
+  port(
+    clk      				    : IN    STD_LOGIC;  						 --system clock
+    reset_n   					 : IN    STD_LOGIC;  						 --active low reinitializes lcd
+    lcd_enable    			 : IN    STD_LOGIC;  						 --latches data into lcd controller
+    lcd_bus   					 : IN    STD_LOGIC_VECTOR(9 DOWNTO 0);  --data and control signals
+    busy      					 : OUT   STD_LOGIC := '1'; 				 --lcd controller busy/idle feedback
+    LCD_RW, LCD_RS, LCD_EN  : OUT   STD_LOGIC;  						 --read/write, setup/data, and enable for lcd
+    LCD_DATA				    : OUT   STD_LOGIC_VECTOR(7 DOWNTO 0)); --data signals for lcd
+  end component;
 
 component FluxoDados is
    port(
@@ -79,7 +106,7 @@ signal tempo_escolhido 				: std_logic_vector (3 downto 0);
 signal modoRelogio: std_logic;
 signal modoFlag   : std_logic;
 signal modoDisplay: std_logic_vector(3 downto 0);
-
+signal reset_n    : std_logic := '1';
 
 begin
 	
@@ -137,7 +164,7 @@ begin
 		
 
 	
-display00 : entity work.conversorHex7seg
+	display00 : entity work.conversorHex7seg
 	 Port map (saida7seg => HEX0, dadoHex => modoDisplay, apaga => '0');
 	 
 	display01 : entity work.conversorHex7seg
@@ -162,4 +189,42 @@ display00 : entity work.conversorHex7seg
 	 Port map (saida7seg => HEX7, dadoHex => OUT_R6, apaga => '0');
 	
 
+	screen: lcd_controller
+    PORT MAP(clk => CLOCK_50, reset_n => reset_n, lcd_enable => lcd_enable, lcd_bus => lcd_bus, 
+             busy => lcd_busy, LCD_RW => LCD_RW, LCD_RS => LCD_RS, LCD_EN => LCD_EN, LCD_DATA => LCD_DATA);
+	
+	PROCESS(saida_clk)
+    VARIABLE char  :  INTEGER RANGE 0 TO 20 := 0;
+  BEGIN
+    IF(saida_clk'EVENT AND saida_clk = '1') THEN
+      IF(lcd_busy = '0' AND lcd_enable = '0') THEN
+        lcd_enable <= '1';
+		  IF(SW(0) = '1') then
+			IF(char < 11) THEN
+          char := char + 1;
+         END IF;
+        CASE char IS
+          WHEN 1 => lcd_bus <= lS;
+          WHEN 2 => lcd_bus <= lE;
+          WHEN 3 => lcd_bus <= lT;
+          WHEN 4 => lcd_bus <= lU;
+          WHEN 5 => lcd_bus <= lP;
+          WHEN 6 => lcd_bus <= es;
+          WHEN 7 => lcd_bus <= lM;
+          WHEN 8 => lcd_bus <= lO;
+          WHEN 9 => lcd_bus <= lD;
+			 WHEN 10 =>lcd_bus <= lE;
+          WHEN OTHERS => lcd_enable <= '0' ;
+        END CASE;
+		  else
+				char := 0;
+				lcd_bus <= es;
+		  end if;
+      ELSE
+        lcd_enable <= '0';
+      END IF;
+    END IF;
+  END PROCESS;
+	
+	
 end architecture;

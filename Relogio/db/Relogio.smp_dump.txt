@@ -1,4 +1,11 @@
 
+State Machine - |TopLevel|lcd_controller:screen|state
+Name state.send state.ready state.initialize state.power_up 
+state.power_up 0 0 0 0 
+state.initialize 0 0 1 1 
+state.ready 0 1 0 1 
+state.send 1 0 0 1 
+
 State Machine - |TopLevel|SM1:S0|fstate
 Name fstate.state20 fstate.state19 fstate.state18 fstate.state17 fstate.state16 fstate.state12 fstate.state15 fstate.state13 fstate.state14 fstate.state11 fstate.state9 fstate.state8 fstate.state6 fstate.state2 fstate.state3 fstate.state5 fstate.state10 fstate.state7 fstate.state4 fstate.state1 fstate.state0 
 fstate.state0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
