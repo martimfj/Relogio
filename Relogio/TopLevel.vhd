@@ -50,7 +50,8 @@ component SM1 IS
         reset  : IN STD_LOGIC := '0';
         clock  : IN STD_LOGIC;
         input1 : IN STD_LOGIC := '0';
-		  output1 : OUT STD_LOGIC_VECTOR(18 DOWNTO 0)
+		  output1 : OUT STD_LOGIC_VECTOR(18 DOWNTO 0);
+		  modo    : OUT STD_LOGIC
 		  
     );
 	 
@@ -76,9 +77,15 @@ signal tempo_escolhido 				: std_logic_vector (3 downto 0);
 
 
 signal modoRelogio: std_logic;
+signal modoFlag   : std_logic;
+signal modoDisplay: std_logic_vector(3 downto 0);
+
 
 begin
-
+	
+	modoDisplay <= "1010" when modoFlag = '0' else
+				      "1111" when modoFlag = '1';
+				 
 	modoRelogio <= sw(5);
 	Reg_setup <= '0' & '0' & not(KEY(3)) & not(KEY(2)) & not(KEY(1)) & not(KEY(0));
 	select_time  <= '0' & '0' & SW(0);
@@ -104,7 +111,7 @@ begin
             generic map (divisor => 50000000)   -- divide por frequencia.
             port map (clk => CLOCK_50, saida_clk => saida_clk, setup => frequencia);
 				
-		S0: SM1 port map(reset => '0', clock => saida_clk, input1 => out_flag ,output1 => comando);
+		S0: SM1 port map(reset => '0', clock => saida_clk, input1 => out_flag ,output1 => comando, modo => modoFlag);
 
 	
 		-- comando (13 downto 0)
@@ -131,7 +138,7 @@ begin
 
 	
 display00 : entity work.conversorHex7seg
-	 Port map (saida7seg => HEX0, dadoHex => "0000", apaga => '0');
+	 Port map (saida7seg => HEX0, dadoHex => modoDisplay, apaga => '0');
 	 
 	display01 : entity work.conversorHex7seg
 	 Port map (saida7seg => HEX1, dadoHex => "0000", apaga => '1');

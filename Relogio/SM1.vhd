@@ -6,7 +6,8 @@ ENTITY SM1 IS
         reset : IN STD_LOGIC := '0';
         clock : IN STD_LOGIC;
         input1 : IN STD_LOGIC := '0';
-        output1 : OUT STD_LOGIC_VECTOR(18 DOWNTO 0)
+        output1 : OUT STD_LOGIC_VECTOR(18 DOWNTO 0);
+		  modo    : OUT STD_LOGIC := '0'
     );
 END SM1;
 
@@ -18,6 +19,7 @@ ARCHITECTURE BEHAVIOR OF SM1 IS
 	 SIGNAL fstate : type_fstate;
     SIGNAL reg_fstate : type_fstate;
 	 signal flag4: std_logic;
+	 
 BEGIN
     PROCESS (clock)
 	
@@ -191,7 +193,8 @@ BEGIN
 					WHEN state14 =>
 					 
                     reg_fstate <= state0;
-
+						  modo <= not(modo);	
+							
                     output1 <= "0011010000001111111";
 				
 				

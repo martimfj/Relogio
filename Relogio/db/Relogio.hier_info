@@ -258,6 +258,7 @@ reset => output1.OUTPUTSELECT
 reset => output1.OUTPUTSELECT
 reset => output1.OUTPUTSELECT
 reset => output1.OUTPUTSELECT
+reset => modo.IN0
 reset => flag4.IN0
 clock => fstate~1.DATAIN
 input1 => reg_fstate.DATAB
@@ -294,6 +295,7 @@ output1[15] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 output1[16] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 output1[17] <= output1.DB_MAX_OUTPUT_PORT_TYPE
 output1[18] <= output1.DB_MAX_OUTPUT_PORT_TYPE
+modo <= modo$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|FluxoDados:F0
