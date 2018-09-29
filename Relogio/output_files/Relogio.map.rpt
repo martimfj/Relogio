@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Relogio
-Thu Sep 27 22:13:56 2018
+Fri Sep 28 00:09:49 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -15,37 +15,36 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |TopLevel|SM1:S0|fstate
   9. User-Specified and Inferred Latches
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: divisorGenerico:fazDivisaoInteiro1
- 14. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M1
- 15. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M2
- 16. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M3
- 17. Parameter Settings for User Entity Instance: FluxoDados:F0|ULA:U
- 18. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg1
- 19. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg2
- 20. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg3
- 21. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg4
- 22. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg5
- 23. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg6
- 24. Parameter Settings for Inferred Entity Instance: divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0
- 25. Port Connectivity Checks: "conversorHex7Seg:display5"
- 26. Port Connectivity Checks: "conversorHex7Seg:display4"
- 27. Port Connectivity Checks: "conversorHex7Seg:display3"
- 28. Port Connectivity Checks: "conversorHex7Seg:display2"
- 29. Port Connectivity Checks: "conversorHex7Seg:display1"
- 30. Port Connectivity Checks: "conversorHex7Seg:display0"
- 31. Port Connectivity Checks: "conversorHex7Seg:display01"
- 32. Port Connectivity Checks: "conversorHex7Seg:display00"
- 33. Port Connectivity Checks: "FluxoDados:F0|mux:M3"
- 34. Port Connectivity Checks: "FluxoDados:F0|mux:M1"
- 35. Port Connectivity Checks: "FluxoDados:F0"
- 36. Port Connectivity Checks: "SM1:S0"
- 37. Port Connectivity Checks: "divisorGenerico:fazDivisaoInteiro1"
- 38. Post-Synthesis Netlist Statistics for Top Partition
- 39. Elapsed Time Per Partition
- 40. Analysis & Synthesis Messages
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: divisorGenerico:fazDivisaoInteiro1
+ 13. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M1
+ 14. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M2
+ 15. Parameter Settings for User Entity Instance: FluxoDados:F0|mux:M3
+ 16. Parameter Settings for User Entity Instance: FluxoDados:F0|ULA:U
+ 17. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg1
+ 18. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg2
+ 19. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg3
+ 20. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg4
+ 21. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg5
+ 22. Parameter Settings for User Entity Instance: FluxoDados:F0|Registrador:Rg6
+ 23. Parameter Settings for Inferred Entity Instance: divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0
+ 24. Port Connectivity Checks: "conversorHex7Seg:display5"
+ 25. Port Connectivity Checks: "conversorHex7Seg:display4"
+ 26. Port Connectivity Checks: "conversorHex7Seg:display3"
+ 27. Port Connectivity Checks: "conversorHex7Seg:display2"
+ 28. Port Connectivity Checks: "conversorHex7Seg:display1"
+ 29. Port Connectivity Checks: "conversorHex7Seg:display0"
+ 30. Port Connectivity Checks: "conversorHex7Seg:display01"
+ 31. Port Connectivity Checks: "conversorHex7Seg:display00"
+ 32. Port Connectivity Checks: "FluxoDados:F0|mux:M3"
+ 33. Port Connectivity Checks: "FluxoDados:F0|mux:M1"
+ 34. Port Connectivity Checks: "FluxoDados:F0"
+ 35. Port Connectivity Checks: "SM1:S0"
+ 36. Port Connectivity Checks: "divisorGenerico:fazDivisaoInteiro1"
+ 37. Post-Synthesis Netlist Statistics for Top Partition
+ 38. Elapsed Time Per Partition
+ 39. Analysis & Synthesis Messages
 
 
 
@@ -71,15 +70,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 27 22:13:56 2018       ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 28 00:09:49 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Relogio                                     ;
 ; Top-level Entity Name              ; TopLevel                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,485                                       ;
-;     Total combinational functions  ; 1,465                                       ;
-;     Dedicated logic registers      ; 66                                          ;
-; Total registers                    ; 66                                          ;
+; Total logic elements               ; 1,500                                       ;
+;     Total combinational functions  ; 1,480                                       ;
+;     Dedicated logic registers      ; 77                                          ;
+; Total registers                    ; 77                                          ;
 ; Total pins                         ; 79                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -223,20 +222,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------------+
 ; Resource                                    ; Usage            ;
 +---------------------------------------------+------------------+
-; Estimated Total logic elements              ; 1,485            ;
+; Estimated Total logic elements              ; 1,500            ;
 ;                                             ;                  ;
-; Total combinational functions               ; 1465             ;
+; Total combinational functions               ; 1480             ;
 ; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 425              ;
-;     -- 3 input functions                    ; 668              ;
-;     -- <=2 input functions                  ; 372              ;
+;     -- 4 input functions                    ; 430              ;
+;     -- 3 input functions                    ; 667              ;
+;     -- <=2 input functions                  ; 383              ;
 ;                                             ;                  ;
 ; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 930              ;
+;     -- normal mode                          ; 945              ;
 ;     -- arithmetic mode                      ; 535              ;
 ;                                             ;                  ;
-; Total registers                             ; 66               ;
-;     -- Dedicated logic registers            ; 66               ;
+; Total registers                             ; 77               ;
+;     -- Dedicated logic registers            ; 77               ;
 ;     -- I/O registers                        ; 0                ;
 ;                                             ;                  ;
 ; I/O pins                                    ; 79               ;
@@ -244,9 +243,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                ;
 ;                                             ;                  ;
 ; Maximum fan-out node                        ; frequencia[12]~1 ;
-; Maximum fan-out                             ; 123              ;
-; Total fan-out                               ; 4706             ;
-; Average fan-out                             ; 2.79             ;
+; Maximum fan-out                             ; 124              ;
+; Total fan-out                               ; 4768             ;
+; Average fan-out                             ; 2.78             ;
 +---------------------------------------------+------------------+
 
 
@@ -255,18 +254,19 @@ refer to the applicable agreement for further details.
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                      ; Entity Name      ; Library Name ;
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; |TopLevel                                ; 1465 (9)            ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 79   ; 0            ; |TopLevel                                                                                                                                ; TopLevel         ; work         ;
-;    |FluxoDados:F0|                       ; 56 (0)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0                                                                                                                  ; FluxoDados       ; work         ;
+; |TopLevel                                ; 1480 (7)            ; 77 (0)                    ; 0           ; 0            ; 0       ; 0         ; 79   ; 0            ; |TopLevel                                                                                                                                ; TopLevel         ; work         ;
+;    |FluxoDados:F0|                       ; 45 (0)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0                                                                                                                  ; FluxoDados       ; work         ;
 ;       |Registrador:Rg1|                  ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg1                                                                                                  ; Registrador      ; work         ;
 ;       |Registrador:Rg2|                  ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg2                                                                                                  ; Registrador      ; work         ;
 ;       |Registrador:Rg3|                  ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg3                                                                                                  ; Registrador      ; work         ;
 ;       |Registrador:Rg4|                  ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg4                                                                                                  ; Registrador      ; work         ;
 ;       |Registrador:Rg5|                  ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg5                                                                                                  ; Registrador      ; work         ;
 ;       |Registrador:Rg6|                  ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg6                                                                                                  ; Registrador      ; work         ;
-;       |ULA:U|                            ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|ULA:U                                                                                                            ; ULA              ; work         ;
-;       |mux:M1|                           ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|mux:M1                                                                                                           ; mux              ; work         ;
+;       |ULA:U|                            ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|ULA:U                                                                                                            ; ULA              ; work         ;
+;       |mux:M1|                           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|mux:M1                                                                                                           ; mux              ; work         ;
+;       |mux:M2|                           ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|mux:M2                                                                                                           ; mux              ; work         ;
 ;       |mux:M3|                           ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|mux:M3                                                                                                           ; mux              ; work         ;
-;    |SM1:S0|                              ; 41 (41)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|SM1:S0                                                                                                                         ; SM1              ; work         ;
+;    |SM1:S0|                              ; 69 (69)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|SM1:S0                                                                                                                         ; SM1              ; work         ;
 ;    |conversorHex7Seg:display0|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display0                                                                                                      ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display1|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display1                                                                                                      ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display2|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display2                                                                                                      ; conversorHex7Seg ; work         ;
@@ -283,33 +283,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |TopLevel|SM1:S0|fstate                                                                                                                                                                                                                                                                                                                                   ;
-+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
-; Name           ; fstate.state20 ; fstate.state19 ; fstate.state18 ; fstate.state17 ; fstate.state16 ; fstate.state12 ; fstate.state15 ; fstate.state13 ; fstate.state14 ; fstate.state11 ; fstate.state9 ; fstate.state8 ; fstate.state6 ; fstate.state2 ; fstate.state3 ; fstate.state5 ; fstate.state10 ; fstate.state7 ; fstate.state4 ; fstate.state1 ; fstate.state0 ;
-+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
-; fstate.state0  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 0             ;
-; fstate.state1  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 1             ; 1             ;
-; fstate.state4  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 1             ; 0             ; 1             ;
-; fstate.state7  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 1             ; 0             ; 0             ; 1             ;
-; fstate.state10 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state5  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state3  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state2  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state6  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state8  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state9  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state11 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state14 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state13 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state15 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state12 ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state16 ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state17 ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state18 ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state19 ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state20 ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |TopLevel|SM1:S0|fstate                                                                                                                                                                                                                                                                                                                                                                                                                        ;
++----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
+; Name           ; fstate.state25 ; fstate.state24 ; fstate.state23 ; fstate.state22 ; fstate.state21 ; fstate.state20 ; fstate.state19 ; fstate.state18 ; fstate.state17 ; fstate.state16 ; fstate.state12 ; fstate.state15 ; fstate.state13 ; fstate.state14 ; fstate.state11 ; fstate.state9 ; fstate.state8 ; fstate.state6 ; fstate.state2 ; fstate.state3 ; fstate.state5 ; fstate.state10 ; fstate.state7 ; fstate.state4 ; fstate.state1 ; fstate.state0 ;
++----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
+; fstate.state0  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 0             ;
+; fstate.state1  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 1             ; 1             ;
+; fstate.state4  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 1             ; 0             ; 1             ;
+; fstate.state7  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 1             ; 0             ; 0             ; 1             ;
+; fstate.state10 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state5  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state3  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state2  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state6  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state8  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state9  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state11 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state14 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state13 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state15 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state12 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state16 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state17 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state18 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state19 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state20 ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state21 ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state22 ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state23 ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state24 ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state25 ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
++----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
@@ -318,25 +323,10 @@ Encoding Type:  One-Hot
 ; Latch Name                                         ; Latch Enable Signal   ; Free of Timing Hazards ;
 +----------------------------------------------------+-----------------------+------------------------+
 ; SM1:S0|modo                                        ; SM1:S0|fstate.state14 ; yes                    ;
-; SM1:S0|flag4                                       ; SM1:S0|fstate.state9  ; yes                    ;
+; SM1:S0|flag4                                       ; SM1:S0|flag4          ; yes                    ;
 ; Number of user-specified and inferred latches = 2  ;                       ;                        ;
 +----------------------------------------------------+-----------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; SM1:S0|fstate.state15                 ; Lost fanout        ;
-; SM1:S0|fstate.state16                 ; Lost fanout        ;
-; SM1:S0|fstate.state17                 ; Lost fanout        ;
-; SM1:S0|fstate.state18                 ; Lost fanout        ;
-; SM1:S0|fstate.state19                 ; Lost fanout        ;
-; SM1:S0|fstate.state20                 ; Lost fanout        ;
-; Total Number of Removed Registers = 6 ;                    ;
-+---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -344,7 +334,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 66    ;
+; Total registers                              ; 77    ;
 ; Number of registers using Synchronous Clear  ; 26    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 24    ;
@@ -359,10 +349,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|frequencia[5]             ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |TopLevel|frequencia[0]             ;
-; 16:1               ; 4 bits    ; 40 LEs        ; 36 LEs               ; 4 LEs                  ; No         ; |TopLevel|FluxoDados:F0|ULA:U|Add0  ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |TopLevel|FluxoDados:F0|mux:M3|Mux1 ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|frequencia[3]             ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |TopLevel|FluxoDados:F0|mux:M2|Mux3 ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |TopLevel|frequencia[8]             ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |TopLevel|FluxoDados:F0|mux:M3|Mux2 ;
 ; 11:1               ; 2 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |TopLevel|FluxoDados:F0|mux:M3|Mux3 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 
@@ -664,23 +654,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 79                          ;
-; cycloneiii_ff         ; 66                          ;
+; cycloneiii_ff         ; 77                          ;
 ;     ENA CLR           ; 24                          ;
 ;     SCLR              ; 26                          ;
-;     plain             ; 16                          ;
-; cycloneiii_lcell_comb ; 1467                        ;
+;     plain             ; 27                          ;
+; cycloneiii_lcell_comb ; 1482                        ;
 ;     arith             ; 535                         ;
 ;         2 data inputs ; 46                          ;
 ;         3 data inputs ; 489                         ;
-;     normal            ; 932                         ;
+;     normal            ; 947                         ;
 ;         0 data inputs ; 30                          ;
-;         1 data inputs ; 14                          ;
-;         2 data inputs ; 284                         ;
-;         3 data inputs ; 179                         ;
-;         4 data inputs ; 425                         ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 296                         ;
+;         3 data inputs ; 178                         ;
+;         4 data inputs ; 430                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 110.00                      ;
-; Average LUT depth     ; 93.49                       ;
+; Average LUT depth     ; 92.30                       ;
 +-----------------------+-----------------------------+
 
 
@@ -689,7 +679,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:11     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -699,12 +689,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Sep 27 22:13:27 2018
+    Info: Processing started: Fri Sep 28 00:09:19 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Relogio -c Relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file sm1.vhd
-    Info (12022): Found design unit 1: SM1-BEHAVIOR File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 14
+    Info (12022): Found design unit 1: SM1-BEHAVIOR File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 16
     Info (12023): Found entity 1: SM1 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 4
 Warning (12019): Can't analyze file -- file divisor.vhd is missing
 Warning (12019): Can't analyze file -- file comparador.vhd is missing
@@ -728,18 +718,19 @@ Info (12021): Found 2 design units, including 1 entities, in source file divisor
     Info (12022): Found design unit 1: divisorGenerico-divInteiro File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 18
     Info (12023): Found entity 1: divisorGenerico File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 6
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Info (10041): Inferred latch for "modoDisplay[0]" at TopLevel.vhd(86) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 86
-Info (10041): Inferred latch for "modoDisplay[1]" at TopLevel.vhd(86) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 86
-Info (10041): Inferred latch for "modoDisplay[2]" at TopLevel.vhd(86) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 86
-Info (10041): Inferred latch for "modoDisplay[3]" at TopLevel.vhd(86) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 86
-Info (12129): Elaborating entity "divisorGenerico" using architecture "A:divinteiro" for hierarchy "divisorGenerico:fazDivisaoInteiro1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 110
-Info (12128): Elaborating entity "SM1" for hierarchy "SM1:S0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 114
-Warning (10492): VHDL Process Statement warning at SM1.vhd(172): signal "flag4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 172
-Warning (10631): VHDL Process Statement warning at SM1.vhd(32): inferring latch(es) for signal or variable "flag4", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 32
-Warning (10631): VHDL Process Statement warning at SM1.vhd(32): inferring latch(es) for signal or variable "modo", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 32
-Info (10041): Inferred latch for "modo" at SM1.vhd(32) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 32
-Info (10041): Inferred latch for "flag4" at SM1.vhd(32) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 32
-Info (12128): Elaborating entity "FluxoDados" for hierarchy "FluxoDados:F0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 121
+Info (10041): Inferred latch for "modoDisplay[0]" at TopLevel.vhd(89) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 89
+Info (10041): Inferred latch for "modoDisplay[1]" at TopLevel.vhd(89) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 89
+Info (10041): Inferred latch for "modoDisplay[2]" at TopLevel.vhd(89) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 89
+Info (10041): Inferred latch for "modoDisplay[3]" at TopLevel.vhd(89) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 89
+Info (12129): Elaborating entity "divisorGenerico" using architecture "A:divinteiro" for hierarchy "divisorGenerico:fazDivisaoInteiro1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 115
+Info (12128): Elaborating entity "SM1" for hierarchy "SM1:S0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 119
+Warning (10492): VHDL Process Statement warning at SM1.vhd(48): signal "sequencia" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at SM1.vhd(173): signal "flag4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 173
+Warning (10631): VHDL Process Statement warning at SM1.vhd(34): inferring latch(es) for signal or variable "flag4", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at SM1.vhd(34): inferring latch(es) for signal or variable "modo", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 34
+Info (10041): Inferred latch for "modo" at SM1.vhd(34) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 34
+Info (10041): Inferred latch for "flag4" at SM1.vhd(34) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 34
+Info (12128): Elaborating entity "FluxoDados" for hierarchy "FluxoDados:F0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 126
 Info (10041): Inferred latch for "sinalD[0]" at FluxoDados.vhd(113) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 113
 Info (10041): Inferred latch for "sinalD[1]" at FluxoDados.vhd(113) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 113
 Info (10041): Inferred latch for "sinalD[2]" at FluxoDados.vhd(113) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 113
@@ -754,7 +745,7 @@ Warning (12125): Using design file ula.vhd, which is not specified as a design f
     Info (12023): Found entity 1: ULA File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd Line: 9
 Info (12128): Elaborating entity "ULA" for hierarchy "FluxoDados:F0|ULA:U" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 139
 Info (12128): Elaborating entity "Registrador" for hierarchy "FluxoDados:F0|Registrador:Rg1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 142
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display00" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 140
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display00" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 145
 Info (278001): Inferred 1 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "divisorGenerico:fazDivisaoInteiro1|Div0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 25
 Info (12130): Elaborated megafunction instantiation "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 25
@@ -791,7 +782,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX1[5]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
     Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_6_result_int[0]~14" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 166
     Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_8_result_int[0]~18" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 176
@@ -807,17 +797,16 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_24_result_int[0]~50" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 111
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 10
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 10
-Info (21057): Implemented 1568 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1583 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 1489 logic cells
+    Info (21061): Implemented 1504 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4845 megabytes
-    Info: Processing ended: Thu Sep 27 22:13:56 2018
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:49
+    Info: Peak virtual memory: 4846 megabytes
+    Info: Processing ended: Fri Sep 28 00:09:49 2018
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:50
 
 

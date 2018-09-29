@@ -6,15 +6,17 @@ ENTITY SM1 IS
         reset : IN STD_LOGIC := '0';
         clock : IN STD_LOGIC;
         input1 : IN STD_LOGIC := '0';
+		  sequencia: IN STD_LOGIC;
         output1 : OUT STD_LOGIC_VECTOR(18 DOWNTO 0);
 		  modo    : OUT STD_LOGIC := '0'
+		  
     );
 END SM1;
 
 ARCHITECTURE BEHAVIOR OF SM1 IS
     
 	 TYPE type_fstate IS (state0,state1,state4,state7,state10,state5,state3,state2,state6,state8,
-	 state9,state11,state14,state13,state15,state12,state16,state17,state18,state19,state20);
+	 state9,state11,state14,state13,state15,state12,state16,state17,state18,state19,state20,state21,state22,state23,state24,state25);
     
 	 SIGNAL fstate : type_fstate;
     SIGNAL reg_fstate : type_fstate;
@@ -36,21 +38,20 @@ BEGIN
 			
         IF (reset='1') THEN
             reg_fstate <= state0;
-            output1 <= "0001100111111000000";
+            output1 <= "0000000000000000000";
         ELSE
 				
 					
             CASE fstate IS
 				
 					 WHEN state0 =>
-	--					if(clock = '1') then
-                    reg_fstate <= state1;
+						  if(sequencia = '0') then
+								reg_fstate <= state1;
+                    else
+								reg_fstate <= state15;
+							end if;
 						  
-		--				else
-	--					  reg_fstate  <= state0;
-                    output1 <= "0000000000000000000";
-		--				end if;
-                
+							output1 <= "0000000000000000000";                
 						  
 					 WHEN state1 =>
                     IF (input1 = '0') THEN
@@ -198,6 +199,137 @@ BEGIN
                     output1 <= "0011010000001111111";
 				
 				
+				
+				
+				
+				
+				
+				
+				--------------------Fluxo 2 -------------------
+				
+					 WHEN state15 =>
+                    IF (input1 = '0') THEN
+                        reg_fstate <= state16;
+								
+                    ELSE
+                        reg_fstate <= state17;
+								
+                    END IF;
+
+                    output1 <= "0000001000000000000";
+				
+
+					WHEN state16 =>
+					 
+                    reg_fstate <= state0;
+
+                    output1 <= "0010001100000000000";
+				
+
+
+					 WHEN state17 =>
+                    IF (input1 = '0') THEN
+                        reg_fstate <= state18;
+								
+                    ELSE
+                        reg_fstate <= state19;
+								
+                    END IF;
+
+                    output1 <= "0000011000000000000";
+				
+
+					WHEN state18=>
+					 
+                    reg_fstate <= state0;
+
+                    output1 <= "0010011010000000000";
+
+						  
+					WHEN state19 =>
+                    IF (input1 = '0') THEN
+                        reg_fstate <= state20;
+								
+                    ELSE
+                        reg_fstate <= state21;
+								
+                    END IF;
+
+                    output1 <= "0000101000000000000";
+				
+
+					WHEN state20 =>
+					 
+                    reg_fstate <= state0;
+
+                    output1 <= "0010101001000000000";
+
+						  
+					WHEN state21 =>
+                    IF (input1 = '0') THEN
+                        reg_fstate <= state22;
+								
+                    ELSE
+                        reg_fstate <= state23;
+								
+                    END IF;
+
+                    output1 <= "0000111000000000000";
+				
+
+					WHEN state22 =>
+					 
+                    reg_fstate <= state0;
+
+                    output1 <= "0010111000100000000";
+
+						  
+								  
+					WHEN state23 =>
+                    IF (input1 = '0') THEN
+                        reg_fstate <= state24;
+								flag4 <= '0';
+								
+                    ELSE
+                        reg_fstate <= state25;
+								flag4 <= '1';
+								
+                    END IF;
+
+                    output1 <= "0001001000000000000";
+				
+/*
+					WHEN state11 =>
+					 
+                    reg_fstate <= state0;
+
+                    output1 <= "0011001000010000000";
+
+						  	  
+					WHEN state12 =>
+					
+                    IF (input1 = '0') THEN
+                        reg_fstate <= state13;
+						  
+								IF(flag4 = '1') THEN
+									reg_fstate <= state11;
+								END IF;
+								
+                    ELSE
+                        reg_fstate <= state0;
+								
+                    END IF;
+
+                    output1 <= "0001011000000000000";
+				
+
+					WHEN state13 =>
+					 
+                    reg_fstate <= state0;
+
+                    output1 <= "0011011000001000000";
+						  
+				*/
 				
                 WHEN OTHERS => 
    					  reg_fstate <= state0;
