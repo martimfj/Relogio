@@ -76,6 +76,7 @@ component SM1 IS
 	 PORT(
         reset  : IN STD_LOGIC := '0';
         clock  : IN STD_LOGIC;
+		  sequencia: IN STD_LOGIC;
         input1 : IN STD_LOGIC := '0';
 		  output1 : OUT STD_LOGIC_VECTOR(18 DOWNTO 0);
 		  modo    : OUT STD_LOGIC
@@ -108,12 +109,17 @@ signal modoFlag   : std_logic;
 signal modoDisplay: std_logic_vector(3 downto 0);
 signal reset_n    : std_logic := '1';
 
+signal sequencia   : std_logic;
+
+
 begin
+	
 	
 	modoDisplay <= "1010" when modoFlag = '0' else
 				      "1111" when modoFlag = '1';
 				 
 	modoRelogio <= sw(5);
+	sequencia   <= sw(6);
 	Reg_setup <= '0' & '0' & not(KEY(3)) & not(KEY(2)) & not(KEY(1)) & not(KEY(0));
 	select_time  <= '0' & '0' & SW(0);
 	tempo_escolhido <= "0000" when SW(17) = '1'else ---0
@@ -138,7 +144,7 @@ begin
             generic map (divisor => 50000000)   -- divide por frequencia.
             port map (clk => CLOCK_50, saida_clk => saida_clk, setup => frequencia);
 				
-		S0: SM1 port map(reset => '0', clock => saida_clk, input1 => out_flag ,output1 => comando, modo => modoFlag);
+		S0: SM1 port map(reset => '0', clock => saida_clk, input1 => out_flag ,output1 => comando, modo => modoFlag, sequencia => sequencia);
 
 	
 		-- comando (13 downto 0)

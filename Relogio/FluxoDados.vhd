@@ -136,7 +136,7 @@ begin
 						  
 							
 	
-	U: ULA port map(A => OUT_m1, B => OUT_m2, Sel_Ula => Sel_Ula, Q => u1, Flag => u1_F);
+	U: ULA port map(A => OUT_m2, B => OUT_m1, Sel_Ula => Sel_Ula, Q => u1, Flag => u1_F);
 	
 	
 	Rg1: Registrador port map(DIN => OUT_m3, Enable => ENABLE(5), ENABLERW => Enablerw(5) AND SW(0), RST => RST(5), CLK => clk, DOUT => OUT_R1);

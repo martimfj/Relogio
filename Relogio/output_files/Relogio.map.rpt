@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Relogio
-Thu Sep 27 21:38:47 2018
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Mon Oct 01 17:20:57 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -73,24 +73,24 @@ refer to the applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 27 21:38:47 2018           ;
-; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
-; Revision Name                      ; Relogio                                         ;
-; Top-level Entity Name              ; TopLevel                                        ;
-; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 1,696                                           ;
-;     Total combinational functions  ; 1,676                                           ;
-;     Dedicated logic registers      ; 125                                             ;
-; Total registers                    ; 125                                             ;
-; Total pins                         ; 90                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-+------------------------------------+-------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Oct 01 17:20:57 2018       ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                      ; Relogio                                     ;
+; Top-level Entity Name              ; TopLevel                                    ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 1,712                                       ;
+;     Total combinational functions  ; 1,691                                       ;
+;     Dedicated logic registers      ; 142                                         ;
+; Total registers                    ; 142                                         ;
+; Total pins                         ; 90                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -197,31 +197,31 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                          ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
-; SM1.vhd                          ; yes             ; User VHDL File               ; /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd                                          ;         ;
-; TopLevel.vhd                     ; yes             ; User VHDL File               ; /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd                                     ;         ;
-; Registrador.vhd                  ; yes             ; User VHDL File               ; /home/sabrina/GitHub/Relogio/Relogio/Registrador.vhd                                  ;         ;
-; Mux.vhd                          ; yes             ; User VHDL File               ; /home/sabrina/GitHub/Relogio/Relogio/Mux.vhd                                          ;         ;
-; conversorHex7Seg.vhd             ; yes             ; User VHDL File               ; /home/sabrina/GitHub/Relogio/Relogio/conversorHex7Seg.vhd                             ;         ;
-; FluxoDados.vhd                   ; yes             ; User VHDL File               ; /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd                                   ;         ;
-; divisorGenerico.vhd              ; yes             ; User VHDL File               ; /home/sabrina/GitHub/Relogio/Relogio/divisorGenerico.vhd                              ;         ;
-; lcd_controller.vhd               ; yes             ; User VHDL File               ; /home/sabrina/GitHub/Relogio/Relogio/lcd_controller.vhd                               ;         ;
-; ULA.vhd                          ; yes             ; Auto-Found VHDL File         ; /home/sabrina/GitHub/Relogio/Relogio/ULA.vhd                                          ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; /home/sabrina/intelFPGA_lite/18.0/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; /home/sabrina/intelFPGA_lite/18.0/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; /home/sabrina/intelFPGA_lite/18.0/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
-; aglobal180.inc                   ; yes             ; Megafunction                 ; /home/sabrina/intelFPGA_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc      ;         ;
-; db/lpm_divide_92p.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/sabrina/GitHub/Relogio/Relogio/db/lpm_divide_92p.tdf                            ;         ;
-; db/abs_divider_4dg.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/sabrina/GitHub/Relogio/Relogio/db/abs_divider_4dg.tdf                           ;         ;
-; db/alt_u_div_6af.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf                             ;         ;
-; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/sabrina/GitHub/Relogio/Relogio/db/add_sub_7pc.tdf                               ;         ;
-; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/sabrina/GitHub/Relogio/Relogio/db/add_sub_8pc.tdf                               ;         ;
-; db/lpm_abs_i0a.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/sabrina/GitHub/Relogio/Relogio/db/lpm_abs_i0a.tdf                               ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; SM1.vhd                          ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd                      ;         ;
+; TopLevel.vhd                     ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd                 ;         ;
+; Registrador.vhd                  ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd              ;         ;
+; Mux.vhd                          ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd                      ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/conversorHex7Seg.vhd         ;         ;
+; FluxoDados.vhd                   ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd               ;         ;
+; divisorGenerico.vhd              ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd          ;         ;
+; lcd_controller.vhd               ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/lcd_controller.vhd           ;         ;
+; ula.vhd                          ; yes             ; Auto-Found VHDL File         ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd                      ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal180.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc      ;         ;
+; db/lpm_divide_92p.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/lpm_divide_92p.tdf        ;         ;
+; db/abs_divider_4dg.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/abs_divider_4dg.tdf       ;         ;
+; db/alt_u_div_6af.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf         ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/add_sub_7pc.tdf           ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/add_sub_8pc.tdf           ;         ;
+; db/lpm_abs_i0a.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/lpm_abs_i0a.tdf           ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------+
@@ -229,20 +229,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------------+
 ; Resource                                    ; Usage            ;
 +---------------------------------------------+------------------+
-; Estimated Total logic elements              ; 1,696            ;
+; Estimated Total logic elements              ; 1,712            ;
 ;                                             ;                  ;
-; Total combinational functions               ; 1676             ;
+; Total combinational functions               ; 1691             ;
 ; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 555              ;
-;     -- 3 input functions                    ; 687              ;
-;     -- <=2 input functions                  ; 434              ;
+;     -- 4 input functions                    ; 533              ;
+;     -- 3 input functions                    ; 688              ;
+;     -- <=2 input functions                  ; 470              ;
 ;                                             ;                  ;
 ; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 1106             ;
+;     -- normal mode                          ; 1121             ;
 ;     -- arithmetic mode                      ; 570              ;
 ;                                             ;                  ;
-; Total registers                             ; 125              ;
-;     -- Dedicated logic registers            ; 125              ;
+; Total registers                             ; 142              ;
+;     -- Dedicated logic registers            ; 142              ;
 ;     -- I/O registers                        ; 0                ;
 ;                                             ;                  ;
 ; I/O pins                                    ; 90               ;
@@ -250,9 +250,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                ;
 ;                                             ;                  ;
 ; Maximum fan-out node                        ; frequencia[12]~1 ;
-; Maximum fan-out                             ; 124              ;
-; Total fan-out                               ; 5568             ;
-; Average fan-out                             ; 2.81             ;
+; Maximum fan-out                             ; 123              ;
+; Total fan-out                               ; 5590             ;
+; Average fan-out                             ; 2.78             ;
 +---------------------------------------------+------------------+
 
 
@@ -261,18 +261,18 @@ refer to the applicable agreement for further details.
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                      ; Entity Name      ; Library Name ;
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; |TopLevel                                ; 1676 (31)           ; 125 (13)                  ; 0           ; 0            ; 0       ; 0         ; 90   ; 0            ; |TopLevel                                                                                                                                ; TopLevel         ; work         ;
-;    |FluxoDados:F0|                       ; 56 (0)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0                                                                                                                  ; FluxoDados       ; work         ;
+; |TopLevel                                ; 1691 (31)           ; 142 (13)                  ; 0           ; 0            ; 0       ; 0         ; 90   ; 0            ; |TopLevel                                                                                                                                ; TopLevel         ; work         ;
+;    |FluxoDados:F0|                       ; 46 (0)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0                                                                                                                  ; FluxoDados       ; work         ;
 ;       |Registrador:Rg1|                  ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg1                                                                                                  ; Registrador      ; work         ;
 ;       |Registrador:Rg2|                  ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg2                                                                                                  ; Registrador      ; work         ;
 ;       |Registrador:Rg3|                  ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg3                                                                                                  ; Registrador      ; work         ;
 ;       |Registrador:Rg4|                  ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg4                                                                                                  ; Registrador      ; work         ;
 ;       |Registrador:Rg5|                  ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg5                                                                                                  ; Registrador      ; work         ;
 ;       |Registrador:Rg6|                  ; 1 (1)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|Registrador:Rg6                                                                                                  ; Registrador      ; work         ;
-;       |ULA:U|                            ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|ULA:U                                                                                                            ; ULA              ; work         ;
-;       |mux:M1|                           ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|mux:M1                                                                                                           ; mux              ; work         ;
+;       |ULA:U|                            ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|ULA:U                                                                                                            ; ULA              ; work         ;
+;       |mux:M2|                           ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|mux:M2                                                                                                           ; mux              ; work         ;
 ;       |mux:M3|                           ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|FluxoDados:F0|mux:M3                                                                                                           ; mux              ; work         ;
-;    |SM1:S0|                              ; 41 (41)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|SM1:S0                                                                                                                         ; SM1              ; work         ;
+;    |SM1:S0|                              ; 75 (75)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|SM1:S0                                                                                                                         ; SM1              ; work         ;
 ;    |conversorHex7Seg:display0|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display0                                                                                                      ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display1|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display1                                                                                                      ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display2|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|conversorHex7Seg:display2                                                                                                      ; conversorHex7Seg ; work         ;
@@ -284,7 +284,7 @@ refer to the applicable agreement for further details.
 ;          |lpm_divide_92p:auto_generated| ; 1268 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated                                               ; lpm_divide_92p   ; work         ;
 ;             |abs_divider_4dg:divider|    ; 1268 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider                       ; abs_divider_4dg  ; work         ;
 ;                |alt_u_div_6af:divider|   ; 1268 (1268)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider ; alt_u_div_6af    ; work         ;
-;    |lcd_controller:screen|               ; 190 (190)           ; 46 (46)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|lcd_controller:screen                                                                                                          ; lcd_controller   ; work         ;
+;    |lcd_controller:screen|               ; 181 (181)           ; 46 (46)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|lcd_controller:screen                                                                                                          ; lcd_controller   ; work         ;
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -303,33 +303,44 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |TopLevel|SM1:S0|fstate                                                                                                                                                                                                                                                                                                                                   ;
-+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
-; Name           ; fstate.state20 ; fstate.state19 ; fstate.state18 ; fstate.state17 ; fstate.state16 ; fstate.state12 ; fstate.state15 ; fstate.state13 ; fstate.state14 ; fstate.state11 ; fstate.state9 ; fstate.state8 ; fstate.state6 ; fstate.state2 ; fstate.state3 ; fstate.state5 ; fstate.state10 ; fstate.state7 ; fstate.state4 ; fstate.state1 ; fstate.state0 ;
-+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
-; fstate.state0  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 0             ;
-; fstate.state1  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 1             ; 1             ;
-; fstate.state4  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 1             ; 0             ; 1             ;
-; fstate.state7  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 1             ; 0             ; 0             ; 1             ;
-; fstate.state10 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state5  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state3  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state2  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state6  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state8  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state9  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state11 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state14 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state13 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state15 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state12 ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state16 ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state17 ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state18 ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state19 ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-; fstate.state20 ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
-+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |TopLevel|SM1:S0|fstate                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
+; Name           ; fstate.state31 ; fstate.state30 ; fstate.state29 ; fstate.state28 ; fstate.state27 ; fstate.state26 ; fstate.state25 ; fstate.state24 ; fstate.state23 ; fstate.state22 ; fstate.state21 ; fstate.state20 ; fstate.state19 ; fstate.state18 ; fstate.state17 ; fstate.state16 ; fstate.state12 ; fstate.state15 ; fstate.state13 ; fstate.state14 ; fstate.state11 ; fstate.state9 ; fstate.state8 ; fstate.state6 ; fstate.state2 ; fstate.state3 ; fstate.state5 ; fstate.state10 ; fstate.state7 ; fstate.state4 ; fstate.state1 ; fstate.state0 ;
++----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
+; fstate.state0  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 0             ;
+; fstate.state1  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 1             ; 1             ;
+; fstate.state4  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 1             ; 0             ; 1             ;
+; fstate.state7  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 1             ; 0             ; 0             ; 1             ;
+; fstate.state10 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state5  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state3  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state2  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state6  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state8  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state9  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state11 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state14 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state13 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state15 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state12 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state16 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state17 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state18 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state19 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state20 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state21 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state22 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state23 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state24 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state25 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state26 ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state27 ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state28 ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state29 ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state30 ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
+; fstate.state31 ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0              ; 0             ; 0             ; 0             ; 1             ;
++----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+----------------+---------------+---------------+---------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
@@ -338,30 +349,24 @@ Encoding Type:  One-Hot
 ; Latch Name                                         ; Latch Enable Signal   ; Free of Timing Hazards ;
 +----------------------------------------------------+-----------------------+------------------------+
 ; SM1:S0|modo                                        ; SM1:S0|fstate.state14 ; yes                    ;
-; SM1:S0|flag4                                       ; SM1:S0|fstate.state9  ; yes                    ;
+; SM1:S0|flag4                                       ; SM1:S0|flag4          ; yes                    ;
 ; Number of user-specified and inferred latches = 2  ;                       ;                        ;
 +----------------------------------------------------+-----------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; lcd_bus[8]                             ; Merged with lcd_bus[7]                 ;
-; lcd_bus[7]                             ; Stuck at GND due to stuck port data_in ;
-; lcd_bus[9]                             ; Stuck at VCC due to stuck port data_in ;
-; lcd_controller:screen|LCD_RW           ; Stuck at GND due to stuck port data_in ;
-; SM1:S0|fstate.state15                  ; Lost fanout                            ;
-; SM1:S0|fstate.state16                  ; Lost fanout                            ;
-; SM1:S0|fstate.state17                  ; Lost fanout                            ;
-; SM1:S0|fstate.state18                  ; Lost fanout                            ;
-; SM1:S0|fstate.state19                  ; Lost fanout                            ;
-; SM1:S0|fstate.state20                  ; Lost fanout                            ;
-; lcd_controller:screen|LCD_DATA[7]      ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 11 ;                                        ;
-+----------------------------------------+----------------------------------------+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; lcd_bus[8]                            ; Merged with lcd_bus[7]                 ;
+; lcd_bus[7]                            ; Stuck at GND due to stuck port data_in ;
+; lcd_bus[9]                            ; Stuck at VCC due to stuck port data_in ;
+; lcd_controller:screen|LCD_RW          ; Stuck at GND due to stuck port data_in ;
+; lcd_controller:screen|LCD_DATA[7]     ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 5 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------+
@@ -379,7 +384,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 125   ;
+; Total registers                              ; 142   ;
 ; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 24    ;
@@ -399,20 +404,20 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; 33:1               ; 9 bits    ; 198 LEs       ; 63 LEs               ; 135 LEs                ; Yes        ; |TopLevel|lcd_bus[9]                          ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |TopLevel|lcd_controller:screen|clk_count[16] ;
-; 14:1               ; 7 bits    ; 63 LEs        ; 49 LEs               ; 14 LEs                 ; Yes        ; |TopLevel|lcd_controller:screen|LCD_DATA[2]   ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|frequencia[6]                       ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |TopLevel|frequencia[12]                      ;
-; 16:1               ; 4 bits    ; 40 LEs        ; 36 LEs               ; 4 LEs                  ; No         ; |TopLevel|FluxoDados:F0|ULA:U|Add0            ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |TopLevel|FluxoDados:F0|mux:M3|Mux1           ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |TopLevel|FluxoDados:F0|mux:M3|Mux3           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; 33:1               ; 9 bits    ; 198 LEs       ; 63 LEs               ; 135 LEs                ; Yes        ; |TopLevel|lcd_bus[6]                         ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |TopLevel|lcd_controller:screen|clk_count[2] ;
+; 14:1               ; 7 bits    ; 63 LEs        ; 49 LEs               ; 14 LEs                 ; Yes        ; |TopLevel|lcd_controller:screen|LCD_DATA[2]  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|frequencia[6]                      ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |TopLevel|FluxoDados:F0|mux:M2|Mux3          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |TopLevel|frequencia[12]                     ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |TopLevel|FluxoDados:F0|mux:M3|Mux1          ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |TopLevel|FluxoDados:F0|mux:M3|Mux3          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -742,26 +747,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 90                          ;
-; cycloneiii_ff         ; 125                         ;
+; cycloneiii_ff         ; 142                         ;
 ;     ENA               ; 12                          ;
 ;     ENA CLR           ; 24                          ;
 ;     ENA SCLR          ; 6                           ;
 ;     ENA SLD           ; 1                           ;
 ;     SCLR              ; 26                          ;
-;     plain             ; 56                          ;
-; cycloneiii_lcell_comb ; 1678                        ;
+;     plain             ; 73                          ;
+; cycloneiii_lcell_comb ; 1693                        ;
 ;     arith             ; 570                         ;
 ;         2 data inputs ; 80                          ;
 ;         3 data inputs ; 490                         ;
-;     normal            ; 1108                        ;
+;     normal            ; 1123                        ;
 ;         0 data inputs ; 30                          ;
-;         1 data inputs ; 17                          ;
-;         2 data inputs ; 309                         ;
-;         3 data inputs ; 197                         ;
-;         4 data inputs ; 555                         ;
+;         1 data inputs ; 16                          ;
+;         2 data inputs ; 346                         ;
+;         3 data inputs ; 198                         ;
+;         4 data inputs ; 533                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 110.00                      ;
-; Average LUT depth     ; 82.38                       ;
+; Max LUT depth         ; 109.00                      ;
+; Average LUT depth     ; 80.68                       ;
 +-----------------------+-----------------------------+
 
 
@@ -770,7 +775,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:12     ;
 +----------------+--------------+
 
 
@@ -779,133 +784,132 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Thu Sep 27 21:38:20 2018
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Mon Oct 01 17:20:22 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Relogio -c Relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file SM1.vhd
-    Info (12022): Found design unit 1: SM1-BEHAVIOR File: /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd Line: 14
-    Info (12023): Found entity 1: SM1 File: /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sm1.vhd
+    Info (12022): Found design unit 1: SM1-BEHAVIOR File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 16
+    Info (12023): Found entity 1: SM1 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 4
 Warning (12019): Can't analyze file -- file divisor.vhd is missing
 Warning (12019): Can't analyze file -- file comparador.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file TopLevel.vhd
-    Info (12022): Found design unit 1: TopLevel-rtl File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 33
-    Info (12023): Found entity 1: TopLevel File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file Registrador.vhd
-    Info (12022): Found design unit 1: Registrador-comportamento File: /home/sabrina/GitHub/Relogio/Relogio/Registrador.vhd Line: 16
-    Info (12023): Found entity 1: Registrador File: /home/sabrina/GitHub/Relogio/Relogio/Registrador.vhd Line: 4
-Warning (12090): Entity "mux" obtained from "Mux.vhd" instead of from Quartus Prime megafunction library File: /home/sabrina/GitHub/Relogio/Relogio/Mux.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file Mux.vhd
-    Info (12022): Found design unit 1: mux-mux_architecture File: /home/sabrina/GitHub/Relogio/Relogio/Mux.vhd Line: 17
-    Info (12023): Found entity 1: mux File: /home/sabrina/GitHub/Relogio/Relogio/Mux.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file conversorHex7Seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/sabrina/GitHub/Relogio/Relogio/conversorHex7Seg.vhd Line: 18
-    Info (12023): Found entity 1: conversorHex7Seg File: /home/sabrina/GitHub/Relogio/Relogio/conversorHex7Seg.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file FluxoDados.vhd
-    Info (12022): Found design unit 1: FluxoDados-fl File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 29
-    Info (12023): Found entity 1: FluxoDados File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file divisorGenerico.vhd
-    Info (12022): Found design unit 1: divisorGenerico-divInteiro File: /home/sabrina/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 18
-    Info (12023): Found entity 1: divisorGenerico File: /home/sabrina/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhd
+    Info (12022): Found design unit 1: TopLevel-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 33
+    Info (12023): Found entity 1: TopLevel File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
+    Info (12022): Found design unit 1: Registrador-comportamento File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd Line: 16
+    Info (12023): Found entity 1: Registrador File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd Line: 4
+Warning (12090): Entity "mux" obtained from "Mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
+    Info (12022): Found design unit 1: mux-mux_architecture File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd Line: 17
+    Info (12023): Found entity 1: mux File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/conversorHex7Seg.vhd Line: 18
+    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/conversorHex7Seg.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file fluxodados.vhd
+    Info (12022): Found design unit 1: FluxoDados-fl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 29
+    Info (12023): Found entity 1: FluxoDados File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file divisorgenerico.vhd
+    Info (12022): Found design unit 1: divisorGenerico-divInteiro File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 18
+    Info (12023): Found entity 1: divisorGenerico File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file lcd_controller.vhd
-    Info (12022): Found design unit 1: lcd_controller-controller File: /home/sabrina/GitHub/Relogio/Relogio/lcd_controller.vhd Line: 62
-    Info (12023): Found entity 1: lcd_controller File: /home/sabrina/GitHub/Relogio/Relogio/lcd_controller.vhd Line: 51
+    Info (12022): Found design unit 1: lcd_controller-controller File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/lcd_controller.vhd Line: 62
+    Info (12023): Found entity 1: lcd_controller File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/lcd_controller.vhd Line: 51
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at TopLevel.vhd(109): used explicit default value for signal "reset_n" because signal was never assigned a value File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 109
-Info (10041): Inferred latch for "modoDisplay[0]" at TopLevel.vhd(113) File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 113
-Info (10041): Inferred latch for "modoDisplay[1]" at TopLevel.vhd(113) File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 113
-Info (10041): Inferred latch for "modoDisplay[2]" at TopLevel.vhd(113) File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 113
-Info (10041): Inferred latch for "modoDisplay[3]" at TopLevel.vhd(113) File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 113
-Info (12129): Elaborating entity "divisorGenerico" using architecture "A:divinteiro" for hierarchy "divisorGenerico:fazDivisaoInteiro1" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 137
-Info (12128): Elaborating entity "SM1" for hierarchy "SM1:S0" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 141
-Warning (10492): VHDL Process Statement warning at SM1.vhd(172): signal "flag4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd Line: 172
-Warning (10631): VHDL Process Statement warning at SM1.vhd(32): inferring latch(es) for signal or variable "flag4", which holds its previous value in one or more paths through the process File: /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd Line: 32
-Warning (10631): VHDL Process Statement warning at SM1.vhd(32): inferring latch(es) for signal or variable "modo", which holds its previous value in one or more paths through the process File: /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd Line: 32
-Info (10041): Inferred latch for "modo" at SM1.vhd(32) File: /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd Line: 32
-Info (10041): Inferred latch for "flag4" at SM1.vhd(32) File: /home/sabrina/GitHub/Relogio/Relogio/SM1.vhd Line: 32
-Info (12128): Elaborating entity "FluxoDados" for hierarchy "FluxoDados:F0" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 148
-Info (10041): Inferred latch for "sinalD[0]" at FluxoDados.vhd(113) File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 113
-Info (10041): Inferred latch for "sinalD[1]" at FluxoDados.vhd(113) File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 113
-Info (10041): Inferred latch for "sinalD[2]" at FluxoDados.vhd(113) File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 113
-Info (10041): Inferred latch for "sinalD[3]" at FluxoDados.vhd(113) File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 113
-Info (10041): Inferred latch for "sinalC[0]" at FluxoDados.vhd(110) File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 110
-Info (10041): Inferred latch for "sinalC[1]" at FluxoDados.vhd(110) File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 110
-Info (10041): Inferred latch for "sinalC[2]" at FluxoDados.vhd(110) File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 110
-Info (10041): Inferred latch for "sinalC[3]" at FluxoDados.vhd(110) File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 110
-Info (12128): Elaborating entity "mux" for hierarchy "FluxoDados:F0|mux:M1" File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 117
-Warning (12125): Using design file ULA.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: ULA-rtl File: /home/sabrina/GitHub/Relogio/Relogio/ULA.vhd Line: 26
-    Info (12023): Found entity 1: ULA File: /home/sabrina/GitHub/Relogio/Relogio/ULA.vhd Line: 9
-Info (12128): Elaborating entity "ULA" for hierarchy "FluxoDados:F0|ULA:U" File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 139
-Info (12128): Elaborating entity "Registrador" for hierarchy "FluxoDados:F0|Registrador:Rg1" File: /home/sabrina/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 142
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display00" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 167
-Info (12128): Elaborating entity "lcd_controller" for hierarchy "lcd_controller:screen" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 192
+Warning (10540): VHDL Signal Declaration warning at TopLevel.vhd(110): used explicit default value for signal "reset_n" because signal was never assigned a value File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 110
+Info (10041): Inferred latch for "modoDisplay[0]" at TopLevel.vhd(118) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 118
+Info (10041): Inferred latch for "modoDisplay[1]" at TopLevel.vhd(118) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 118
+Info (10041): Inferred latch for "modoDisplay[2]" at TopLevel.vhd(118) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 118
+Info (10041): Inferred latch for "modoDisplay[3]" at TopLevel.vhd(118) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 118
+Info (12129): Elaborating entity "divisorGenerico" using architecture "A:divinteiro" for hierarchy "divisorGenerico:fazDivisaoInteiro1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 143
+Info (12128): Elaborating entity "SM1" for hierarchy "SM1:S0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 147
+Warning (10492): VHDL Process Statement warning at SM1.vhd(49): signal "sequencia" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at SM1.vhd(174): signal "flag4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 174
+Warning (10631): VHDL Process Statement warning at SM1.vhd(35): inferring latch(es) for signal or variable "flag4", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at SM1.vhd(35): inferring latch(es) for signal or variable "modo", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 35
+Info (10041): Inferred latch for "modo" at SM1.vhd(35) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 35
+Info (10041): Inferred latch for "flag4" at SM1.vhd(35) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 35
+Info (12128): Elaborating entity "FluxoDados" for hierarchy "FluxoDados:F0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 154
+Info (10041): Inferred latch for "sinalD[0]" at FluxoDados.vhd(113) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 113
+Info (10041): Inferred latch for "sinalD[1]" at FluxoDados.vhd(113) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 113
+Info (10041): Inferred latch for "sinalD[2]" at FluxoDados.vhd(113) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 113
+Info (10041): Inferred latch for "sinalD[3]" at FluxoDados.vhd(113) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 113
+Info (10041): Inferred latch for "sinalC[0]" at FluxoDados.vhd(110) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 110
+Info (10041): Inferred latch for "sinalC[1]" at FluxoDados.vhd(110) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 110
+Info (10041): Inferred latch for "sinalC[2]" at FluxoDados.vhd(110) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 110
+Info (10041): Inferred latch for "sinalC[3]" at FluxoDados.vhd(110) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 110
+Info (12128): Elaborating entity "mux" for hierarchy "FluxoDados:F0|mux:M1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 117
+Warning (12125): Using design file ula.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ULA-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd Line: 26
+    Info (12023): Found entity 1: ULA File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd Line: 9
+Info (12128): Elaborating entity "ULA" for hierarchy "FluxoDados:F0|ULA:U" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 139
+Info (12128): Elaborating entity "Registrador" for hierarchy "FluxoDados:F0|Registrador:Rg1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 142
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display00" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 173
+Info (12128): Elaborating entity "lcd_controller" for hierarchy "lcd_controller:screen" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 198
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "divisorGenerico:fazDivisaoInteiro1|Div0" File: /home/sabrina/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 25
-Info (12130): Elaborated megafunction instantiation "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0" File: /home/sabrina/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 25
-Info (12133): Instantiated megafunction "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0" with the following parameter: File: /home/sabrina/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 25
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "divisorGenerico:fazDivisaoInteiro1|Div0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 25
+Info (12130): Elaborated megafunction instantiation "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 25
+Info (12133): Instantiated megafunction "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0" with the following parameter: File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 25
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_92p.tdf
-    Info (12023): Found entity 1: lpm_divide_92p File: /home/sabrina/GitHub/Relogio/Relogio/db/lpm_divide_92p.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_92p File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/lpm_divide_92p.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_4dg.tdf
-    Info (12023): Found entity 1: abs_divider_4dg File: /home/sabrina/GitHub/Relogio/Relogio/db/abs_divider_4dg.tdf Line: 26
+    Info (12023): Found entity 1: abs_divider_4dg File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/abs_divider_4dg.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_6af.tdf
-    Info (12023): Found entity 1: alt_u_div_6af File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 26
+    Info (12023): Found entity 1: alt_u_div_6af File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: /home/sabrina/GitHub/Relogio/Relogio/db/add_sub_7pc.tdf Line: 22
+    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/add_sub_7pc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: /home/sabrina/GitHub/Relogio/Relogio/db/add_sub_8pc.tdf Line: 22
+    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/add_sub_8pc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_i0a.tdf
-    Info (12023): Found entity 1: lpm_abs_i0a File: /home/sabrina/GitHub/Relogio/Relogio/db/lpm_abs_i0a.tdf Line: 24
+    Info (12023): Found entity 1: lpm_abs_i0a File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/lpm_abs_i0a.tdf Line: 24
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "HEX1[5]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
-    Warning (13410): Pin "LCD_RW" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 26
-    Warning (13410): Pin "LCD_DATA[7]" is stuck at GND File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 27
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "HEX1[5]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 25
+    Warning (13410): Pin "LCD_RW" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 26
+    Warning (13410): Pin "LCD_DATA[7]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 27
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_6_result_int[0]~14" File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 166
-    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_8_result_int[0]~18" File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 176
-    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_9_result_int[0]~20" File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 181
-    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_10_result_int[0]~22" File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 36
-    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_11_result_int[0]~24" File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 41
-    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_12_result_int[0]~26" File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 46
-    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_14_result_int[0]~30" File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 56
-    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_16_result_int[0]~34" File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 66
-    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_17_result_int[0]~36" File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 71
-    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_18_result_int[0]~38" File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 76
-    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_19_result_int[0]~40" File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 81
-    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_24_result_int[0]~50" File: /home/sabrina/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 111
+    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_6_result_int[0]~14" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 166
+    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_8_result_int[0]~18" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 176
+    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_9_result_int[0]~20" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 181
+    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_10_result_int[0]~22" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 36
+    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_11_result_int[0]~24" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 41
+    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_12_result_int[0]~26" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 46
+    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_14_result_int[0]~30" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 56
+    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_16_result_int[0]~34" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 66
+    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_17_result_int[0]~36" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 71
+    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_18_result_int[0]~38" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 76
+    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_19_result_int[0]~40" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 81
+    Info (17048): Logic cell "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|alt_u_div_6af:divider|add_sub_24_result_int[0]~50" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 111
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[6]" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 23
-    Warning (15610): No output dependent on input pin "SW[7]" File: /home/sabrina/GitHub/Relogio/Relogio/TopLevel.vhd Line: 23
-Info (21057): Implemented 1793 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 23
+Info (21057): Implemented 1811 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 67 output pins
-    Info (21061): Implemented 1703 logic cells
+    Info (21061): Implemented 1721 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 1018 megabytes
-    Info: Processing ended: Thu Sep 27 21:38:47 2018
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:44
+    Info: Peak virtual memory: 4848 megabytes
+    Info: Processing ended: Mon Oct 01 17:20:57 2018
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:00:55
 
 

@@ -2,36 +2,36 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'SM1:S0|fstate.state9'
-Slack : -11.178
-TNS   : -11.178
+Type  : Slow 1200mV 85C Model Setup 'SM1:S0|fstate.state27'
+Slack : -9.636
+TNS   : -9.636
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -8.605
-TNS   : -443.511
+Slack : -8.356
+TNS   : -444.405
 
 Type  : Slow 1200mV 85C Model Setup 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : -8.014
-TNS   : -324.812
+Slack : -7.311
+TNS   : -386.170
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.402
+Slack : 0.385
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : 0.410
+Slack : 0.622
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'SM1:S0|fstate.state9'
-Slack : 4.149
+Type  : Slow 1200mV 85C Model Hold 'SM1:S0|fstate.state27'
+Slack : 2.152
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : -2.006
-TNS   : -37.666
+Slack : -2.115
+TNS   : -37.074
 
 Type  : Slow 1200mV 85C Model Removal 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : 1.458
+Slack : 1.392
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
@@ -40,42 +40,42 @@ TNS   : -99.375
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisorGenerico:fazDivisaoInteiro1|tick'
 Slack : -1.285
-TNS   : -66.820
+TNS   : -88.665
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SM1:S0|fstate.state9'
-Slack : 0.471
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SM1:S0|fstate.state27'
+Slack : 0.406
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'SM1:S0|fstate.state9'
-Slack : -10.131
-TNS   : -10.131
+Type  : Slow 1200mV 0C Model Setup 'SM1:S0|fstate.state27'
+Slack : -8.745
+TNS   : -8.745
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -7.671
-TNS   : -394.609
+Slack : -7.519
+TNS   : -396.094
 
 Type  : Slow 1200mV 0C Model Setup 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : -7.192
-TNS   : -291.923
+Slack : -6.566
+TNS   : -350.046
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.353
+Slack : 0.338
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : 0.365
+Slack : 0.573
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'SM1:S0|fstate.state9'
-Slack : 3.872
+Type  : Slow 1200mV 0C Model Hold 'SM1:S0|fstate.state27'
+Slack : 1.920
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : -1.705
-TNS   : -31.663
+Slack : -1.800
+TNS   : -30.906
 
 Type  : Slow 1200mV 0C Model Removal 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : 1.335
+Slack : 1.279
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
@@ -84,54 +84,54 @@ TNS   : -99.375
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisorGenerico:fazDivisaoInteiro1|tick'
 Slack : -1.285
-TNS   : -66.820
+TNS   : -88.665
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SM1:S0|fstate.state9'
-Slack : 0.469
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SM1:S0|fstate.state27'
+Slack : 0.390
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'SM1:S0|fstate.state9'
-Slack : -5.423
-TNS   : -5.423
+Type  : Fast 1200mV 0C Model Setup 'SM1:S0|fstate.state27'
+Slack : -4.576
+TNS   : -4.576
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -3.718
-TNS   : -178.017
+Slack : -3.524
+TNS   : -177.206
 
 Type  : Fast 1200mV 0C Model Setup 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : -3.564
-TNS   : -136.228
+Slack : -3.181
+TNS   : -155.720
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.181
+Slack : 0.174
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : 0.190
+Slack : 0.271
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'SM1:S0|fstate.state9'
-Slack : 1.872
+Type  : Fast 1200mV 0C Model Hold 'SM1:S0|fstate.state27'
+Slack : 1.100
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : -0.500
-TNS   : -7.051
+Slack : -0.564
+TNS   : -6.900
 
 Type  : Fast 1200mV 0C Model Removal 'divisorGenerico:fazDivisaoInteiro1|tick'
-Slack : 0.693
+Slack : 0.660
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -99.925
+TNS   : -100.496
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisorGenerico:fazDivisaoInteiro1|tick'
 Slack : -1.000
-TNS   : -52.000
+TNS   : -69.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SM1:S0|fstate.state9'
-Slack : 0.428
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SM1:S0|fstate.state27'
+Slack : 0.441
 TNS   : 0.000
 
 ------------------------------------------------------------
