@@ -5,12 +5,13 @@ use ieee.std_logic_1164.all;
 entity conversorHex7Seg is
   port
   (
-    -- Input ports
+    ------------INPUT--------------------------	 
     dadoHex  : in  std_logic_vector(3 downto 0);
     apaga  	 : in  std_logic := '0';
     negativo : in  std_logic := '0';
     overFlow : in  std_logic := '0';
-    -- Output ports
+    
+	 ------------OUTPUT--------------------------	 
     saida7seg : out std_logic_vector(6 downto 0)
   );
 end entity;

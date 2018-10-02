@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity FluxoDados is
    port(
 
-		--------------INPUTS-------------------
+		----------------------INPUTS---------------------
 	   clk        :   in  std_logic;
 		RST    	  :   in  std_logic_vector(5 downto 0);
 		ENABLE	  :   in  std_logic_vector(5 downto 0);
@@ -17,7 +17,9 @@ entity FluxoDados is
 		SW		     :   in  STD_LOGIC_VECTOR(17 DOWNTO 0);
 		KEY		  :   in  STD_LOGIC_VECTOR(3 DOWNTO 0);
 		tempo	     :   in  std_logic_vector(3 downto 0);
-		--------------OUTPUTS--------------------
+		swModoTempo:   in  std_logic;
+		
+		----------------------OUTPUTS----------------------
 		Flag		  : out STD_LOGIC;
 		R1, R2, R3, R4, R5, R6 : OUT STD_LOGIC_VECTOR(3 downto 0)
 	
@@ -26,72 +28,93 @@ end entity;
 
 architecture fl of FluxoDados is
 
+
 component ULA is
     Port (
-    A, B      : in  STD_LOGIC_VECTOR(3 downto 0);  -- input 4 bit
-    Sel_Ula   : in  STD_LOGIC;							-- flag de selecao soma ou sub -> 0 = soma 1 = sub
-    Q 	     : out STD_LOGIC_VECTOR(3 downto 0);  -- output 4 bit
-	 Flag		  : out STD_LOGIC
+		 ----------------------INPUTS-----------------------------------------------
+		 A, B      : in  STD_LOGIC_VECTOR(3 downto 0);  -- input 4 bit
+		 Sel_Ula   : in  STD_LOGIC;							-- flag de selecao soma ou sub -> 0 = soma 1 = sub
+		 
+		 ----------------------OUTPUTS----------------------------------------------
+		 Q 	     : out STD_LOGIC_VECTOR(3 downto 0);  -- output 4 bit
+		 Flag		  : out STD_LOGIC
     
     );
 
 end component; 
 
+
 component mux is
 
-  generic(
-    DATA_WIDTH   : natural := 4;   -- Bits in each input
-    SEL_WIDTH    : natural := 3	  -- Number of inputs
-);
-	  port(
-    A, B, C, D, E, F  : in  std_logic_vector( (DATA_WIDTH - 1) downto 0);
-    Sel_Mux 	    		 : in  std_logic_vector( (SEL_WIDTH - 1) downto 0);
-    Q   			    		 : out std_logic_vector( (DATA_WIDTH - 1) downto 0)
+	generic(
+		 DATA_WIDTH   : natural := 4;   -- Bits in each input
+		 SEL_WIDTH    : natural := 3	  -- Number of inputs
+	);
+
+	port(
+
+		 ----------------------INPUTS-----------------------------------------------
+		 A, B, C, D, E, F  : in  std_logic_vector( (DATA_WIDTH - 1) downto 0);
+		 Sel_Mux 	    		 : in  std_logic_vector( (SEL_WIDTH - 1) downto 0);
+		 
+		 ----------------------OUTPUTS----------------------------------------------
+		 Q   			    		 : out std_logic_vector( (DATA_WIDTH - 1) downto 0)
 );
 end component;
 
 
 component Registrador is
- generic (
-	  larguraDados : natural := 4
- );
+	
+	generic (
+		larguraDados : natural := 4
+	);
  
-	port (DIN 	 		: in  std_logic_vector(larguraDados-1 downto 0);
-		  DOUT 	 		: out std_logic_vector(larguraDados-1 downto 0);
-		  ENABLE, ENABLERW, RST, CLK  : in  std_logic
+	
+	port (
+		 ----------------------INPUTS-----------------------------------------------
+		 DIN 	 		: in  std_logic_vector(larguraDados-1 downto 0);
+		 ENABLE, ENABLERW, RST, CLK  : in  std_logic;
 
-);		  
+		 ----------------------OUTPUTS----------------------------------------------
+		 DOUT 	 		: out std_logic_vector(larguraDados-1 downto 0)
+		 
+	);		  
+
 end component;
  
 
 component conversorHex7Seg is
 	port
 	(
-		 -- Input ports
+		 ---------------INPUTS-----------------------
 		 dadoHex  : in  std_logic_vector(3 downto 0);
 		 apaga  	 : in  std_logic := '0';
 		 negativo : in  std_logic := '0';
 		 overFlow : in  std_logic := '0';
 
-		 -- Output ports
+		 ---------------OUTPUTS----------------------
 		 saida7seg : out std_logic_vector(6 downto 0)
 	);
 end component;
 
-------------------------------------
--------------SINAIS--------------------
-------------------------------------
+---------------------------------------------
+-------------SINAIS---------------------------
+----------------------------------------------
 
---------------MUX--------------------
+--------------MUX-----------------------------
+signal sinalC  : std_logic_vector (3 downto 0);
+signal sinalD  : std_logic_vector (3 downto 0);
+
+
 signal OUT_m1 : std_logic_vector (3 downto 0);
 signal OUT_m2 : std_logic_vector (3 downto 0);
 signal OUT_m3 : std_logic_vector (3 downto 0);
 
---------------ULA--------------------
+--------------ULA-----------------------------
 signal u1   : std_logic_vector (3 downto 0);
 signal u1_F : std_logic;
 
------------REGISTRADOR-------------
+--------------REGISTRADOR---------------------
 signal OUT_R1  : std_logic_vector (3 downto 0);
 signal OUT_R2  : std_logic_vector (3 downto 0);
 signal OUT_R3  : std_logic_vector (3 downto 0);
@@ -99,23 +122,37 @@ signal OUT_R4  : std_logic_vector (3 downto 0);
 signal OUT_R5  : std_logic_vector (3 downto 0);
 signal OUT_R6  : std_logic_vector (3 downto 0);
 
----------DISPLAY 7 SEGMENTOS-------
 
 begin
-	
-	M1: Mux port map(A => "0000", B=> "0001", C => "0010", 
 
-   				     D => "0011", E => "0101", F => "1001", 
+
+	--------------SINAIS DE CONTROLE---------------------
+
+	sinalC <= "0010" when swModoTempo = '0' else
+				 "0001" when swModoTempo = '1';
+				 
+	sinalD <= "0011" when swModoTempo = '0' else
+				 "0001" when swModoTempo = '1';
+
+	
+	------------------PORT MAP MUX1------------------------
+	
+	M1: Mux port map(A => "0000", B=> "0001", C => sinalC, 
+
+   				     D => sinalD, E => "0101", F => "1001", 
 				  
 						  Sel_Mux => Sel_Mux1, Q => OUT_m1);
 						  
 						  
+	------------------PORT MAP MUX2------------------------					  
+	
 	M2: Mux port map(A => OUT_R1, B=> OUT_R2, C => OUT_R3, 
 
    				     D => OUT_R4, E => OUT_R5, F => OUT_R6,
 				  
 						  Sel_Mux => Sel_Mux2, Q => OUT_m2);
 						  
+	------------------PORT MAP MUX3------------------------
 						  
 	M3: Mux port map(A => u1, B=> tempo, C => "0001", 
 
@@ -124,10 +161,12 @@ begin
 						  Sel_Mux => Sel_time, Q => OUT_m3);
 						  
 							
+	------------------ULA----------------------------------
 	
-	U: ULA port map(A => OUT_m1, B => OUT_m2, Sel_Ula => Sel_Ula, Q => u1, Flag => u1_F);
+	U: ULA port map(A => OUT_m2, B => OUT_m1, Sel_Ula => Sel_Ula, Q => u1, Flag => u1_F);
 	
 	
+	------------------PORT MAP REGISTRADOR------------------------
 	Rg1: Registrador port map(DIN => OUT_m3, Enable => ENABLE(5), ENABLERW => Enablerw(5) AND SW(0), RST => RST(5), CLK => clk, DOUT => OUT_R1);
 	Rg2: Registrador port map(DIN => OUT_m3, Enable => ENABLE(4), ENABLERW => Enablerw(4) AND SW(0), RST => RST(4), CLK => clk, DOUT => OUT_R2);
 	Rg3: Registrador port map(DIN => OUT_m3, Enable => ENABLE(3), ENABLERW => Enablerw(3) AND SW(0), RST => RST(3), CLK => clk, DOUT => OUT_R3);
@@ -135,6 +174,9 @@ begin
 	Rg5: Registrador port map(DIN => OUT_m3, Enable => ENABLE(1), ENABLERW => Enablerw(1) AND SW(0), RST => RST(1), CLK => clk, DOUT => OUT_R5);
 	Rg6: Registrador port map(DIN => OUT_m3, Enable => ENABLE(0), ENABLERW => Enablerw(0) AND SW(0), RST => RST(0), CLK => clk, DOUT => OUT_R6);
 
+	
+	------------------OUTPUTS FLUXO DE DADOS---------------
+	
 	R1 <= OUT_R1;
 	R2 <= OUT_R2;
 	R3 <= OUT_R3;
