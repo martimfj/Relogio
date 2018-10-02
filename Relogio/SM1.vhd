@@ -46,14 +46,22 @@ BEGIN
             CASE fstate IS
 				
 					 WHEN state0 =>
+						  
+						  --Modo Hora--
 						  if(sequencia = '0') then
 								reg_fstate <= state1;
+							
+						  --Modo Cronometro--	
                     else
 								reg_fstate <= state15;
+							
 							end if;
 						  
 							output1 <= "0000000000000000000";                
 						  
+						  
+						  
+					 ---------- Fluxo Hora ----------------
 					 WHEN state1 =>
                     IF (input1 = '0') THEN
                         reg_fstate <= state2;
@@ -74,7 +82,7 @@ BEGIN
 				
 
 
-					 WHEN state3 =>
+					WHEN state3 =>
                     IF (input1 = '0') THEN
                         reg_fstate <= state4;
 								
@@ -198,17 +206,14 @@ BEGIN
 						  modo <= not(modo);	
 							
                     output1 <= "0011010000001111111";
+					
+	  			   ------------------//------------------------
 				
 				
 				
+					---------- Fluxo Cronometro ----------------
 				
-				
-				
-				
-				
-				-------------------- Fluxo 2 -------------------
-				
-					 WHEN state15 =>
+					WHEN state15 =>
                     IF (input1 = '0') THEN
                         reg_fstate <= state16;
 								
@@ -357,8 +362,9 @@ BEGIN
                     reg_fstate <= state29;
 
                     output1 <= "0011011000001000000";
-
-			
+					
+					------------------//------------------------
+				
 				
                 WHEN OTHERS => 
    					  reg_fstate <= state0;
