@@ -105,8 +105,8 @@ ARCHITECTURE controller OF lcd_controller IS
           clk_count := clk_count + 1;
           
 			 IF(clk_count < (10 * freq)) THEN       --function set
-            lcd_data <= "00111100";      --2-line mode, display on
-            --lcd_data <= "00110100";    --1-line mode, display on
+            --lcd_data <= "00111100";      --2-line mode, display on
+            lcd_data <= "00110100";    --1-line mode, display on
             --lcd_data <= "00110000";    --1-line mdoe, display off
             --lcd_data <= "00111000";    --2-line mode, display off
             LCD_EN<= '1';

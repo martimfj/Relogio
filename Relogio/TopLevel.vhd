@@ -7,18 +7,25 @@ entity TopLevel is
 	
 	generic(
 			-------------------- LCD ------------------------------
+			lC  : std_logic_vector(9 downto 0) := "1001000011"; --C
 			lD  : std_logic_vector(9 downto 0) := "1001000100"; --D
 			lE  : std_logic_vector(9 downto 0) := "1001000101"; --E
 			lF  : std_logic_vector(9 downto 0) := "1001000110"; --F
+			lH  : std_logic_vector(9 downto 0) := "1001001000"; --H
 			lM  : std_logic_vector(9 downto 0) := "1001001101"; --M
+			lN  : std_logic_vector(9 downto 0) := "1001001110"; --N
 			lO  : std_logic_vector(9 downto 0) := "1001001111"; --O
 			lP  : std_logic_vector(9 downto 0) := "1001010000"; --P
 			lQ  : std_logic_vector(9 downto 0) := "1001010001"; --Q
 			lS  : std_logic_vector(9 downto 0) := "1001010011"; --S
 			lT  : std_logic_vector(9 downto 0) := "1001010100"; --T
 			lU  : std_logic_vector(9 downto 0) := "1001010101"; --U
+			lW  : std_logic_vector(9 downto 0) := "1001010111"; --W
 			es  : std_logic_vector(9 downto 0) := "1000100000"; --espaço
-			p0  : std_logic_vector(9 downto 0) := "1000111010"  --:
+			p0  : std_logic_vector(9 downto 0) := "1000111010"; --:
+			l1  : std_logic_vector(9 downto 0) := "1000110001"; --1
+			l2  : std_logic_vector(9 downto 0) := "1000110010"; --2
+			l4  : std_logic_vector(9 downto 0) := "1000110100"  --4
 	);
 	
 	port(
@@ -145,8 +152,8 @@ signal sequencia   : std_logic;
 begin
 	
 	----------------------SINAIS DE CONTROLE--------------------------------------
-	modoDisplay <= "1010" when modoFlag = '0' else
-				      "1111" when modoFlag = '1';
+	modoDisplay <= "1010" when modoFlag = '1' else
+				      "1111" when modoFlag = '0';
 				 
 				 
 	modoRelogio <= sw(5);
@@ -210,7 +217,7 @@ begin
 		
 	----------------------------PORT MAP DISPLAY--------------------------
 	display00 : entity work.conversorHex7seg
-	 Port map (saida7seg => HEX0, dadoHex => modoDisplay, apaga => '0');
+	 Port map (saida7seg => HEX0, dadoHex => modoDisplay, apaga => '1' NAND SW(5));
 	 
 	display01 : entity work.conversorHex7seg
 	 Port map (saida7seg => HEX1, dadoHex => "0000", apaga => '1');
@@ -240,51 +247,126 @@ begin
              busy => lcd_busy, LCD_RW => LCD_RW, LCD_RS => LCD_RS, LCD_EN => LCD_EN, LCD_DATA => LCD_DATA);
 	
 	
+	---------------------------PROCESS-----------------------------------------------
 	
-	---------------------------PRECESS-----------------------------------------------
-	PROCESS(saida_clk)
-    
-	 VARIABLE char  :  INTEGER RANGE 0 TO 20 := 0;
-    
-	 BEGIN
-		 IF(saida_clk'EVENT AND saida_clk = '1') THEN
+PROCESS(CLOCK_50)
+ 
+VARIABLE char  :  INTEGER RANGE 0 TO 17 := 0;
+
+	BEGIN
+	 IF(CLOCK_50'EVENT AND CLOCK_50 = '1') THEN
+
+	 IF(lcd_busy = '0' AND lcd_enable = '0') THEN
+		  lcd_enable <= '1';
+		  
+		  ---------SETUP MODE -------------
+		  IF(SW(0) = '1') then
+			IF(char < 17) THEN
+			 char := char + 1;
+			END IF;
+		
+		  CASE char IS
+			 WHEN 1 => lcd_bus <= lM;
+			 WHEN 2 => lcd_bus <= lO;
+			 WHEN 3 => lcd_bus <= lD;
+			 WHEN 4 => lcd_bus <= lO;
+			 WHEN 5 => lcd_bus <= es;
+			 WHEN 6 => lcd_bus <= lS;
+			 WHEN 7 => lcd_bus <= lE;
+			 WHEN 8 => lcd_bus <= lT;
+			 WHEN 9 => lcd_bus <= lU;
+			 WHEN 10 =>lcd_bus <= lP;
+			 WHEN 11 to 16 => lcd_bus <= es;
+			 WHEN OTHERS => lcd_enable <= '0'; char:= 0;
+		  END CASE;
+		  
+		  elsif(SW(6) = '1') then
 			
-			IF(lcd_busy = '0' AND lcd_enable = '0') THEN
-			  lcd_enable <= '1';
-			  
-			  IF(SW(0) = '1') then
-				
-				IF(char < 11) THEN
-				 char := char + 1;
-				
-				END IF;
-			  
-			  CASE char IS
-				 WHEN 1 => lcd_bus <= lS;
-				 WHEN 2 => lcd_bus <= lE;
-				 WHEN 3 => lcd_bus <= lT;
-				 WHEN 4 => lcd_bus <= lU;
-				 WHEN 5 => lcd_bus <= lP;
-				 WHEN 6 => lcd_bus <= es;
-				 WHEN 7 => lcd_bus <= lM;
-				 WHEN 8 => lcd_bus <= lO;
-				 WHEN 9 => lcd_bus <= lD;
-				 WHEN 10 =>lcd_bus <= lE;
-				 WHEN OTHERS => lcd_enable <= '0' ;
-			  END CASE;
-			  
-			  else
-					char := 0;
-					lcd_bus <= es;
-			  end if;
-			
-			ELSE
-			  lcd_enable <= '0';
+			IF(char < 17) THEN
+			 char := char + 1;
 			
 			END IF;
-		 
-		 END IF;
-  
-  END PROCESS;
+		  
+		  CASE char IS
+
+		  ----------------MODO COUNTDOWN-------------------
+			 WHEN 1 => lcd_bus <= lC;
+			 WHEN 2 => lcd_bus <= lO;
+			 WHEN 3 => lcd_bus <= lU;
+			 WHEN 4 => lcd_bus <= lN;
+			 WHEN 5 => lcd_bus <= lT;
+			 WHEN 6 => lcd_bus <= lD;
+			 WHEN 7 => lcd_bus <= lO;
+			 WHEN 8 => lcd_bus <= lW;
+			 WHEN 9 => lcd_bus <= lN;
+			 WHEN 10 to 16 => lcd_bus <= es;
+			 WHEN OTHERS => lcd_enable <= '0'; char:= 0;
+		  END CASE;
+		  
+		  elsif(SW(5) = '1') then
+			
+			IF(char < 17	) THEN
+			 char := char + 1;
+			END IF;
+		  
+		  CASE char IS
+		  ----------------MODO HORARIO-------------------
+			 WHEN 1 => lcd_bus <= lM;
+			 WHEN 2 => lcd_bus <= lO;
+			 WHEN 3 => lcd_bus <= lD;
+			 WHEN 4 => lcd_bus <= lO;
+			 WHEN 5 => lcd_bus <= es;
+			 WHEN 6 => lcd_bus <= l1;
+			 WHEN 7 => lcd_bus <= l2;
+			 WHEN 8 => lcd_bus <= lH;
+			 WHEN 9 to 16 => lcd_bus <= es;
+			 WHEN OTHERS => lcd_enable <= '0'; char:= 0;
+		  END CASE;
+		  
+		  elsif(SW(5) = '0') then
+			
+			IF(char < 17	) THEN
+			 char := char + 1;
+			
+			END IF;
+		  
+		  CASE char IS
+
+		  ----------------MODO HORARIO-------------------
+			 WHEN 1 => lcd_bus <= lM;
+			 WHEN 2 => lcd_bus <= lO;
+			 WHEN 3 => lcd_bus <= lD;
+			 WHEN 4 => lcd_bus <= lO;
+			 WHEN 5 => lcd_bus <= es;
+			 WHEN 6 => lcd_bus <= l2;
+			 WHEN 7 => lcd_bus <= l4;
+			 WHEN 8 => lcd_bus <= lH;
+			 WHEN 9 to 16 => lcd_bus <= es;
+			 WHEN OTHERS => lcd_enable <= '0'; char:= 0;
+		  END CASE;
+		  
+		  
+		  else
+		  IF(char < 17	) THEN
+			 char := char + 1;
+			END IF;
+				
+				CASE char IS
+					WHEN 1 to 16 => lcd_bus <= es;
+					WHEN OTHERS => lcd_enable <= '0'; char:= 0;
+				END CASE;
+				
+			end if;
+			
+
+	----------------END LCD--------------------		
+		ELSE
+		  lcd_enable <= '0';
+		
+		END IF;
+	 
+	 END IF;
+
+	END PROCESS;
   
 end architecture;
