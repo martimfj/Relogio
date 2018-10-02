@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
--- DATE "10/01/2018 19:27:26"
+-- DATE "10/01/2018 20:05:24"
 
 -- 
 -- Device: Altera EP4CE115F29C7 Package FBGA780
@@ -81,18 +81,18 @@ ENTITY 	TopLevel IS
 	CLOCK_50 : IN std_logic;
 	SW : IN std_logic_vector(17 DOWNTO 0);
 	KEY : IN std_logic_vector(3 DOWNTO 0);
-	HEX0 : OUT std_logic_vector(6 DOWNTO 0);
-	HEX1 : OUT std_logic_vector(6 DOWNTO 0);
-	HEX2 : OUT std_logic_vector(6 DOWNTO 0);
-	HEX3 : OUT std_logic_vector(6 DOWNTO 0);
-	HEX4 : OUT std_logic_vector(6 DOWNTO 0);
-	HEX5 : OUT std_logic_vector(6 DOWNTO 0);
-	HEX6 : OUT std_logic_vector(6 DOWNTO 0);
-	HEX7 : OUT std_logic_vector(6 DOWNTO 0);
-	LCD_RW : OUT std_logic;
-	LCD_RS : OUT std_logic;
-	LCD_EN : OUT std_logic;
-	LCD_DATA : OUT std_logic_vector(7 DOWNTO 0)
+	HEX0 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX1 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX2 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX3 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX4 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX5 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX6 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX7 : BUFFER std_logic_vector(6 DOWNTO 0);
+	LCD_RW : BUFFER std_logic;
+	LCD_RS : BUFFER std_logic;
+	LCD_EN : BUFFER std_logic;
+	LCD_DATA : BUFFER std_logic_vector(7 DOWNTO 0)
 	);
 END TopLevel;
 
