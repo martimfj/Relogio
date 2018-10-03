@@ -58,3 +58,8 @@ Para incrementar 1 no registrador da unidade de hora, precisamos enviar para o T
 
 ## Top Level
 O top level do projeto une as duas parter do projeto: Unidade de Controle com o Fluxo de dados. Vindo da Unidade de controle, temos a instrução que o fluxo de dados deve executar para performar a ação necessária do relógio. Foi nesta parte do projeto que foram implementadas todos os features de velocidade do timer, modificação do horário e ativação do modo countdown.
+
+## Dificuldades
+Uma grande dificuldade do projeto foi implementar a máquina de estados, pois tinha várias peculiaridades como poder mudar as 24h ou as 12h, trocar os números das dezenas corretamente etc. Provavelmente a parte mais complexa do projeto.
+
+Além disso, o temporizador necessitou uma outra máquina de estados que funcionasse ao contrario, o que foi bastante complexo no começo.
