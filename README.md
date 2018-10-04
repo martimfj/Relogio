@@ -1,4 +1,4 @@
-# Projeto 1: Relógio Digital - Design de Computadores
+****# Projeto 1: Relógio Digital - Design de Computadores
 
 Leonardo Medeiros, Martim Ferreira José e Sabrina Simão <br>
 Engenharia da Computação - Insper
@@ -28,11 +28,11 @@ Abaixo da ULA temos um outro MUX, que é usado para alterar a entrada dos regist
 
 ## Unidade de Controle
 A unidade de controle é a máquina de estados que vai controlar a ordem na qual o fluxo de dados irá ocorrer. Para implementar o relógio, foi preciso pensar em como mudar a unidade de tempo assim que ela atingisse o seu máximo de forma cíclica. A seguir estão os máximos para cada unidade de tempo:
-* **Unidade de segundo (US):** 10
-* **Dezena de segundo (DS):** 6
-* **Unidade de minuto (UM):** 10
-* **Dezena de minuto (DM):** 6
-* **Unidade de hora (UH):** 4 (base de tempo 24h) ou 2 (base de tempo 12h)
+* **Unidade de segundo (US):** 9
+* **Dezena de segundo (DS):** 5
+* **Unidade de minuto (UM):** 9
+* **Dezena de minuto (DM):** 3
+* **Unidade de hora (UH):** 3 (base de tempo 24h) ou 2 (base de tempo 12h)
 * **Dezena de hora (DH):** 2 (base de tempo 24h) ou 1 (base de tempo 12h)
 
 Obs: Esses números são as constantes do primeiro MUX ([Fluxo de Dados](#fluxo-de-dados))
@@ -40,7 +40,7 @@ Obs: Esses números são as constantes do primeiro MUX ([Fluxo de Dados](#fluxo-
 A máquina de estados implementada pode ser observada pelo diagrama a seguir:
 ![Diagrama de Máquina de Estados](./img/maquina_estados_diagrama.png)
 
-No diagrama, é possível observar que temos 2 grupos de estados, na esquerda o funcionamento básico do relógio e a direita o funcionamento de um timer countdown. Cada linha da máquina de estados representa um número do relógio, por exemplo: a primeira linha se refere a unidade de segundos (US), a segunda se refere a dezena de segundos (DS), a terceira é unidade de hora (UM) e assim por diante... No primeiro grupo, temos um estado que compara (subtração) o valor em questão e outro estado que incrementa 1. No segundo grupo, a primeira coluna compara o valor em questão, a segunda coluna decrementa 1 e a terceira coluna adiciona 6 ou 9 ao valor em questão.
+No diagrama, é possível observar que temos 2 grupos de estados, na esquerda o funcionamento básico do relógio e a direita o funcionamento de um timer countdown. Cada linha da máquina de estados representa um número do relógio, por exemplo: a primeira linha se refere a unidade de segundos (US), a segunda se refere a dezena de segundos (DS), a terceira é unidade de hora (UM) e assim por diante. No primeiro grupo, temos um estado que compara (subtração) o valor em questão e outro estado que incrementa 1. No segundo grupo, a primeira coluna compara o valor em questão, a segunda coluna decrementa 1 e a terceira coluna adiciona 5 ou 9 ao valor em questão. Para mais informações sobre as saídas da máquina de estado, acesse o link: [Tabelas de saída da máquina de estados](../master/Relogio/Registrador.vhd)
 
 Cada um dos estados têm uma saída específica de 19 bits que é a instrução que irá para o Top Level. A instrução é constituída pelo SELCNT, SELTMP, SELULA, Enables e Reset. Para exemplificar, temos abaixo 3 estados diferentes, adição da unidade de segundo, subtração da dezena de minuto e adição na unidade de hora.
 
