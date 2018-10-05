@@ -1,4 +1,4 @@
-****# Projeto 1: Relógio Digital - Design de Computadores
+# Projeto 1: Relógio Digital - Design de Computadores
 
 Leonardo Medeiros, Martim Ferreira José e Sabrina Simão <br>
 Engenharia da Computação - Insper
