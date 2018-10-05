@@ -97,6 +97,7 @@ component SM1 IS
 		------------------INPUTS------------------------
         		
 	   reset  : IN STD_LOGIC := '0';
+		CLOCK_50 :IN STD_LOGIC;
       clock  : IN STD_LOGIC;
  		sequencia: IN STD_LOGIC;
       input1 : IN STD_LOGIC := '0';
@@ -148,7 +149,9 @@ signal reset_n    : std_logic := '1';
 -----------------------FLUXO----------------------------------
 signal sequencia   : std_logic;
 
+signal segundo : std_logic;
 
+signal auxBt : std_logic;
 begin
 	
 	----------------------SINAIS DE CONTROLE--------------------------------------
@@ -174,21 +177,20 @@ begin
 							 "1001" when SW(8)  = '1'else ---9
 							 "0000";
 	
-	frequencia  <= 6    when SW(1) = '1' else
-						50    when SW(2) = '1' else
-						500   when SW(3) = '1' else
-						5000  when SW(4) = '1' else
-						6;
+	frequencia  <= 2    when SW(1) = '1' else
+						25    when SW(2) = '1' else
+						100   when SW(3) = '1' else
+						500  when SW(4) = '1' else
+						2;
 	
 	----------------------------PORT MAP DIVISOR------------------------------------
 	fazDivisaoInteiro1: entity work.divisorGenerico(divInteiro)
             generic map (divisor => 50000000)   -- divide por frequencia.
             port map (clk => CLOCK_50, saida_clk => saida_clk, setup => frequencia);
 				
-		S0: SM1 port map(reset => '0', clock => saida_clk, input1 => out_flag ,output1 => comando, modo => modoFlag, sequencia => sequencia);
+				
+	S0: SM1 port map(reset => '0', CLOCK_50 => CLOCK_50, clock => auxBt, input1 => out_flag ,output1 => comando, modo => modoFlag, sequencia => sequencia);
 
-	
-	
 	
 	
 	----------------------------PORT MAP FLUXO DE DADOS------------------------------
@@ -198,7 +200,7 @@ begin
 		-- 18 17 16 | 15 14 13  |  12  | 11 10 9 8 7 6 | 5 4 3 2 1 0  
 	
 		F0: FluxoDados port map( 
-		clk 		   => saida_clk,
+		clk 		   => CLOCK_50,
 		Sel_Ula     => comando(12),
 		Sel_Mux1    => comando(18 downto 16),
 		Sel_Mux2    => comando(15 downto 13),
@@ -240,6 +242,7 @@ begin
 	display5 : entity work.conversorHex7seg
 	 Port map (saida7seg => HEX7, dadoHex => OUT_R6, apaga => '0');
 	
+	detectorSub3: work.edgeDetector(bordaSubida) port map (clk => CLOCK_50, entrada => saida_clk, saida => auxBt);
 	
 	----------------------------PORT MAP LCD-----------------------------------------
 	screen: lcd_controller
@@ -248,7 +251,7 @@ begin
 	
 	
 	---------------------------PROCESS-----------------------------------------------
-	
+
 PROCESS(CLOCK_50)
  
 VARIABLE char  :  INTEGER RANGE 0 TO 17 := 0;
