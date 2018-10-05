@@ -1,5 +1,5 @@
 Timing Analyzer report for Relogio
-Thu Oct 04 22:14:49 2018
+Thu Oct 04 22:46:04 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -118,12 +118,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.06        ;
+; Average used               ; 1.04        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   5.9%      ;
+;     Processor 2            ;   3.6%      ;
 +----------------------------+-------------+
 
 
@@ -1827,9 +1827,9 @@ No synchronizer chains to report.
 ; 0.457 ; divisorGenerico:fazDivisaoInteiro1|contador[4]  ; divisorGenerico:fazDivisaoInteiro1|contador[6]  ; CLOCK_50             ; CLOCK_50    ; 0.000        ; 0.040      ; 0.581      ;
 ; 0.458 ; SM1:S0|fstate.state1                            ; SM1:S0|fstate.state3                            ; CLOCK_50             ; CLOCK_50    ; 0.000        ; 0.240      ; 0.782      ;
 ; 0.458 ; divisorGenerico:fazDivisaoInteiro1|contador[5]  ; divisorGenerico:fazDivisaoInteiro1|tick         ; CLOCK_50             ; CLOCK_50    ; 0.000        ; 0.684      ; 1.226      ;
-; 0.459 ; lcd_bus[1]                                      ; lcd_bus[1]                                      ; CLOCK_50             ; CLOCK_50    ; 0.000        ; 0.041      ; 0.584      ;
 ; 0.459 ; divisorGenerico:fazDivisaoInteiro1|contador[2]  ; divisorGenerico:fazDivisaoInteiro1|contador[3]  ; CLOCK_50             ; CLOCK_50    ; 0.000        ; 0.040      ; 0.583      ;
 ; 0.459 ; divisorGenerico:fazDivisaoInteiro1|contador[0]  ; divisorGenerico:fazDivisaoInteiro1|contador[1]  ; CLOCK_50             ; CLOCK_50    ; 0.000        ; 0.040      ; 0.583      ;
+; 0.459 ; lcd_bus[1]                                      ; lcd_bus[1]                                      ; CLOCK_50             ; CLOCK_50    ; 0.000        ; 0.041      ; 0.584      ;
 ; 0.460 ; divisorGenerico:fazDivisaoInteiro1|contador[8]  ; divisorGenerico:fazDivisaoInteiro1|contador[9]  ; CLOCK_50             ; CLOCK_50    ; 0.000        ; 0.040      ; 0.584      ;
 ; 0.461 ; divisorGenerico:fazDivisaoInteiro1|contador[18] ; divisorGenerico:fazDivisaoInteiro1|contador[19] ; CLOCK_50             ; CLOCK_50    ; 0.000        ; 0.039      ; 0.584      ;
 ; 0.461 ; divisorGenerico:fazDivisaoInteiro1|contador[14] ; divisorGenerico:fazDivisaoInteiro1|contador[15] ; CLOCK_50             ; CLOCK_50    ; 0.000        ; 0.039      ; 0.584      ;
@@ -2702,7 +2702,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 04 22:14:45 2018
+    Info: Processing started: Thu Oct 04 22:45:56 2018
 Info: Command: quartus_sta Relogio -c Relogio
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -2716,7 +2716,7 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name SM1:S0|fstate.state0 SM1:S0|fstate.state0
     Info (332105): create_clock -period 1.000 -name CLOCK_50 CLOCK_50
     Info (332105): create_clock -period 1.000 -name SM1:S0|fstate.state27 SM1:S0|fstate.state27
-Warning (332125): Found combinational loop of 2 nodes File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 12
+Warning (332125): Found combinational loop of 2 nodes File: C:/Users/leo_v/Desktop/Teste/Relogio/Relogio/SM1.vhd Line: 12
     Warning (332126): Node "S0|modo~0|combout"
     Warning (332126): Node "S0|modo~0|datac"
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
@@ -2816,9 +2816,9 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4850 megabytes
-    Info: Processing ended: Thu Oct 04 22:14:49 2018
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 4848 megabytes
+    Info: Processing ended: Thu Oct 04 22:46:04 2018
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:05
 
 
