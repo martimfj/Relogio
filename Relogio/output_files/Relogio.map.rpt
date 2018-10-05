@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Relogio
-Thu Oct 04 23:51:59 2018
+Thu Oct 04 22:14:09 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -76,7 +76,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 04 23:51:59 2018       ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 04 22:14:09 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Relogio                                     ;
 ; Top-level Entity Name              ; TopLevel                                    ;
@@ -197,32 +197,32 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
-; SM1.vhd                          ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd                       ;         ;
-; TopLevel.vhd                     ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd                  ;         ;
-; Registrador.vhd                  ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd               ;         ;
-; Mux.vhd                          ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd                       ;         ;
-; conversorHex7Seg.vhd             ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/conversorHex7Seg.vhd          ;         ;
-; FluxoDados.vhd                   ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd                ;         ;
-; divisorGenerico.vhd              ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd           ;         ;
-; lcd_controller.vhd               ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/lcd_controller.vhd            ;         ;
-; output_files/edgeDetector.vhd    ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/output_files/edgeDetector.vhd ;         ;
-; ula.vhd                          ; yes             ; Auto-Found VHDL File         ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd                       ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_divide.tdf       ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/abs_divider.inc      ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/sign_div_unsign.inc  ;         ;
-; aglobal180.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc       ;         ;
-; db/lpm_divide_92p.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/lpm_divide_92p.tdf         ;         ;
-; db/abs_divider_4dg.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/abs_divider_4dg.tdf        ;         ;
-; db/alt_u_div_6af.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf          ;         ;
-; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/add_sub_7pc.tdf            ;         ;
-; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/add_sub_8pc.tdf            ;         ;
-; db/lpm_abs_i0a.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/lpm_abs_i0a.tdf            ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; edgeDetector.vhd                 ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/edgeDetector.vhd         ;         ;
+; SM1.vhd                          ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd                  ;         ;
+; TopLevel.vhd                     ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd             ;         ;
+; Registrador.vhd                  ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/Registrador.vhd          ;         ;
+; Mux.vhd                          ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/Mux.vhd                  ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/conversorHex7Seg.vhd     ;         ;
+; FluxoDados.vhd                   ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd           ;         ;
+; divisorGenerico.vhd              ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/divisorGenerico.vhd      ;         ;
+; lcd_controller.vhd               ; yes             ; User VHDL File               ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/lcd_controller.vhd       ;         ;
+; ula.vhd                          ; yes             ; Auto-Found VHDL File         ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/ula.vhd                  ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal180.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc      ;         ;
+; db/lpm_divide_92p.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/db/lpm_divide_92p.tdf    ;         ;
+; db/abs_divider_4dg.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/db/abs_divider_4dg.tdf   ;         ;
+; db/alt_u_div_6af.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/db/alt_u_div_6af.tdf     ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/db/add_sub_7pc.tdf       ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/db/add_sub_8pc.tdf       ;         ;
+; db/lpm_abs_i0a.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/db/lpm_abs_i0a.tdf       ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -806,7 +806,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:24     ;
+; Top            ; 00:01:30     ;
 +----------------+--------------+
 
 
@@ -816,138 +816,138 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 04 23:50:13 2018
+    Info: Processing started: Thu Oct 04 22:12:22 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Relogio -c Relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/edgeDetector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sm1.vhd
-    Info (12022): Found design unit 1: SM1-BEHAVIOR File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 17
-    Info (12023): Found entity 1: SM1 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 4
+    Info (12022): Found design unit 1: SM1-BEHAVIOR File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 17
+    Info (12023): Found entity 1: SM1 File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 4
 Warning (12019): Can't analyze file -- file divisor.vhd is missing
 Warning (12019): Can't analyze file -- file comparador.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhd
-    Info (12022): Found design unit 1: TopLevel-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 46
-    Info (12023): Found entity 1: TopLevel File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 6
+    Info (12022): Found design unit 1: TopLevel-rtl File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 46
+    Info (12023): Found entity 1: TopLevel File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
-    Info (12022): Found design unit 1: Registrador-comportamento File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd Line: 22
-    Info (12023): Found entity 1: Registrador File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Registrador.vhd Line: 4
-Warning (12090): Entity "mux" obtained from "Mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd Line: 4
+    Info (12022): Found design unit 1: Registrador-comportamento File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/Registrador.vhd Line: 22
+    Info (12023): Found entity 1: Registrador File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/Registrador.vhd Line: 4
+Warning (12090): Entity "mux" obtained from "Mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/Mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: mux-mux_architecture File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd Line: 20
-    Info (12023): Found entity 1: mux File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/Mux.vhd Line: 4
+    Info (12022): Found design unit 1: mux-mux_architecture File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/Mux.vhd Line: 20
+    Info (12023): Found entity 1: mux File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/Mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/conversorHex7Seg.vhd Line: 19
-    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/conversorHex7Seg.vhd Line: 5
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/conversorHex7Seg.vhd Line: 19
+    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/conversorHex7Seg.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fluxodados.vhd
-    Info (12022): Found design unit 1: FluxoDados-fl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 29
-    Info (12023): Found entity 1: FluxoDados File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 5
+    Info (12022): Found design unit 1: FluxoDados-fl File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 29
+    Info (12023): Found entity 1: FluxoDados File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file divisorgenerico.vhd
-    Info (12022): Found design unit 1: divisorGenerico-divInteiro File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 24
-    Info (12023): Found entity 1: divisorGenerico File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 6
+    Info (12022): Found design unit 1: divisorGenerico-divInteiro File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/divisorGenerico.vhd Line: 24
+    Info (12023): Found entity 1: divisorGenerico File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/divisorGenerico.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file lcd_controller.vhd
-    Info (12022): Found design unit 1: lcd_controller-controller File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/lcd_controller.vhd Line: 68
-    Info (12023): Found entity 1: lcd_controller File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/lcd_controller.vhd Line: 51
-Info (12021): Found 3 design units, including 1 entities, in source file output_files/edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/output_files/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/output_files/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/output_files/edgeDetector.vhd Line: 4
+    Info (12022): Found design unit 1: lcd_controller-controller File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/lcd_controller.vhd Line: 68
+    Info (12023): Found entity 1: lcd_controller File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/lcd_controller.vhd Line: 51
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at TopLevel.vhd(147): used explicit default value for signal "reset_n" because signal was never assigned a value File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 147
-Info (12129): Elaborating entity "divisorGenerico" using architecture "A:divinteiro" for hierarchy "divisorGenerico:fazDivisaoInteiro1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 187
-Info (12128): Elaborating entity "SM1" for hierarchy "SM1:S0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 192
-Warning (10492): VHDL Process Statement warning at SM1.vhd(55): signal "clock" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 55
-Warning (10492): VHDL Process Statement warning at SM1.vhd(57): signal "sequencia" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 57
-Warning (10492): VHDL Process Statement warning at SM1.vhd(189): signal "flag4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 189
-Warning (10631): VHDL Process Statement warning at SM1.vhd(40): inferring latch(es) for signal or variable "output1", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Warning (10631): VHDL Process Statement warning at SM1.vhd(40): inferring latch(es) for signal or variable "flag4", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Warning (10631): VHDL Process Statement warning at SM1.vhd(40): inferring latch(es) for signal or variable "modo", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "modo" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "flag4" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[0]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[1]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[2]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[3]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[4]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[5]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[6]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[7]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[8]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[9]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[10]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[11]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[12]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[13]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[14]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[15]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[16]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[17]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (10041): Inferred latch for "output1[18]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-Info (12128): Elaborating entity "FluxoDados" for hierarchy "FluxoDados:F0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 202
-Info (10041): Inferred latch for "sinalD[0]" at FluxoDados.vhd(134) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 134
-Info (10041): Inferred latch for "sinalD[1]" at FluxoDados.vhd(134) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 134
-Info (10041): Inferred latch for "sinalD[2]" at FluxoDados.vhd(134) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 134
-Info (10041): Inferred latch for "sinalD[3]" at FluxoDados.vhd(134) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 134
-Info (10041): Inferred latch for "sinalC[0]" at FluxoDados.vhd(131) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 131
-Info (10041): Inferred latch for "sinalC[1]" at FluxoDados.vhd(131) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 131
-Info (10041): Inferred latch for "sinalC[2]" at FluxoDados.vhd(131) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 131
-Info (10041): Inferred latch for "sinalC[3]" at FluxoDados.vhd(131) File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 131
-Info (12128): Elaborating entity "mux" for hierarchy "FluxoDados:F0|mux:M1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 140
+Warning (10540): VHDL Signal Declaration warning at TopLevel.vhd(147): used explicit default value for signal "reset_n" because signal was never assigned a value File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 147
+Info (12129): Elaborating entity "divisorGenerico" using architecture "A:divinteiro" for hierarchy "divisorGenerico:fazDivisaoInteiro1" File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 187
+Info (12128): Elaborating entity "SM1" for hierarchy "SM1:S0" File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 192
+Warning (10492): VHDL Process Statement warning at SM1.vhd(55): signal "clock" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 55
+Warning (10492): VHDL Process Statement warning at SM1.vhd(57): signal "sequencia" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at SM1.vhd(189): signal "flag4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 189
+Warning (10631): VHDL Process Statement warning at SM1.vhd(40): inferring latch(es) for signal or variable "output1", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Warning (10631): VHDL Process Statement warning at SM1.vhd(40): inferring latch(es) for signal or variable "flag4", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Warning (10631): VHDL Process Statement warning at SM1.vhd(40): inferring latch(es) for signal or variable "modo", which holds its previous value in one or more paths through the process File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "modo" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "flag4" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[0]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[1]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[2]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[3]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[4]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[5]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[6]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[7]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[8]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[9]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[10]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[11]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[12]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[13]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[14]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[15]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[16]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[17]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (10041): Inferred latch for "output1[18]" at SM1.vhd(40) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+Info (12128): Elaborating entity "FluxoDados" for hierarchy "FluxoDados:F0" File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 202
+Info (10041): Inferred latch for "sinalD[0]" at FluxoDados.vhd(134) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 134
+Info (10041): Inferred latch for "sinalD[1]" at FluxoDados.vhd(134) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 134
+Info (10041): Inferred latch for "sinalD[2]" at FluxoDados.vhd(134) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 134
+Info (10041): Inferred latch for "sinalD[3]" at FluxoDados.vhd(134) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 134
+Info (10041): Inferred latch for "sinalC[0]" at FluxoDados.vhd(131) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 131
+Info (10041): Inferred latch for "sinalC[1]" at FluxoDados.vhd(131) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 131
+Info (10041): Inferred latch for "sinalC[2]" at FluxoDados.vhd(131) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 131
+Info (10041): Inferred latch for "sinalC[3]" at FluxoDados.vhd(131) File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 131
+Info (12128): Elaborating entity "mux" for hierarchy "FluxoDados:F0|mux:M1" File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 140
 Warning (12125): Using design file ula.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: ULA-rtl File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd Line: 26
-    Info (12023): Found entity 1: ULA File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/ula.vhd Line: 9
-Info (12128): Elaborating entity "ULA" for hierarchy "FluxoDados:F0|ULA:U" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 166
-Info (12128): Elaborating entity "Registrador" for hierarchy "FluxoDados:F0|Registrador:Rg1" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/FluxoDados.vhd Line: 170
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display00" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 221
-Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub3" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 245
-Info (12128): Elaborating entity "lcd_controller" for hierarchy "lcd_controller:screen" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 248
+    Info (12022): Found design unit 1: ULA-rtl File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/ula.vhd Line: 26
+    Info (12023): Found entity 1: ULA File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/ula.vhd Line: 9
+Info (12128): Elaborating entity "ULA" for hierarchy "FluxoDados:F0|ULA:U" File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 166
+Info (12128): Elaborating entity "Registrador" for hierarchy "FluxoDados:F0|Registrador:Rg1" File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/FluxoDados.vhd Line: 170
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display00" File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 221
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub3" File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 245
+Info (12128): Elaborating entity "lcd_controller" for hierarchy "lcd_controller:screen" File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 248
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "divisorGenerico:fazDivisaoInteiro1|Div0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 35
-Info (12130): Elaborated megafunction instantiation "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 35
-Info (12133): Instantiated megafunction "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0" with the following parameter: File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/divisorGenerico.vhd Line: 35
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "divisorGenerico:fazDivisaoInteiro1|Div0" File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/divisorGenerico.vhd Line: 35
+Info (12130): Elaborated megafunction instantiation "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0" File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/divisorGenerico.vhd Line: 35
+Info (12133): Instantiated megafunction "divisorGenerico:fazDivisaoInteiro1|lpm_divide:Div0" with the following parameter: File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/divisorGenerico.vhd Line: 35
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_92p.tdf
-    Info (12023): Found entity 1: lpm_divide_92p File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/lpm_divide_92p.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_92p File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/db/lpm_divide_92p.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_4dg.tdf
-    Info (12023): Found entity 1: abs_divider_4dg File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/abs_divider_4dg.tdf Line: 26
+    Info (12023): Found entity 1: abs_divider_4dg File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/db/abs_divider_4dg.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_6af.tdf
-    Info (12023): Found entity 1: alt_u_div_6af File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 26
+    Info (12023): Found entity 1: alt_u_div_6af File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/db/alt_u_div_6af.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/add_sub_7pc.tdf Line: 22
+    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/db/add_sub_7pc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/add_sub_8pc.tdf Line: 22
+    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/db/add_sub_8pc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_i0a.tdf
-    Info (12023): Found entity 1: lpm_abs_i0a File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/db/lpm_abs_i0a.tdf Line: 24
-Warning (13012): Latch SM1:S0|output1[12] has unsafe behavior File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SM1:S0|fstate.state0 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 24
-Warning (13012): Latch SM1:S0|output1[16] has unsafe behavior File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 40
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SM1:S0|fstate.state0 File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/SM1.vhd Line: 24
+    Info (12023): Found entity 1: lpm_abs_i0a File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/db/lpm_abs_i0a.tdf Line: 24
+Warning (13012): Latch SM1:S0|output1[12] has unsafe behavior File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SM1:S0|fstate.state0 File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 24
+Warning (13012): Latch SM1:S0|output1[16] has unsafe behavior File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 40
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SM1:S0|fstate.state0 File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/SM1.vhd Line: 24
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 38
-    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 38
-    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 38
-    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 38
-    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 38
-    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 38
-    Warning (13410): Pin "HEX1[5]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 38
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 38
-    Warning (13410): Pin "LCD_RW" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 39
-    Warning (13410): Pin "LCD_DATA[7]" is stuck at GND File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 40
+    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 38
+    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 38
+    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 38
+    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 38
+    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 38
+    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 38
+    Warning (13410): Pin "HEX1[5]" is stuck at VCC File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 38
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 38
+    Warning (13410): Pin "LCD_RW" is stuck at GND File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 39
+    Warning (13410): Pin "LCD_DATA[7]" is stuck at GND File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 40
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/leo_v/Desktop/GitHub/Relogio/Relogio/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/leo_v/Desktop/Proj_final/Relogio/Relogio/TopLevel.vhd Line: 34
 Info (21057): Implemented 1947 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 67 output pins
     Info (21061): Implemented 1857 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 4849 megabytes
-    Info: Processing ended: Thu Oct 04 23:52:00 2018
+    Info: Peak virtual memory: 4848 megabytes
+    Info: Processing ended: Thu Oct 04 22:14:09 2018
     Info: Elapsed time: 00:01:47
     Info: Total CPU time (on all processors): 00:02:06
 
