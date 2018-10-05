@@ -3,12 +3,13 @@ USE ieee.std_logic_1164.all;
 
 ENTITY SM1 IS
     PORT (
-        reset : IN STD_LOGIC := '0';
-        clock : IN STD_LOGIC;
-        input1 : IN STD_LOGIC := '0';
+        reset    : IN STD_LOGIC := '0';
+		  CLOCK_50 :IN STD_LOGIC;
+        clock    : IN STD_LOGIC;
+        input1   : IN STD_LOGIC := '0';
 		  sequencia: IN STD_LOGIC;
-        output1 : OUT STD_LOGIC_VECTOR(18 DOWNTO 0);
-		  modo    : OUT STD_LOGIC := '0'
+        output1  : OUT STD_LOGIC_VECTOR(18 DOWNTO 0);
+		  modo     : OUT STD_LOGIC := '0'
 		  
     );
 END SM1;
@@ -19,27 +20,30 @@ ARCHITECTURE BEHAVIOR OF SM1 IS
 	 state9,state11,state14,state13,state15,state12,state16,state17,state18,state19,state20,state21,
 	 state22,state23,state24,state25,state26, state27, state28, state29, state30, state31);
     
+	 
 	 SIGNAL fstate : type_fstate;
     SIGNAL reg_fstate : type_fstate;
 	 signal flag4: std_logic;
-	 
 BEGIN
-    PROCESS (clock)
+
+    PROCESS (CLOCK_50)
 	
     BEGIN
-        IF (rising_edge(clock)) THEN
+	 
+        IF (rising_edge(CLOCK_50)) THEN
             fstate <= reg_fstate;
+				
         END IF;
-    END PROCESS;
+    
+	 END PROCESS;
 
     PROCESS (fstate,reset,input1)
 
     BEGIN
-		  
-			
+
         IF (reset='1') THEN
             reg_fstate <= state0;
-            output1 <= "0000000000000000000";
+            output1 <= "0000000000000111111";
         ELSE
 				
 					
@@ -48,19 +52,23 @@ BEGIN
 					 WHEN state0 =>
 						  
 						  --Modo Hora--
-						  if(sequencia = '0') then
-								reg_fstate <= state1;
-							
-						  --Modo Cronometro--	
-                    else
-								reg_fstate <= state15;
+						  IF (clock = '1') THEN
+							  
+							  if(sequencia = '0') then
+									reg_fstate <= state1;
+								
+							  --Modo Cronometro--	
+							  else
+									reg_fstate <= state15;
+								
+								end if;
+							  
+								output1 <= "0000000000000000000";                
+						  
+							else
+								reg_fstate <= state0;
 							
 							end if;
-						  
-							output1 <= "0000000000000000000";                
-						  
-						  
-						  
 					 ---------- Fluxo Hora ----------------
 					 WHEN state1 =>
                     IF (input1 = '0') THEN
@@ -77,9 +85,8 @@ BEGIN
 					WHEN state2 =>
 					 
                     reg_fstate <= state0;
-
+					
                     output1 <= "0010000100000000000";
-				
 
 
 					WHEN state3 =>
@@ -368,7 +375,7 @@ BEGIN
 				
                 WHEN OTHERS => 
    					  reg_fstate <= state0;
-                    output1 <= "XXXXXXXXXXXXXXXXXXX";
+                    output1 <= "0000000111111111111";
                     report "Reach undefined state";
             END CASE;
         END IF;
